@@ -1,0 +1,143 @@
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\chapter{Estimación del gradiente}
+\label{ch:chapter3}
+
+Acá la idea es describir el algoritmo con su desarrollo matemático para que no salga nada de la nada (mas o menos 10-12 paginas en este capitulo).
+
+Sea una función $f\left(x\right)$ con $x\in\mathbb{R}^{n}$. Además de ser continua y derivable para todo n. Aplicando el desarrollo en serie de Taylor siendo n = 1.
+
+\begin{equation*}
+	f\left(x\right)=f\left(a\right)+f^{'}\left(a\right)\left(x-a\right)+\frac{1}{2!}\cdot{f}^{''}\left(a\right){\left(x-a\right)}^{2}
+\end{equation*}
+
+Donde $f^{'}\left(a\right)$ y $f^{''}\left(a\right)$ se corresponden con la primera y segunda derivada de la función en torno a un punto cualquiera en el espacio "$a$", si en lugar de ello se hace con $x_*$, estando x lo suficientemente cerca de dicho punto.
+
+\begin{equation*}
+	f\left(x\right)=f\left(x_{*}\right)+f^{'}\left(x_{*}\right)\left(x-x_{*}\right)+\frac{1}{2!}\cdot{f}^{''}\left(x_{*}\right){\left(x-x_{*}\right)}^2 
+\end{equation*}
+
+Si $f^{'}\left(x_{*}\right)=0$ se tiene un máximo, mínimo o un punto de inflexión, teniendo esto en cuenta y despejando de la ecuación anterior.
+
+\begin{equation*}
+	f\left(x\right)-f\left(x_{*}\right)=\frac{1}{2!}\cdot{f}^{''}\left(x_{*}\right){\left(x-x_{*}\right)}^2 
+\end{equation*}
+
+\newpage
+
+Se dan diferentes situaciones:
+
+\begin{itemize}
+	\item Si $f^{''}\left(x_{*}\right)<0\rightarrow{f}\left(x\right)-f\left(x_{*}\right)<0\rightarrow{f}\left(x\right)<f\left(x_{*}\right)\rightarrow{f}\left(x_{*}\right)$ es un máximo.
+	\item Si $f^{''}\left(x_{*}\right)>0\rightarrow{f}\left(x\right)-f\left(x_{*}\right)>0\rightarrow{f}\left(x\right)>f\left(x_{*}\right)\rightarrow{f}\left(x_{*}\right)$ es un mínimo.
+	\item Si $f^{''}\left(x_{*}\right)=0\rightarrow{f}\left(x\right)-f\left(x_{*}\right)=0\rightarrow{f}\left(x\right)=f\left(x_{*}\right)\rightarrow{f}\left(x_{*}\right)$ es un punto de inflexión.
+\end{itemize}
+
+Si se hace el mismo desarrollo y se expande el dominio para $n\geq{2}$, se obtiene:
+
+\begin{equation*}
+	f\left(x\right)=f\left(x_{*}\right)+\mathrm{\nabla}{f}{\left(x_{*}\right)}^{T}\left(x-x_{*}\right)+\frac{1}{2!}\cdot{\left(x-x_{*}\right)}^{T}\cdot{H}\left({f}\left(x_{*}\right)\right) 		\cdot\left(x-x_{*}\right)
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+	\mathrm{\nabla}{f}= 	
+	\begin{bmatrix}
+		\frac{\partial{f}}{\partial{x}_1} \\
+		\frac{\partial{f}}{\partial{x}_2}  \\
+		\vdots \\
+		\frac{\partial{f}}{\partial{x}_n}
+	\end{bmatrix}
+\end{equation*}
+
+\begin{equation*}
+	{H}\left(f\right)=\mathrm{\nabla}^{2}{f}= 	
+	\begin{bmatrix}
+		\frac{\partial^{2}{f}}{\partial{x}_{1}^{2}} & \frac{\partial^{2}{f}}{\partial{x}_{1}\cdot\partial{x}_{2}} & \cdots & \frac{\partial^{2}{f}}{\partial{x}_{1}\cdot\partial{x}_{n}}\\
+		\frac{\partial^{2}{f}}{\partial{x}_{2}\cdot\partial{x}_{1}} & \frac{\partial^{2}{f}}{\partial{x}_{2}^{2}} & \cdots & \frac{\partial^{2}{f}}{\partial{x}_{2}\cdot\partial{x}_{n}}\\
+		\vdots & \vdots & \ddots & \vdots\\
+		\frac{\partial^{2}{f}}{\partial{x}_{n}\cdot\partial{x}_{1}} & \frac{\partial^{2}{f}}{\partial{x}_{n}\cdot\partial{x}_{2}} & \cdots & \frac{\partial^{2}{f}}{\partial{x}_{n}^{2}}
+	\end{bmatrix}
+\end{equation*}
+
+En este caso lo que interesa es que el gradiente de la función sea 0, es decir, que "$\mathrm{\nabla}{f}{\left(x_{*}\right)}=0$". Por lo tanto, los casos particulares, previamente descritos, se re-definen y adoptan un significado similar. 
+
+\begin{equation*}
+	f\left(x\right)-f\left(x_{*}\right)=\frac{1}{2!}\cdot{H}\left(f\right)\cdot\left(x-x_{*}\right)^2 
+\end{equation*}
+
+\begin{itemize}
+	\item Si ${H}\left(f\right)<0$ (definida negativa) $\rightarrow{f}\left(x\right)-f\left(x_{*}\right)<0\rightarrow{f}\left(x_{*}\right)$ es un máximo.
+	\item Si ${H}\left(f\right)>0$ (definida positiva) $\rightarrow{f}\left(x\right)-f\left(x_{*}\right)>0\rightarrow{f}\left(x_{*}\right)$ es un mínimo.
+	\item Si ${H}\left(f\right)=0$ es indefinida es un punto silla.
+\end{itemize}
+
+En caso de las funciones para dos o más dimensiones, la condición necesaria para ser optimo es estar semidefinido, es decir, si $\mathrm{\nabla}{f}{\left(x_{*}\right)}=0$ y ${H}\left(f\right)$ es semidefinida, se tiene:
+
+\begin{itemize}
+	\item Es máximo si esta semidefinida negativa $\rightarrow{y}^{T}\cdot{H}\left({f}\right)\cdot{y}\leq{0}$
+	\item Es mínimo si esta semidefinida positiva $\rightarrow{y}^{T}\cdot{H}\left({f}\right)\cdot{y}\geq{0}$
+\end{itemize}
+
+Se pretende describir un procedimiento para estimar el gradiente de una función "$\widehat{\mathrm{\nabla }}{f}\left(c\right)$", basándose en mediciones locales de múltiples robots situados de manera simétrica en un espacio de 2D. En dicho procedimiento, se consideran N robots distribuidos uniformemente a lo largo de una formación circular con un radio D y un punto central c definido en dos dimensiones.
+
+Partiendo de la ecuación (Ecuación de la expasion de Taylor del inicio, poner el numero), pero haciendo la expansión únicamente hasta el termino de primer orden sobre cada una de las medidas $r_i$ pertenecientes a la función "${f}\left({r}_{i}\right)$".
+
+\begin{equation*}
+	f\left(r_{i}\right)-f\left(c\right)=\mathrm{\nabla}{f}\left(c\right)^{T}\left(r_{i}-c\right)+\varphi_{i}\left(D,c\right)
+\end{equation*}
+
+Me quede aca, desde aca para abajo es sucio.
+
+En donde $r_{i}=$ es la posición del robot i, ${\boldsymbol{\phi }}_{\boldsymbol{i}}\boldsymbol{=}\frac{\boldsymbol{2}\cdot\boldsymbol{\pi }\cdot\boldsymbol{i}}{\boldsymbol{N}}\boldsymbol{\ }$es el ángulo de rotación, $R_{\phi }$ \underbar{es la matriz de rotación} definida como \textbf{ }$\left[ \begin{array}{cc} {\boldsymbol{c}}_{\boldsymbol{\phi }} & \boldsymbol{-}{\boldsymbol{s}}_{\boldsymbol{\phi }} \\  {\boldsymbol{s}}_{\boldsymbol{\phi }} & {\boldsymbol{c}}_{\boldsymbol{\phi }} \end{array} \right]$\textbf{, }finalmente $e\ =\ {\left[1,0\right]}^T$, por simplicidad no se considera la dinámica de los robots.
+
+
+
+\noindent La señal está definida según una función cuadrática $\boldsymbol{\sigma }\boldsymbol{(}\boldsymbol{r}\boldsymbol{)=}{\boldsymbol{r}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{S}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}{\boldsymbol{p}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}\boldsymbol{q}$ si se tiene una formación de más de 4 robots se asume que la estimación es el gradiente de la función.
+
+\noindent 
+\[{\phi }_i={\phi }_{o}+\frac{2\cdot\pi \cdot{i}}{N} \] 
+
+Con ${\phi }_{o}\left(t\right)=w_{o}\cdot{t}$la formación propuesta es adecuada para robots que se mueven en formación circular como vehículos aéreos no tripulados de área.
+
+Problema en cuestión:
+
+Se puede poner de tres formas:
+
+Primera forma:
+
+\begin{equation*}
+	\hat{\nabla}{f}\left(c\right):=\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+	\hat{\nabla}{f}\left(c\right) = \nabla{f}\left(c\right) + \varphi\left(D,c\right)
+\end{equation*}
+
+Segunda forma:
+
+\begin{equation*}
+	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\nabla{f}\left(c\right) + \varphi\left(D,c\right)
+\end{equation*}
+
+
+Tercera forma:
+
+\begin{equation*}
+	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\underbrace{\nabla{f}\left(c\right) + \varphi\left(D,c\right)}_{:=\hat{\nabla}{f}\left(c\right)}
+\end{equation*}
+
+
+Se tiene una función $f\left(r\right)$, donde $r$ definida en 2 dimensiones, que el gradiente en el punto máximo es 0 ($\mathrm{\nabla }f\left(r^*\right)=0$), pero en el punto del campo escalar será distinto de 0 ($\left(\mathrm{\nabla }\sigma \left(r\right)\neq 0\right),$ obviamente se ha de dar con ``situaciones espaciales'' diferentes lugares ($\forall r\neq r^*$) y finalmente el hessiano estará definido negativamente dado que es un máximo local, es decir, $H_{\sigma (r^*)}<-a\cdot{I}_{p}$ (con a $\mathrm{>}$ 0 e $I_p$ es una matriz identidad perteneciente al espacio $R^{pxp}$.
+
+
+
+Parrafos que me pueden servir en algun momento:
+
+
+Se tienen dos casos ${\left[A\right]}_{\alpha }=A$ si $A\le -\alpha \cdot{I}_{p}$  sino seria  ${\left[A\right]}_{\alpha }=-I_p$, el primero de los casos se utilizará si el centro de formación c está muy alejado de la fuente así se evita que la matriz se defina como semipositiva y tienda a alejar a los robots del punto de interés, además, cuando dicho punto ``c'' está cerca de la fuente se asume entonces que $A<-\alpha \cdot{I}_{p}$
