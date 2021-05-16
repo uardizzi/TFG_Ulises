@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  16 MAY 2021 03:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  16 MAY 2021 04:23
 entering extended mode
 **./principal.tex
 (principal.tex
@@ -577,7 +577,12 @@ l.64 \newpage
 Cap\'{\i }tulo 2.
 [6
 
-] [7] [8]) (chapter3.tex [9] [10]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+[7] [8]) (chapter3.tex [9] [10]
 Cap\'{\i }tulo 3.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 20.
@@ -646,13 +651,13 @@ Package rerunfilecheck Info: File `principal.out' has not changed.
 (rerunfilecheck)             Checksum: 8CCB66CF1EA94333D70895B03DF09E94;4441.
  ) 
 Here is how much of TeX's memory you used:
- 12463 strings out of 479334
- 180102 string characters out of 2857084
- 499570 words of memory out of 3000000
- 29577 multiletter control sequences out of 15000+200000
- 422138 words of font info for 73 fonts, out of 3000000 for 9000
+ 12465 strings out of 479334
+ 180122 string characters out of 2857084
+ 500570 words of memory out of 3000000
+ 29578 multiletter control sequences out of 15000+200000
+ 422902 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,74p,696b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,15n,74p,696b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecbx2074.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -685,7 +690,7 @@ s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tutir/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tutir/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tutir/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on principal.pdf (34 pages, 891805 bytes).
+Output written on principal.pdf (34 pages, 891710 bytes).
 PDF statistics:
  870 PDF objects out of 1000 (max. 8388607)
  82 named destinations out of 1000 (max. 500000)
