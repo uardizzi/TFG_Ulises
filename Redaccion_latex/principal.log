@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  16 MAY 2021 04:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  16 MAY 2021 04:38
 entering extended mode
 **./principal.tex
 (principal.tex
@@ -469,7 +469,7 @@ LaTeX Info: Redefining \nameref on input line 153.
 
 \c@lstlisting=\count297
  (title.tex
-<figures/escudo.jpg, id=122, 210.7875pt x 240.9pt>
+<figures/escudo.jpg, id=126, 210.7875pt x 240.9pt>
 File: figures/escudo.jpg Graphic file (type jpg)
 <use figures/escudo.jpg>
 Package pdftex.def Info: figures/escudo.jpg  used on input line 43.
@@ -479,7 +479,7 @@ Package pdftex.def Info: figures/escudo.jpg  used on input line 43.
 
 {C:/Users/tutir/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./figures/escud
 o.jpg>] [0]
-<figures/cc-by-nc-sa.png, id=137, 323.2075pt x 112.42pt>
+<figures/cc-by-nc-sa.png, id=141, 323.2075pt x 112.42pt>
 File: figures/cc-by-nc-sa.png Graphic file (type png)
 <use figures/cc-by-nc-sa.png>
 Package pdftex.def Info: figures/cc-by-nc-sa.png  used on input line 49.
@@ -561,7 +561,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Fuego-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Fuego-eps-converted-to.pdf, id=223, 903.375pt x 803.0pt>
+<figures/Fuego-eps-converted-to.pdf, id=228, 903.375pt x 803.0pt>
 File: figures/Fuego-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Fuego-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Fuego-eps-converted-to.pdf  used on input line
@@ -648,13 +648,13 @@ Package natbib Warning: Citation(s) may have changed.
 
 )
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 8CCB66CF1EA94333D70895B03DF09E94;4441.
+(rerunfilecheck)             Checksum: 7A3A0EF0B40EEB58CF3363B236914DCF;4680.
  ) 
 Here is how much of TeX's memory you used:
- 12465 strings out of 479334
- 180122 string characters out of 2857084
- 500570 words of memory out of 3000000
- 29578 multiletter control sequences out of 15000+200000
+ 12467 strings out of 479334
+ 180156 string characters out of 2857084
+ 500573 words of memory out of 3000000
+ 29579 multiletter control sequences out of 15000+200000
  422902 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,15n,74p,696b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -690,9 +690,9 @@ s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tutir/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tutir/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tutir/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on principal.pdf (34 pages, 891710 bytes).
+Output written on principal.pdf (34 pages, 892489 bytes).
 PDF statistics:
- 870 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 875 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

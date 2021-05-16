@@ -17,3 +17,10 @@ Acá habría que definir los consensus algorithms e introducciones generales a v
 
 Definir breves conceptos, problemas en la coordinación, descripción de las curvas de nivel para usar la estimación de gradiente.
 
+
+• Control basado en la posición: los agentes detectan sus propias posiciones con respecto a un sistema de coordenadas global. Controlan activamente sus propias posiciones para lograr la formación deseada, que está prescrita por las posiciones deseadas con respecto al sistema de coordenadas global.
+
+• Control basado en el desplazamiento: Los agentes controlan activamente los desplazamientos de sus agentes vecinos para lograr la formación deseada, que se especifica mediante los desplazamientos deseados con respecto a un sistema de coordenadas global bajo el supuesto de que cada agente es capaz de detectar las posiciones relativas de sus agentes vecinos con respecto al sistema de coordenadas global. Esto implica que los agentes necesitan conocer la orientación del sistema de coordenadas global. Sin embargo, los agentes no requieren conocimiento del sistema de coordenadas global en sí ni de sus posiciones con respecto al sistema de coordenadas.
+
+• Control basado en la distancia: las distancias entre agentes se controlan activamente para lograr la formación deseada, que viene dada por las distancias entre agentes deseadas. Se supone que los agentes individuales pueden detectar las posiciones relativas de sus agentes vecinos con respecto a sus propios sistemas de coordenadas locales. Las orientaciones de los sistemas de coordenadas locales no están necesariamente alineadas entre sí.
+
