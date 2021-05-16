@@ -5,26 +5,31 @@
 %\mbox{}
 %---------------------------------------
 
-\chapter{Introducción.} 
+\chapter{Introducción} 
 \label{ch:chapter1}
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{4mm}
 
-Aca me falta la motivación y definir las curvas de nivel con las figuras de ejemplos en prácticos reales (no se si esto ultimo sea mejor abajo del diagrama de flujo o justo antes de introducir el problema acá), se que esta parte va sin secciones, pero es para mas o menos guiarme (3-4 paginas este capitulo).
+\section{Motivación}
 
-Actualmente los sistemas roboticos representan una ventaja al otorgar un mayor rango de acción, flexibilidad y operar en situaciones riesgosas.
+Actualmente los sistemas robóticos representan una ventaja al otorgar un mayor rango de acción, flexibilidad y operar en situaciones riesgosas.
 
 Un robot realmente no posee una definición precisa y universal dado que existe bastante discrepancia entre los expertos. Por lo tanto, podrían considerarse como un sistema autónomo y programable capaz de realizar tareas. Además, están dotados por la integración de tres capacidades claves:
 
 \begin{enumerate}
 	\item \textbf{Sensores} para reunir datos del entorno.
-	\item Necesidad de poder \textbf{tomar decisiones} para convertir dichos datos en acciones.
+	\item La \textbf{toma de decisiones} para convertir dichos datos en acciones.
 	\item Al ya tener definida su labor deben extenderlas al mundo real a través de sus efectores finales y/o actuadores.
 \end{enumerate}
 
 Si juntas dichos aspectos con el comportamiento de los organismos sociales, en donde los individuos no han de tener un alto conocimiento para producir un comportamiento colectivo complejo, ni existir un líder que guía al resto para completar un objetivo, como en los bancos de peces, un panal de abejas o una bandada de pájaros, se tiene la \textbf{robótica de enjambre}.
 
-En contraposición de tener un único robot realizando una labor compleja se tiene la robótica de enjambre, en la que varios individuos simples forma un comportamiento colectivo para realizar la misma tarea. Las características principales con las que se pueden definir los enjambres son:
+\newpage
+
+\subsection{Robótica de enjambre}
+
+
+Hoy en día, la robótica de enjambre conforma un grupo de investigación muy activo por su versatilidad en diferentes ámbitos, tales como militar o industrial. En contraposición de tener un único robot realizando una labor compleja se tiene la robótica de enjambre, en la que varios individuos simples forma un comportamiento colectivo para realizar la misma tarea traduciendo a su vez en una reducción de costes. Las características principales con las que se pueden definir los enjambres son:
 
 \begin{enumerate}
 	\item El número optimo de agentes varia en función de la tarea asignada pudiendo ir desde tan pocos como una simple pareja hasta miles de unidades.
@@ -34,16 +39,36 @@ En contraposición de tener un único robot realizando una labor compleja se tie
 	\item El hecho de que se puede definir su modo de operar no implica que se controle a cada robot individualmente, es decir, cada uno ellos han de poseer un comportamiento \textbf{autónomo} y \textbf{descentralizado}.
 \end{enumerate}
 
-Los \textbf{sistemas multiagentes}. como bien su nombre indica, se basan en un grupo de dos o más agentes que interaccionan entre si para lograr un objetivo común en un mismo entorno. Dicha comunicación puede darse entre vecinos sin necesidad de recurrir a una entidad central, es decir, cada uno de ellos va a poseer un comportamiento autónomo y aun así conocer la existencia del resto.
 
-La información va a estar distribuida en cada uno de los agentes, en donde cada uno cumple un rol diferente. Además, se añade la posibilidad de fallo en cualquiera de ellos. Esto se traduce en un sistema mas eficaz, flexible y fiable. 
+\subsection{Sistemas multiagentes}
 
-\section{Motivación.}
+Un agente se puede definir como una entidad software que es capaz de realizar una tarea definida de forma autónoma y con cierto grado de complejidad por el hecho de estar dotado de cierto grado de inteligencia.
 
-Acá creo que tengo que buscar información relevante del tema y decir porque estoy haciendo este tfg.
+Los sistemas multiagentes como bien su nombre indica, se basan en un grupo de dos o más agentes que interaccionan entre si para lograr un objetivo común en un mismo entorno. Dicha comunicación puede darse entre vecinos sin necesidad de recurrir a una entidad central, es decir, cada uno de ellos va a poseer un comportamiento autónomo y aun así conocer la existencia del resto.
 
-\section{Planteamiento del problema.}
+Por tal motivo, la información va a estar distribuida en cada uno de los agentes con una rol distinto, además, se añade la posibilidad de fallo en cualquiera de ellos. Esto se traduce en un sistema más eficaz, flexible y fiable. 
 
-En base a todo lo descrito anteriormente se va a desarrollar a lo largo de los siguientes capítulos un  sistema multiagente de tipo enjambre que sea capaz de estimar un gradiente a partir de 3 o más robots dispuestos en una formación circular y estos sean capaces de desplazarse a una zona de interés definido como un máximo de una determinada función.
 
-En el capítulo dos se dará una idea general del problema global haciendo uso de un diagrama de bloques. Además, de describir brevemente diferentes aspectos necesarios para el desarrollo del problema. En el tercero se realiza la estimación previamente descrita. En el cuarto se da explica un algoritmo de control para que los agentes se coloquen de manera simetrica a lo largo del circulo. Finalmente, en el quinto y ultimo capítulo se dan los diferentes resultados obtenidos con la cooperación de ambos algoritmos.
+\section{Planteamiento del problema}
+
+Uno de los problemas principales es la coordinación de los agentes para que adopten una simetría concreta, en donde, se van a tener en cuenta la velocidad de cada uno de ellos, su posición con respecto al mundo y a los agentes vecinos o la posibilidad de colisión.\\
+
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/Fuego.eps}
+\caption{Curvas de nivel descritas por un incendio en Forsberg} \label{fig:countour_levels}
+\end{figure}
+
+\newpage
+
+Por otro lado, los agentes han de ser capaces de cumplir su rol asignado una vez dispuestos alrededor de la forma simétrica adoptada, dicha misión consiste en avanzar desde un punto cualquiera a uno de interés que puede ser descrito mediante las \textbf{curvas de nivel}.
+
+En la figura \ref{fig:countour_levels} se aprecian las curvas de nivel de la intensidad de la flama en un incendio, esta información puede ser útil para indicarle al enjambre hacia donde debe moverse para realizar misiones de rescate. El modelado que posteriormente se hará para la resolución del problema se va a basar en dichas curvas. 
+
+En base a todo lo descrito anteriormente se va a desarrollar a lo largo de la memoria un sistema multiagente de tipo enjambre que sea capaz de estimar un gradiente a partir de 3 o más robots dispuestos en una formación circular, además de poder desplazarse a una zona de interés.
+
+\section{Organización de la memoria}
+
+En el capítulo dos se dará una idea general del problema global haciendo uso de un diagrama de bloques, además, de describir brevemente diferentes aspectos necesarios para el desarrollo del problema. En el tercero se realiza la estimación previamente descrita. En el cuarto se aporta un algoritmo de control para la coordinación de los agentes de manera simétrica a lo largo de una formación circular. Finalmente, en el quinto y ultimo capítulo se dan los diferentes resultados obtenidos mediante la acción conjunta de ambos algoritmos.
