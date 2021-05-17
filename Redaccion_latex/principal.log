@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  17 MAY 2021 03:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  17 MAY 2021 19:13
 entering extended mode
 **./principal.tex
 (principal.tex
@@ -490,7 +490,7 @@ LaTeX Info: Redefining \nameref on input line 153.
 
 \c@lstlisting=\count301
  (title.tex
-<figures/escudo.jpg, id=122, 210.7875pt x 240.9pt>
+<figures/escudo.jpg, id=126, 210.7875pt x 240.9pt>
 File: figures/escudo.jpg Graphic file (type jpg)
 <use figures/escudo.jpg>
 Package pdftex.def Info: figures/escudo.jpg  used on input line 43.
@@ -500,7 +500,7 @@ Package pdftex.def Info: figures/escudo.jpg  used on input line 43.
 {C:/Users/tutir/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./figures/escud
 o.jpg>])
 (autorizacion.tex [0] [1]
-<figures/cc-by-nc-sa.png, id=141, 323.2075pt x 112.42pt>
+<figures/cc-by-nc-sa.png, id=145, 323.2075pt x 112.42pt>
 File: figures/cc-by-nc-sa.png Graphic file (type png)
 <use figures/cc-by-nc-sa.png>
 Package pdftex.def Info: figures/cc-by-nc-sa.png  used on input line 49.
@@ -569,30 +569,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
  []
 
 Package epstopdf Info: Source file: <figures/Fuego.eps>
-(epstopdf)                    date: 2021-05-16 02:01:18
+(epstopdf)                    date: 2021-05-17 03:36:51
 (epstopdf)                    size: 4381244 bytes
 (epstopdf)             Output file: <figures/Fuego-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-16 02:02:50
+(epstopdf)                    date: 2021-05-17 03:36:51
 (epstopdf)                    size: 521270 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Fuego-eps-converted
 -to.pdf figures/Fuego.eps>
-(epstopdf)             \includegraphics on input line 60.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Fuego-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Fuego-eps-converted-to.pdf, id=230, 903.375pt x 803.0pt>
+<figures/Fuego-eps-converted-to.pdf, id=237, 903.375pt x 803.0pt>
 File: figures/Fuego-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Fuego-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Fuego-eps-converted-to.pdf  used on input line
- 60.
+ 58.
 (pdftex.def)             Requested size: 280.12166pt x 249.00095pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64 \newpage
+l.62 \newpage
               [3])pdfTeX warning (ext4): destination with the same identifier (
 name{page.4}) has been already used, duplicate ignored
 <to be read again> 
@@ -613,10 +613,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
  []
 
 Package epstopdf Info: Source file: <figures/Gaussiana.eps>
-(epstopdf)                    date: 2021-05-17 00:58:05
-(epstopdf)                    size: 1787068 bytes
+(epstopdf)                    date: 2021-05-17 03:36:51
+(epstopdf)                    size: 1709450 bytes
 (epstopdf)             Output file: <figures/Gaussiana-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-17 01:50:50
+(epstopdf)                    date: 2021-05-17 03:36:51
 (epstopdf)                    size: 354847 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Gaussiana-eps-conve
 rted-to.pdf figures/Gaussiana.eps>
@@ -626,18 +626,18 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Gaussiana-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Gaussiana-eps-converted-to.pdf, id=276, 462.72874pt x 346.29375pt>
+<figures/Gaussiana-eps-converted-to.pdf, id=283, 462.72874pt x 346.29375pt>
 File: figures/Gaussiana-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Gaussiana-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Gaussiana-eps-converted-to.pdf  used on input 
 line 118.
 (pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
 Package epstopdf Info: Source file: <figures/CurvasNivelGauss.eps>
-(epstopdf)                    date: 2021-05-17 01:27:44
-(epstopdf)                    size: 40835 bytes
+(epstopdf)                    date: 2021-05-17 03:36:51
+(epstopdf)                    size: 38924 bytes
 (epstopdf)             Output file: <figures/CurvasNivelGauss-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-05-17 01:50:52
+(epstopdf)                    date: 2021-05-17 03:36:51
 (epstopdf)                    size: 15885 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/CurvasNivelGauss-ep
 s-converted-to.pdf figures/CurvasNivelGauss.eps>
@@ -647,7 +647,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/CurvasNivelGauss-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/CurvasNivelGauss-eps-converted-to.pdf, id=277, 505.89pt x 360.34625pt>
+<figures/CurvasNivelGauss-eps-converted-to.pdf, id=284, 505.89pt x 360.34625pt>
 
 File: figures/CurvasNivelGauss-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/CurvasNivelGauss-eps-converted-to.pdf>
@@ -688,10 +688,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
  []
 
 Package epstopdf Info: Source file: <figures/TA.eps>
-(epstopdf)                    date: 2021-05-16 18:15:54
+(epstopdf)                    date: 2021-05-17 03:36:51
 (epstopdf)                    size: 1393901 bytes
 (epstopdf)             Output file: <figures/TA-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-05-16 18:16:59
+(epstopdf)                    date: 2021-05-17 03:36:51
 (epstopdf)                    size: 29825 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/TA-eps-converted-to
 .pdf figures/TA.eps>
@@ -701,13 +701,34 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/TA-eps-converted-to.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/TA-eps-converted-to.pdf, id=329, 198.7425pt x 179.67125pt>
+<figures/TA-eps-converted-to.pdf, id=336, 198.7425pt x 179.67125pt>
 File: figures/TA-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/TA-eps-converted-to.pdf>
 Package pdftex.def Info: figures/TA-eps-converted-to.pdf  used on input line 16
 0.
 (pdftex.def)             Requested size: 280.12166pt x 253.27068pt.
-[12] [13 <./figures/TA-eps-converted-to.pdf>]) (chapter3.tex [14] [15]
+[12] [13 <./figures/TA-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/Flujo2.eps>
+(epstopdf)                    date: 2021-05-17 16:54:06
+(epstopdf)                    size: 9840762 bytes
+(epstopdf)             Output file: <figures/Flujo2-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-05-17 17:24:22
+(epstopdf)                    size: 183862 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/Flujo2-eps-converte
+d-to.pdf figures/Flujo2.eps>
+(epstopdf)             \includegraphics on input line 198.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/Flujo2-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/Flujo2-eps-converted-to.pdf, id=349, 1194.4625pt x 1365.1pt>
+File: figures/Flujo2-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/Flujo2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Flujo2-eps-converted-to.pdf  used on input lin
+e 198.
+(pdftex.def)             Requested size: 280.12166pt x 320.13199pt.
+[14] [15 <./figures/Flujo2-eps-converted-to.pdf>]) (chapter3.tex [16] [17]
 Cap\'{\i }tulo 3.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 13.
@@ -720,21 +741,21 @@ Overfull \hbox (48.59175pt too wide) in paragraph at lines 13--14
 $\OML/cmm/m/it/12 R[]$ $[]$
  []
 
-[16
+[18
 
-]) (chapter4.tex [17] [18] [19]
+]) (chapter4.tex [19] [20] [21]
 Cap\'{\i }tulo 4.
-) (chapter5.tex [20
-
-] [21]
-Cap\'{\i }tulo 5.
-) (chapter6.tex [22
+) (chapter5.tex [22
 
 ] [23]
-Cap\'{\i }tulo 6.
-[24
+Cap\'{\i }tulo 5.
+) (chapter6.tex [24
 
-] [25]) (bibliography.tex [26] [27]
+] [25]
+Cap\'{\i }tulo 6.
+[26
+
+] [27]) (bibliography.tex [28] [29]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
 .
 
@@ -742,24 +763,24 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
 No file principal.bbl.
-(appendixA.tex [28
+(appendixA.tex [30
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.MQTT}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.1 \newpage
-            ] [29]
+            ] [31]
 Ap\'{e}ndice A.
-) (appendixB.tex [30
+) (appendixB.tex [32
 
-] [31]
+] [33]
 Ap\'{e}ndice B.
 )
 
 Package natbib Warning: There were multiply defined citations.
 
-[32
+[34
 
 ] (principal.aux
 LaTeX Info: Redefining \. on input line 25.
@@ -772,17 +793,14 @@ Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: F66417DE1DB6B826F08931EB1AB5FC44;4853.
+(rerunfilecheck)             Checksum: 810F1AFB3FC7798E40F601DAD546365A;5024.
  ) 
 Here is how much of TeX's memory you used:
- 12662 strings out of 479334
- 183270 string characters out of 2857084
- 502685 words of memory out of 3000000
- 29751 multiletter control sequences out of 15000+200000
+ 12681 strings out of 479334
+ 183625 string characters out of 2857084
+ 502859 words of memory out of 3000000
+ 29759 multiletter control sequences out of 15000+200000
  422434 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,15n,74p,713b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -819,9 +837,9 @@ X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tutir/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tutir/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tutir/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on principal.pdf (42 pages, 1318693 bytes).
+Output written on principal.pdf (44 pages, 1510596 bytes).
 PDF statistics:
- 987 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

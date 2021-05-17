@@ -21,3 +21,8 @@ Algoritmos de tipo consenso:
 https://academy.binance.com/es/articles/what-is-a-blockchain-consensus-algorithmhttps://academy.binance.com/es/articles/what-is-a-blockchain-consensus-algorithm
 https://es.wikipedia.org/wiki/Problema_del_consenso
 
+Funcion lipzchtiaz (como se escriba xd):
+
+https://web.mat.upc.edu/rafael.ramirez/edos/cuarta_clase.pdf
+
+

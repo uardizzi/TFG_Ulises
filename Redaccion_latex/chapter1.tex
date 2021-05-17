@@ -51,9 +51,7 @@ Por tal motivo, la información va a estar distribuida en cada uno de los agente
 
 \section{Planteamiento del problema}
 
-Uno de los problemas principales es la coordinación de los agentes para que adopten una simetría concreta, en donde, se van a tener en cuenta la velocidad de cada uno de ellos, su posición con respecto al mundo y a los agentes vecinos o la posibilidad de colisión.\\
-
-
+Uno de los problemas principales de la robótica de enjambre es la coordinación de los agentes para que adopten una simetría concreta, en donde, se van a tener en cuenta la velocidad de cada uno de ellos, su posición con respecto al mundo y a los agentes vecinos o la posibilidad de colisión.\\
 
 \begin{figure}[htb]
 \centering
@@ -63,11 +61,11 @@ Uno de los problemas principales es la coordinación de los agentes para que ado
 
 \newpage
 
-Por otro lado, los agentes han de ser capaces de cumplir su rol asignado una vez dispuestos alrededor de la forma simétrica adoptada, dicha misión consiste en avanzar desde un punto cualquiera a uno de interés que puede ser descrito mediante las \textbf{curvas de nivel}.
+Por otro lado, los agentes han de ser capaces de cumplir su rol asignado una vez dispuestos alrededor de la forma simétrica adoptada, dicha misión consiste en avanzar desde un punto cualquiera a uno de interés que puede ser descrito mediante las \textbf{curvas de nivel}, en donde el punto de máximo valor se le puede atribuir el nombre de fuente.
 
-En la figura \ref{fig:countour_levels} se aprecian las curvas de nivel de la intensidad de la flama en un incendio, esta información puede ser útil para indicarle al enjambre hacia donde debe moverse para realizar misiones de rescate. El modelado que posteriormente se hará para la resolución del problema se va a basar en dichas curvas. 
+En la figura \ref{fig:countour_levels} se aprecian las curvas de nivel de la intensidad de la flama de un incendio, esta información puede ser útil para indicarle al enjambre hacia donde debe moverse para realizar misiones de rescate. El modelado que posteriormente se hará para la resolución del problema se va a basar en dichas curvas. 
 
-En base a todo lo descrito anteriormente se va a desarrollar a lo largo de la memoria un sistema multiagente de tipo enjambre que sea capaz de estimar un gradiente a partir de 3 o más robots dispuestos en una formación circular, además de poder desplazarse a una zona de interés.
+En base a todo lo descrito anteriormente  \textbf{el objetivo de la memoria} consiste en desarrollar un sistema multiagente de tipo enjambre que sea capaz de estimar un gradiente a partir de 3 o más robots dispuestos en una formación circular y así disponer de información sobre la ubicación del punto fuente, además de poder coordinarse y desplazarse hacia dicho punto por medio de una formación de control. En este los robots pueden ser USVs (vehículo no tripulado) que han de desplazarse hacia zonas de máxima concentración de sustancias tóxicas, es decir, se esta modelando dicho caso.
 
 \section{Organización de la memoria}
 

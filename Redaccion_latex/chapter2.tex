@@ -87,7 +87,7 @@ En caso de las funciones para dos o más dimensiones, la condición necesaria pa
 
 \subsection{Descripción general}
 
-Se pretende describir un procedimiento para estimar el gradiente de una función $\widehat{\mathrm{\nabla }}{f}\left(c\right)$, basándose en mediciones locales de múltiples robots situados de manera simétrica en un espacio de 2D. En dicho procedimiento, se consideran N robots distribuidos uniformemente a lo largo de una formación circular con un radio D y un punto central c definido en dos dimensiones. [poner referencia]
+Se pretende describir un procedimiento para la búsqueda de fuentes mediante la estimación del gradiente de una función $\widehat{\mathrm{\nabla }}{f}\left(c\right)$, basándose en mediciones locales de múltiples robots situados de manera simétrica en un espacio de 2D. En dicho procedimiento, se consideran N robots distribuidos uniformemente a lo largo de una formación circular con un radio D y un punto central c definido en dos dimensiones. [poner referencia]
 
 Partiendo de la ecuación \ref{TaylorNormal} pero haciendo la expansión únicamente hasta el termino de primer orden sobre cada una de las medidas $r_i$ pertenecientes a la función ${f}\left({r}_{i}\right)$ y despejando el gradiente se llega a:
 
@@ -132,7 +132,7 @@ Por ende, se define una distribución gaussiana de la siguiente forma:
 	f\left(x,y\right)=k·e^{-H}\hspace{10mm}con\hspace{2mm}H=P·S·P^{T}
 \end{equation*}
 
-Donde $P=\left[x,y\right]$ son sus coordenadas definidas $\forall_{x,y}\in\mathnormal{R}$ y $S=\left[S_x,S_y\right]$ es su desviación siendo una matriz cuadrada y diagonal que mientras más grande sean sus valores más plana será y consecuentemente sus curvas de nivel cubrirán un espacio más amplio, además, su centro va a estar definido como $c=\left[c_x,c_y\right]$.
+Donde $P=\left[x,y\right]$ son sus coordenadas definidas $\forall_{x,y}\in\mathbb{R}$ y $S=\left[S_x,S_y\right]$ es su desviación siendo una matriz cuadrada y diagonal que mientras más grande sean sus valores más plana será y consecuentemente sus curvas de nivel cubrirán un espacio más amplio, además, su centro va a estar definido como $c=\left[c_x,c_y\right]$.
 
 Finalmente, para la simulación del algoritmo se propuso situar el centro en $c=\left[600,600\right]$, tener una desviación $S=\left[\frac{1000}{sqrt{2}},\frac{1000}{sqrt{2}}\right]$ y finalmente un valor de $k=1$ tal como puede apreciarse en la figura \ref{FunGauss}.
 
@@ -153,7 +153,7 @@ Las características esenciales de este tipo de control están relacionadas con 
 
 El problema de control considera vehículos tipo monociclo con velocidad constante, es decir, solo se actúa sobre la dirección del vehículo a través de giros coordinados actuando sobre el ángulo de inclinación lateral de la aeronave. A esto se le añade la velocidad del viento que altera la velocidad constante propia llevaba por cada agente cuyo marco de coordenadas se encuentra fijado en el centro de una formación circular. Sin embargo, se asumirá que la velocidad del viento es mucho menor que la velocidad deseada, por lo que la velocidad respecto al suelo puede considerarse casi constante durante la misión del vehículo. [2].
 
-Se llega a un \textbf{algoritmo distribuido para controlar formaciones circulares} de UAV de ala fija con velocidades constantes que actúa sobre el radio del circulo a ser rastreado no sobre la dirección de cada uno de los agentes, es decir, altera la velocidad angular que poseen en torno a un punto central (centro de la circunferencia).\\
+El objetivo es describir u  \textbf{algoritmo distribuido para controlar formaciones circulares} de UAV de ala fija con velocidades constantes que actúa sobre el radio del circulo a ser rastreado no sobre la dirección de cada uno de los agentes, es decir, altera la velocidad angular que poseen en torno a un punto central (centro de la circunferencia).\\
 
 \begin{figure}[htb]
 \centering
@@ -174,12 +174,44 @@ En donde, $c_i \in \mathbb{R}$ siendo la señal de control que se diseñará y e
 	\item Si $c_i$ se hace muy grande, el radio tenderá a disminuir y con ello se aumenta la velocidad angular.
 \end{itemize}
 
-Ambos casos tienen como objetivo converger a la formación circular definida previamente. Finalmente, en esta sección únicamente se trato al algoritmo de manera simplificada dado que más adelante, en el capitulo 4, se dará una descripción más detallada de este, en donde se verán dos formas de consenso entre los agentes o el comportamiento propio descrito para cada uno de ellos.
+Ambos casos tienen como objetivo converger a la formación circular definida previamente. Finalmente, en esta sección únicamente se trato al algoritmo de manera simplificada dado que más adelante, en el capitulo 4, se dará una descripción más detallada de este, en donde se verán dos formas de consenso entre los agentes, el comportamiento propio descrito para cada uno de ellos o el criterio de convergencia de los agentes.
 
 \section{Acción conjunta de ambos algoritmos}
 
-El diagrama de fluyo ira acá
-
 \subsection{Algoritmo de ascenso de gradiente}
+
+Hasta el momento únicamente se ha comentado sobre la cooperación de los agentes para la disposición de una figura geométrica y simétrica requerida o un algoritmo para la localización de fuentes en el espacio. No obstante, se ha dejado de lado el avance de los agentes, es decir, ha de existir un algoritmo que desplace a todo el enjambre hacia la ubicación de la fuente haciendo uso del gradiente estimado.
+
+Para ello, se utiliza el algoritmo de ascenso de gradiente para desplazar el centro de la formación circular, el cual se encuentra definido de la siguiente forma:
+
+\begin{equation}\label{GA}
+	c_{k+1}=c_k+\epsilon\nabla{f}\left(c_k\right)\hspace{10mm}[Referencia bibliografica]
+\end{equation}
+
+En donde, $c_k=[x,y]\hspace{2mm}\forall_{x,y}\in\mathbb{R}$ siendo este el centro de la formación circular. Al tratarse de un problema definido como un punto máximo de una función, el avance ha de ser estrictamente positivo, es decir, los valores han de ser cada vez mayores para desplazarte hacia dicho punto. Esto es debido al valor que toma la función siendo $\rightarrow{f}\left(c_k\right)-f\left(c_{k*}\right)<0\rightarrow{f}\left(c_{k*}\right)$ con $\mathrm{\nabla}{f}{\left(c_{k*}\right)}=0$ tal como se vio al inicio del capitulo.
+
+\subsection{Dinámica del sistema}
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/Flujo2.eps}
+\caption{Diagrama de flujo que describe la dinámica del sistema [Referencia bibliográfica]} \label{fig:Flujo}
+\end{figure}
+
+En la figura \ref{fig:Flujo} se pueden apreciar diferentes colores para diferenciar cada uno de los pasos a seguir antes de llegar a la fuente final, desglosándolos estos serían:
+
+\begin{enumerate}
+	\item Se disponen los N agentes en el plano.
+	\item Se ejecuta el algoritmo de control de formación circular que cuando los agentes estén dispuestos de manera simétrica, es decir, sus posiciones absolutas no alteren mucho el resultado de la estima del gradiente pasará a la siguiente fase, en caso contrario se quedará esperando que se coloquen en sus sitios.
+	\item Al ya estar repartidos alrededor de la formación circular, se hace la estimación del gradiente para obtener la localización de la fuente. En este punto, se dan dos casos que en la figura \ref{fig:Flujo} están referidos como A:
+	\begin{itemize}
+		\item Si $\widehat{\mathrm{\nabla }}{f}\left(c_{k}\right)\approxeq0$ se está cerca de la fuente conformando una \textbf{solución satisfactoria}.
+		\item Si $\widehat{\mathrm{\nabla }}{f}\left(c_{k}\right)>0$ aun están desplazándose para llegar al objetivo.
+	\end{itemize}
+	\item Si se da la segunda de las situaciones antes planteadas, se ha de desplazar el centro de la formación circular mediante el algoritmo de ascenso de gradiente, tal como se vio en el apartado [hacer referencia al capitulo anterior].
+	\item Antes de volver a estimar el gradiente se debe comprobar el paso 2, en caso de permanecer en sus posiciones de la formación directamente partes del paso 3.
+\end{enumerate}
+
 
 
