@@ -14,3 +14,10 @@ Control de formacion:
 
 https://www.hindawi.com/journals/mpe/2014/205759/
 https://www.sciencedirect.com/science/article/abs/pii/S0005109814004038
+El pdf de hector.
+
+Algoritmos de tipo consenso:
+
+https://academy.binance.com/es/articles/what-is-a-blockchain-consensus-algorithmhttps://academy.binance.com/es/articles/what-is-a-blockchain-consensus-algorithm
+https://es.wikipedia.org/wiki/Problema_del_consenso
+

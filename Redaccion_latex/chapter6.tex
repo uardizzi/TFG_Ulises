@@ -15,6 +15,12 @@ Capitulo 2: Según lo dicho en la charla de diciembre y en el pdf del campus aca
 Acá habría que definir los consensus algorithms e introducciones generales a varios aspectos (no se si meter lo de abajo al inicio acá), también un diagrama de flujo del control+estimador (este capitulo y el siguiente osea el 2+3 me deberían llevar como 18-20 paginas, llevaría de momento 1 de indice + 3-4 introducción + 18-20 (en dos capítulos))
 
 
+Parrafos en la parte de control:
+
+Específicamente, si las posiciones de los agentes individuales se controlan activamente, los agentes pueden moverse a sus posiciones deseadas sin interactuar entre sí. 
+ 
+En el caso de que las distancias entre agentes se controlen activamente, la formación de agentes puede tratarse como un cuerpo rígido. Luego, los agentes deben interactuar entre sí para mantener su formación como un cuerpo rígido. En resumen, los tipos de variables controladas especifican la mejor formación deseada posible que pueden lograr los agentes, lo que a su vez prescribe el requisito sobre la topología de interacción de los agentes.
+
 Definir breves conceptos, problemas en la coordinación, descripción de las curvas de nivel para usar la estimación de gradiente.
 
 
@@ -24,3 +30,9 @@ Definir breves conceptos, problemas en la coordinación, descripción de las cur
 
 • Control basado en la distancia: las distancias entre agentes se controlan activamente para lograr la formación deseada, que viene dada por las distancias entre agentes deseadas. Se supone que los agentes individuales pueden detectar las posiciones relativas de sus agentes vecinos con respecto a sus propios sistemas de coordenadas locales. Las orientaciones de los sistemas de coordenadas locales no están necesariamente alineadas entre sí.
 
+Parte de la estimación del gradiente:
+
+
+\begin{equation*}
+	f\left(r_{i}\right)-f\left(c\right)=\mathrm{\nabla}{f}\left(c\right)^{T}\left(r_{i}-c\right)+\varphi_{i}\left(D,c\right)
+\end{equation*}
