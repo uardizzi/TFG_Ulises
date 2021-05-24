@@ -36,3 +36,62 @@ Parte de la estimación del gradiente:
 \begin{equation*}
 	f\left(r_{i}\right)-f\left(c\right)=\mathrm{\nabla}{f}\left(c\right)^{T}\left(r_{i}-c\right)+\varphi_{i}\left(D,c\right)
 \end{equation*}
+
+
+
+
+Capitulo 3:
+
+
+Se puede poner de tres formas:
+
+Primera forma:
+
+\begin{equation*}
+	\hat{\nabla}{f}\left(c\right):=\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+	\hat{\nabla}{f}\left(c\right) = \nabla{f}\left(c\right) + \varphi\left(D,c\right)
+\end{equation*}
+
+Segunda forma:
+
+\begin{equation*}
+	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\nabla{f}\left(c\right) + \varphi\left(D,c\right)
+\end{equation*}
+
+
+Tercera forma:
+
+\begin{equation*}
+	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\underbrace{\nabla{f}\left(c\right) + \varphi\left(D,c\right)}_{:=\hat{\nabla}{f}\left(c\right)}
+\end{equation*}
+
+
+
+
+
+
+Se tiene una función $f\left(r\right)$, donde $r$ definida en 2 dimensiones, que el gradiente en el punto máximo es 0 ($\mathrm{\nabla }f\left(r^*\right)=0$), pero en el punto del campo escalar será distinto de 0 ($\left(\mathrm{\nabla }\sigma \left(r\right)\neq 0\right),$ obviamente se ha de dar con ``situaciones espaciales'' diferentes lugares ($\forall r\neq r^*$) y finalmente el hessiano estará definido negativamente dado que es un máximo local, es decir, $H_{\sigma (r^*)}<-a\cdot{I}_{p}$ (con a $\mathrm{>}$ 0 e $I_p$ es una matriz identidad perteneciente al espacio $R^{pxp}$.
+
+
+
+
+por simplicidad no se considera la dinámica de los robots.
+
+
+
+
+
+
+
+
+\noindent La señal está definida según una función cuadrática $\boldsymbol{\sigma }\boldsymbol{(}\boldsymbol{r}\boldsymbol{)=}{\boldsymbol{r}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{S}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}{\boldsymbol{p}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}\boldsymbol{q}$ si se tiene una formación de más de 4 robots se asume que la estimación es el gradiente de la función.
+
+\noindent 
+\[{\phi }_i={\phi }_{o}+\frac{2\cdot\pi \cdot{i}}{N} \] 
+
+Con ${\phi }_{o}\left(t\right)=w_{o}\cdot{t}$la formación propuesta es adecuada para robots que se mueven en formación circular como vehículos aéreos no tripulados de área.

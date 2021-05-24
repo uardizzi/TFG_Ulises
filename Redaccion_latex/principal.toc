@@ -18,12 +18,13 @@
 \contentsline {subsection}{\numberline {2.2.2}Descripción general del algoritmo}{12}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Acción conjunta de ambos algoritmos}{14}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Algoritmo de ascenso de gradiente}{14}{subsection.2.3.1}%
-\contentsline {chapter}{\numberline {3}Estimación del gradiente}{16}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Coordinación}{20}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{22}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Resultados experimentales}{22}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Futuras investigaciones}{22}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Parrafor en sucio}{24}{chapter.6}%
-\contentsline {chapter}{Bibliografía}{28}{chapter*.6}%
-\contentsline {chapter}{\numberline {A}Introduction}{30}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Conclusions}{32}{appendix.Alph2}%
+\contentsline {subsection}{\numberline {2.3.2}Dinámica del sistema}{15}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Estimación del gradiente}{18}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Coordinación}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Resultados experimentales}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Futuras investigaciones}{23}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Parrafor en sucio}{25}{chapter.6}%
+\contentsline {chapter}{Bibliografía}{30}{chapter*.6}%
+\contentsline {chapter}{\numberline {A}Introduction}{32}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Conclusions}{34}{appendix.Alph2}%

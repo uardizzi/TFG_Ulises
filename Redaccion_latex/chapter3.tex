@@ -5,57 +5,34 @@
 \chapter{Estimación del gradiente}
 \label{ch:chapter3}
 
-Acá la idea es describir el algoritmo con su desarrollo matemático para que no salga nada de la nada (mas o menos 10-12 paginas en este capitulo).
+En [referencia bibliográfica] se divide el problema en dos pasos, el primero, consiste en modelar a los agentes con dinámicas no lineales y se estabilizan a una formación deseada. En segundo lugar, un algoritmo distribuido que permite a los agentes estimar el gradiente de un campo escalar en el centro de dicha formación y conducirla hasta su lugar de origen.
 
+A. Agentes ??? 
 
-Me quede aca, desde aca para abajo es sucio.
-
-En donde $r_{i}=$ es la posición del robot i, ${\boldsymbol{\phi }}_{\boldsymbol{i}}\boldsymbol{=}\frac{\boldsymbol{2}\cdot\boldsymbol{\pi }\cdot\boldsymbol{i}}{\boldsymbol{N}}\boldsymbol{\ }$es el ángulo de rotación, $R_{\phi }$ \underbar{es la matriz de rotación} definida como \textbf{ }$\left[ \begin{array}{cc} {\boldsymbol{c}}_{\boldsymbol{\phi }} & \boldsymbol{-}{\boldsymbol{s}}_{\boldsymbol{\phi }} \\  {\boldsymbol{s}}_{\boldsymbol{\phi }} & {\boldsymbol{c}}_{\boldsymbol{\phi }} \end{array} \right]$\textbf{, }finalmente $e\ =\ {\left[1,0\right]}^T$, por simplicidad no se considera la dinámica de los robots.
-
-
-
-\noindent La señal está definida según una función cuadrática $\boldsymbol{\sigma }\boldsymbol{(}\boldsymbol{r}\boldsymbol{)=}{\boldsymbol{r}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{S}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}{\boldsymbol{p}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}\boldsymbol{q}$ si se tiene una formación de más de 4 robots se asume que la estimación es el gradiente de la función.
-
-\noindent 
-\[{\phi }_i={\phi }_{o}+\frac{2\cdot\pi \cdot{i}}{N} \] 
-
-Con ${\phi }_{o}\left(t\right)=w_{o}\cdot{t}$la formación propuesta es adecuada para robots que se mueven en formación circular como vehículos aéreos no tripulados de área.
-
-Problema en cuestión:
-
-Se puede poner de tres formas:
-
-Primera forma:
+Se consideran un grupo de N vehículos idénticos modelados con cinemática de uniciclo sujetos a una simple restricción no holonómica, tal que la dinámica de los agentes se define como:
 
 \begin{equation*}
-	\hat{\nabla}{f}\left(c\right):=\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)
+	\begin{aligned}
+		\dot{r}_i&=v_i\left[cos\theta_i\hspace{1mm}sin\theta_i\right]^T\\
+		\dot{\theta}_i&=u_i
+	\end{aligned}
 \end{equation*}
 
-Donde:
+En donde, $r_i\in\mathbb{R}^2$ definiendo la posición de cada agente i, $\theta_i$ es el angulo de cabecera/rumbo (no se como se traduce esto preguntar), por ultimo $u_i$ y $v_i$ son entradas de control. Se asume que cada vehículo conoce su posición absoluta con respecto al marco inercial (preguntar también como se traduce esto) y ademas, los agentes serán capaces de intercambiar sus angulos de cabecera/rumbo??.
+
+Particularizando para una distribución uniforme a lo largo de un circulo con radio D, un ángulo de rotacion $\phi_o\left(t\right)=w_ot$ y el centro de la formación c. 
 
 \begin{equation*}
-	\hat{\nabla}{f}\left(c\right) = \nabla{f}\left(c\right) + \varphi\left(D,c\right)
+	r_i = c + D\cdot{R}_{\theta_i}\cdot{e}\hspace{10mm}{i = 1,...,N}
 \end{equation*}
 
-Segunda forma:
+En donde, $r_{i}$ es la posición del robot i con respecto al radio del circulo, ${\phi }_{i}=\phi_o\frac{2\cdot\pi\cdot{i}}{N}$ es el ángulo de rotación, $R_{\phi }$ es la matriz de rotación definida como $\left[ \begin{array}{cc} {c}_{\phi } & -{s}_{\phi } \\  {s}_{\phi } & {c}_{\phi } \end{array} \right]$ y  $e\ =\ {\left[1,0\right]}^T$.
 
-\begin{equation*}
-	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\nabla{f}\left(c\right) + \varphi\left(D,c\right)
-\end{equation*}
+B. Signal Strength.
 
+Se destaca que cada uno de los agentes deberá tener la capacidad de medir la intensidad de la señal mediante un sensor. En términos matemáticos y como en capítulos anteriores se anticipo, la distribución de la señal es una función espacial bidimensional que representa un campo escalar con un máximo o mínimo definido justo en la posición donde dicha se localiza. Por lo tanto, en este problema se va a considerar que la señal es emitida por una única fuente de modo que su punto de inflexión en $z_*$ es el único máximo definido del campo escalar.
 
-Tercera forma:
-
-\begin{equation*}
-	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\underbrace{\nabla{f}\left(c\right) + \varphi\left(D,c\right)}_{:=\hat{\nabla}{f}\left(c\right)}
-\end{equation*}
-
-
-Se tiene una función $f\left(r\right)$, donde $r$ definida en 2 dimensiones, que el gradiente en el punto máximo es 0 ($\mathrm{\nabla }f\left(r^*\right)=0$), pero en el punto del campo escalar será distinto de 0 ($\left(\mathrm{\nabla }\sigma \left(r\right)\neq 0\right),$ obviamente se ha de dar con ``situaciones espaciales'' diferentes lugares ($\forall r\neq r^*$) y finalmente el hessiano estará definido negativamente dado que es un máximo local, es decir, $H_{\sigma (r^*)}<-a\cdot{I}_{p}$ (con a $\mathrm{>}$ 0 e $I_p$ es una matriz identidad perteneciente al espacio $R^{pxp}$.
+En el capitulo (preguntar como hacer referencia) sección se hablo de una función lipzchiana que a su vez están eran necesariamentes cuadráticas, el hecho de considerar este tipo de funciones se debe 
 
 
 
-Parrafos que me pueden servir en algun momento:
-
-
-Se tienen dos casos ${\left[A\right]}_{\alpha }=A$ si $A\le -\alpha \cdot{I}_{p}$  sino seria  ${\left[A\right]}_{\alpha }=-I_p$, el primero de los casos se utilizará si el centro de formación c está muy alejado de la fuente así se evita que la matriz se defina como semipositiva y tienda a alejar a los robots del punto de interés, además, cuando dicho punto ``c'' está cerca de la fuente se asume entonces que $A<-\alpha \cdot{I}_{p}$
