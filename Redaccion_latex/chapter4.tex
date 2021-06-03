@@ -2,11 +2,23 @@
 \thispagestyle{empty}
 \mbox{}
 
-\chapter{Coordinación}
+\chapter{Conclusiones y futuras investigaciones}
 \label{ch:chapter4}
 
-Acá la idea es explicar de manera breve el algoritmo de control de Hector, por ejemplo poner una figura del paper y decir que influiría en el calculo del gradiente estimado (mas o menos 5-6 paginas acá).
+Al evaluar el comportamiento del sistema completo variando sus parámetros más relevantes y en dos situaciones completamente diferentes se pueden extraer las siguientes conclusiones:
 
-En la actualidad, uno de los principales problemas de los sistemas multiagente
+En primer lugar, la operación conjunta de los tres algoritmos satisfacen los objetivos dispuestos en \ref{Objetives} que consistía en determinar la zona de máxima concentración de sustancias en superficies marítimas. Sin embargo, dados los distintos resultados obtenidos se puede deducir que determinar el número de agentes, el radio y hasta el peso correspondiente al avance, se deben elegir con especial cuidado dado que una mala elección de cualquiera de estos tres puede conllevar a que el sistema se ralentice, no sea fiable o incluso que ni llegue al punto de inflexión.
 
-El objetivo principal de este algoritmo consiste en mantener a los agentes alrededor de un circulos, es decir, 
+Por otro lado, recopilando todos los resultados gráficos obtenidos se aprecia que el sistema en sí es mucho más sensible al radio de la formación que al número de agentes. Este ultimo llegando a ser incluso despreciable a partir de un valor $N_{max}$, si retomas la referencia \cite{Adicional_Estimacion_1} acota al error de la siguiente forma:
+
+\begin{equation}\label{Depe}
+	||\hat{\nabla}f\left(c\right)-\nabla{f}\left(c\right)||\leqslant{D·L}
+\end{equation}
+
+En donde, $L$ es un escalar delimitado por $\varphi_i\left(D,c\right)\leq{L\cdot{||r-c||^2}}$. Si bien es cierto que el error depende del radio de la formación D de tal forma que un aumento conlleva a tener más error al darle mayor margen sobre la desigualdad \ref{Depe}. No obstante, el algoritmo a su vez debería de estar acotado por el número de agentes que a pesar de influir en menor medida también deben de tomarse en cuenta para dicha cota.
+
+Un aspecto de vital importancia es el propio avance del algoritmo definido por el ascenso de gradiente. En este se recogen los dos errores dados por la estima de gradiente del algoritmo de búsqueda de fuentes y el error asociado al ángulo entre vecinos adyacentes del algoritmo de control de formación, a su vez se le añade que contiene el valor del peso $\epsilon$. Por lo que si juntas una mala definición de parámetros con los errores acumulados se pueden describir espirales incluso más pronunciadas que las referidas en \ref{Epsilon_Var}.
+
+Tanto en como en \cite{Estimacion_Gradiente} como en \cite{Adicional_Estimacion_1} dan una forma de corregir el error dado por la mala elección del peso $\epsilon$ y las limitaciones apreciadas del algoritmos de ascenso de gradiente. Esto es hacer uso del Newton-Raphson, en el que aprovechas el hessiano de la función para desplazarte sobre su derivada. No obstante, se debe de estimar tal como se hizo con el gradiente pero para ello se ha de definir un vehículo adicional en el centro de la formación dificultado un poco la coordinación entre ellos.
+
+Finalmente, un reto que actualmente se plantea es como dotar a un único vehículo la capacidad de dirigir al enjambre entero sin que el resto sepan absolutamente nada, es decir, solo un único agente posee información sobre el sistema. Esto traducido, por ejemplo, al algoritmo de búsqueda de fuentes sería si solo uno de los vehículos sabe donde esta el gradiente que técnicas habrían que implementar para que el resto de los agentes que conforman al sistema sepan hacia donde tienen que ir sin poseer ningún tipo de información.

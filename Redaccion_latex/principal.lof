@@ -1,16 +1,40 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Curvas de nivel descritas por un incendio en Forsberg [Referencia bibliográfica]}}{4}{figure.1.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Ejemplo de USV [referencia bibliografica]}}{2}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Representación de una función gaussiana}}{3}{figure.1.2}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Función definida en 3D}}}{3}{figure.1.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Curvas de nivel}}}{3}{figure.1.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Representación de una función lipzchiana}}{11}{figure.2.1}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Función definida en 3D}}}{11}{figure.2.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Curvas de nivel}}}{11}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Trayectoria descrita por cada uno de los agentes [Referencia bibliográfica]}}{13}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagrama de flujo que describe la dinámica del sistema [Referencia bibliográfica]}}{15}{figure.2.3}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Disposición de los agentes en torno a la formación circular.}}{8}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Estrategia colaborativa para la búsqueda de fuentes.}}{10}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Estimación del gradiente en función del número de agentes}}{12}{figure.2.3}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {N = 2}}}{12}{figure.2.3}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {N = 3}}}{12}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Estimación del gradiente en función del radio del círculo}}{12}{figure.2.4}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {D = 100}}}{12}{figure.2.4}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {D = 10}}}{12}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Vehículos dispuestos en torno a la formación. El punto rojo representa el circulo al que quieren converger y los diferentes colores que girar en torno a dicho punto son cada uno de los vehículos.}}{13}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ejemplo del algoritmo de control de formación}}{16}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagrama de flujo que describe la dinámica del sistema.}}{18}{figure.2.7}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparativa entre el camino descrito por el gradiente y por el gradiente estimado}}{22}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparativa las componentes del gradiente entre el real y el estimado}}{22}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diferencia entre las componentes del gradiente real y estimada}}{23}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Curva de error descrita por la estimación del gradiente}}{23}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Avance del sistema en diferentes posiciones de la gaussiana}}{25}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Evaluación del gradiente estimado en diversos puntos de la gaussiana}}{26}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Avance del sistema en función del número de agentes N}}{27}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Evaluación del gradiente estimado en función del número de agentes N}}{28}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Error descrito por el gradiente al variar el número de agentes N}}{29}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Avance del sistema en función del radio D}}{29}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Evaluación del gradiente estimado y el real en función del radio D}}{30}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Error descrito por el gradiente al variar el radio D}}{31}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Avance del sistema en función del radio peso $\epsilon $}}{32}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Error descrito por el gradiente al variar el peso $\epsilon $}}{32}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Evaluación del gradiente en función del peso $\epsilon $}}{33}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Nueva función cuadrática resultado de la suma de 3 gaussianas}}{34}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Avance definido sobre el plano con múltiples fuentes en tres puntos diferentes}}{35}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Comparación del valor máximo de ambas fuentes}}{36}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Evaluación del gradiente estimado y el real según la fuente objetivo}}{36}{figure.3.19}%
 \addvspace {10\p@ }

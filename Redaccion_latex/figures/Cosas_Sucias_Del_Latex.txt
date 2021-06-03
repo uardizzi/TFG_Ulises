@@ -1,0 +1,161 @@
+Introducción:
+
+En base a todo lo descrito anteriormente se va a desarrollar a lo largo de los siguientes capítulos un  sistema multiagente de tipo enjambre que sea capaz de estimar un gradiente a partir de 3 o más robots dispuestos en una formación circular y estos sean capaces de desplazarse a una zona de interés definido como un máximo de una determinada función.
+
+
+Capitulo 2: Según lo dicho en la charla de diciembre y en el pdf del campus aca va todo lo explicativo, tipo el optimo de una funcion, las funciones, bases de algoritmos....
+
+Acá habría que definir los consensus algorithms e introducciones generales a varios aspectos (no se si meter lo de abajo al inicio acá), también un diagrama de flujo del control+estimador (este capitulo y el siguiente osea el 2+3 me deberían llevar como 18-20 paginas, llevaría de momento 1 de indice + 3-4 introducción + 18-20 (en dos capítulos))
+
+
+Parrafos en la parte de control:
+
+Específicamente, si las posiciones de los agentes individuales se controlan activamente, los agentes pueden moverse a sus posiciones deseadas sin interactuar entre sí. 
+ 
+En el caso de que las distancias entre agentes se controlen activamente, la formación de agentes puede tratarse como un cuerpo rígido. Luego, los agentes deben interactuar entre sí para mantener su formación como un cuerpo rígido. En resumen, los tipos de variables controladas especifican la mejor formación deseada posible que pueden lograr los agentes, lo que a su vez prescribe el requisito sobre la topología de interacción de los agentes.
+
+Definir breves conceptos, problemas en la coordinación, descripción de las curvas de nivel para usar la estimación de gradiente.
+
+
+• Control basado en la posición: los agentes detectan sus propias posiciones con respecto a un sistema de coordenadas global. Controlan activamente sus propias posiciones para lograr la formación deseada, que está prescrita por las posiciones deseadas con respecto al sistema de coordenadas global.
+
+• Control basado en el desplazamiento: Los agentes controlan activamente los desplazamientos de sus agentes vecinos para lograr la formación deseada, que se especifica mediante los desplazamientos deseados con respecto a un sistema de coordenadas global bajo el supuesto de que cada agente es capaz de detectar las posiciones relativas de sus agentes vecinos con respecto al sistema de coordenadas global. Esto implica que los agentes necesitan conocer la orientación del sistema de coordenadas global. Sin embargo, los agentes no requieren conocimiento del sistema de coordenadas global en sí ni de sus posiciones con respecto al sistema de coordenadas.
+
+• Control basado en la distancia: las distancias entre agentes se controlan activamente para lograr la formación deseada, que viene dada por las distancias entre agentes deseadas. Se supone que los agentes individuales pueden detectar las posiciones relativas de sus agentes vecinos con respecto a sus propios sistemas de coordenadas locales. Las orientaciones de los sistemas de coordenadas locales no están necesariamente alineadas entre sí.
+
+Parte de la estimación del gradiente:
+
+
+\begin{equation*}
+	f\left(r_{i}\right)-f\left(c\right)=\mathrm{\nabla}{f}\left(c\right)^{T}\left(r_{i}-c\right)+\varphi_{i}\left(D,c\right)
+\end{equation*}
+
+
+
+
+Capitulo 3:
+
+
+Se puede poner de tres formas:
+
+Primera forma:
+
+\begin{equation*}
+	\hat{\nabla}{f}\left(c\right):=\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)
+\end{equation*}
+
+Donde:
+
+\begin{equation*}
+	\hat{\nabla}{f}\left(c\right) = \nabla{f}\left(c\right) + \varphi\left(D,c\right)
+\end{equation*}
+
+Segunda forma:
+
+\begin{equation*}
+	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\nabla{f}\left(c\right) + \varphi\left(D,c\right)
+\end{equation*}
+
+
+Tercera forma:
+
+\begin{equation*}
+	\frac{2}{{D}^2\cdot{N}}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\underbrace{\nabla{f}\left(c\right) + \varphi\left(D,c\right)}_{:=\hat{\nabla}{f}\left(c\right)}
+\end{equation*}
+
+
+
+
+
+
+Se tiene una función $f\left(r\right)$, donde $r$ definida en 2 dimensiones, que el gradiente en el punto máximo es 0 ($\mathrm{\nabla }f\left(r^*\right)=0$), pero en el punto del campo escalar será distinto de 0 ($\left(\mathrm{\nabla }\sigma \left(r\right)\neq 0\right),$ obviamente se ha de dar con ``situaciones espaciales'' diferentes lugares ($\forall r\neq r^*$) y finalmente el hessiano estará definido negativamente dado que es un máximo local, es decir, $H_{\sigma (r^*)}<-a\cdot{I}_{p}$ (con a $\mathrm{>}$ 0 e $I_p$ es una matriz identidad perteneciente al espacio $R^{pxp}$.
+
+
+
+
+por simplicidad no se considera la dinámica de los robots.
+
+
+
+
+
+
+
+
+\noindent La señal está definida según una función cuadrática $\boldsymbol{\sigma }\boldsymbol{(}\boldsymbol{r}\boldsymbol{)=}{\boldsymbol{r}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{S}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}{\boldsymbol{p}}^{\boldsymbol{T}}\boldsymbol{\cdot}\boldsymbol{r}\boldsymbol{+}\boldsymbol{q}$ si se tiene una formación de más de 4 robots se asume que la estimación es el gradiente de la función.
+
+\noindent 
+\[{\phi }_i={\phi }_{o}+\frac{2\cdot\pi \cdot{i}}{N} \] 
+
+Con ${\phi }_{o}\left(t\right)=w_{o}\cdot{t}$la formación propuesta es adecuada para robots que se mueven en formación circular como vehículos aéreos no tripulados de área.
+
+
+
+
+Redefinir: 
+
+
+\begin{figure}[htb]
+  \begin{center}
+    \subfigure[Función definida en 3D]{
+        \includegraphics[width=0.45\textwidth]{figures/Gaussiana.eps}
+        \label{Fgauss}}
+    \subfigure[Curvas de nivel]{
+        \includegraphics[width=0.45\textwidth]{figures/CurvasNivelGauss.eps}
+        \label{CurvasGauss}}
+    \caption{Representación de una función lipzchiana}
+    \label{FunGauss}
+  \end{center}
+\end{figure}
+
+
+Por ende, se define una distribución gaussiana de la siguiente forma:
+
+\begin{equation*}
+	f\left(x,y\right)=k·e^{-H}\hspace{10mm}con\hspace{2mm}H=P·S·P^{T}
+\end{equation*}
+
+Donde $P=\left[x,y\right]$ son sus coordenadas definidas $\forall_{x,y}\in\mathbb{R}$ y $S=\left[S_x,S_y\right]$ es su desviación siendo una matriz cuadrada y diagonal que mientras más grande sean sus valores más plana será y consecuentemente sus curvas de nivel cubrirán un espacio más amplio, además, su centro va a estar definido como $c=\left[c_x,c_y\right]$.
+
+
+Capitulo 1:
+
+
+Un robot realmente no posee una definición precisa y universal dado que existe bastante discrepancia entre los expertos. Por lo tanto, podrían considerarse como un sistema autónomo y programable capaz de realizar tareas. Además, están dotados por la integración de tres capacidades claves:
+
+un agente se puede definir como una entidad software que es capaz de realizar una tarea definida de forma autónoma y con cierto grado de complejidad por el hecho de estar dotado de un determinado grado de inteligencia.
+
+Uno de los problemas principales de la robótica de enjambre es la coordinación de los agentes para que adopten una simetría concreta, en donde, se van a tener en cuenta la velocidad de cada uno de ellos, su posición con respecto al mundo y a los agentes vecinos o la posibilidad de colisión.\\
+
+En base a todo lo descrito anteriormente  \textbf{el objetivo de la memoria} consiste en desarrollar un sistema multiagente de tipo enjambre que sea capaz de estimar un gradiente a partir de 3 o más robots dispuestos en una formación circular y así disponer de información sobre la ubicación del punto fuente, además de poder coordinarse y desplazarse hacia dicho punto por medio de una formación de control. En este los robots pueden ser USVs (vehículo no tripulado) que han de desplazarse hacia zonas de máxima concentración de sustancias tóxicas, es decir, se esta modelando dicho caso.
+
+Puedo usarlo para introducir el sistema de manera global (es que Lara usa su propio algoritmo de coordinacion yo uso el de Hector).
+
+En [referencia bibliográfica] se divide el problema en dos pasos, el primero, consiste en modelar a los agentes con dinámicas no lineales y estabilizarlos a una formación deseada. En segundo lugar, un algoritmo distribuido que permite a los agentes estimar el gradiente de un campo escalar en el centro de dicha formación y conducirla hasta su lugar de origen.
+
+Se consideran un grupo de N vehículos idénticos modelados con cinemática de uniciclo sujetos a una simple restricción no holonómica, tal que la dinámica de los agentes se define como:
+
+\begin{equation*}
+	\begin{aligned}
+		\dot{r}_i&=v_i\left[cos\theta_i\hspace{1mm}sin\theta_i\right]^T\\
+		\dot{\theta}_i&=u_i
+	\end{aligned}
+\end{equation*}
+
+En donde, $r_i\in\mathbb{R}^2$ definiendo la posición de cada agente i, $\theta_i$ es el angulo de cabecera/rumbo (no se como se traduce esto preguntar), por ultimo $u_i$ y $v_i$ son entradas de control. Se asume que cada vehículo conoce su posición absoluta con respecto al marco inercial (preguntar también como se traduce esto) y ademas, los agentes serán capaces de intercambiar sus ángulos de rumbo.
+
+
+Mas del capitulo 2:
+
+Las características esenciales de este tipo de control están relacionadas con la capacidad de detección y la topología de interacción de la red formada por los agentes. Esto conlleva a diferenciar dos tipos de variables:
+
+\begin{itemize}
+	\item \textbf{Detectadas:} Especifican la capacidad de detección de los agentes individuales, un ejemplo de ello sería la velocidad u orientación que posee cada agente.
+	\item \textbf{Controladas:} Son aquellas relacionadas con la topología de interacción, es decir, sirve para detallar la mejor formación deseada posible que puedan lograr los agentes.
+\end{itemize}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/TA.eps}
+\caption{Trayectoria descrita por cada uno de los agentes [Referencia bibliográfica]} \label{fig:Trayectory}
+\end{figure}
