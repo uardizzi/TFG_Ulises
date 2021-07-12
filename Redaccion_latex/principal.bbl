@@ -1,0 +1,72 @@
+\begin{thebibliography}{10}
+
+\bibitem{Adicional_Estimacion_1}
+L.~Briñón-Arranz, A.~Renzaglia, and L.~Schenato.
+\newblock Multi-robot symmetric formations for gradient and hessian estimation
+  with application to source seeking.
+\newblock {\em IEEE Transactions on Robotics}, PP, 02 2019.
+
+\bibitem{Estimacion_Gradiente}
+L.~Briñón-Arranz, L.~Schenato, and A.~Seuret.
+\newblock Distributed source seeking via a circular formation of agents under
+  communication constraints.
+\newblock {\em IEEE Transactions on Control of Network Systems}, 3:1--1, 05
+  2015.
+
+\bibitem{Otra_Coorporativa}
+L.~Briñón-Arranz, A.~Seuret, and C.~Canudas-de Wit.
+\newblock Cooperative control design for time-varying formations of multi-agent
+  systems.
+\newblock {\em Automatic Control, IEEE Transactions on}, 59:2283--2288, 08
+  2014.
+
+\bibitem{Git_Hector}
+H.~García~de Marina.
+\newblock Github.
+\newblock \url{https://github.com/UCM-237/pyVehicles}.
+
+\bibitem{Git__todos}
+H.~García~de Marina, J.~F. Jiménez~Castellanos, and U.~A. Ardizzi~Rodríguez.
+\newblock Github.
+\newblock \url{https://github.com/uardizzi/pyVehicles}.
+
+\bibitem{Control_Formacion}
+H.~Garcia~de Marina, Z.~Sun, M.~Bronz, and G.~Hattenberger.
+\newblock Circular formation control of fixed-wing uavs with constant speeds.
+\newblock 09 2017.
+
+\bibitem{Base_Coorporativa}
+Y.~A. Kapitanyuk, A.~Proskurnikov, and M.~Cao.
+\newblock A guiding vector-field algorithm for path-following control of
+  nonholonomic mobile robots.
+\newblock {\em IEEE Transactions on Control Systems Technology}, 26:1372--1385,
+  2018.
+
+\bibitem{Aplicacion_4}
+E.~Sahin.
+\newblock Swarm robotics: From sources of inspiration to domains of
+  application.
+\newblock volume 3342, pages 10--20, 01 2005.
+
+\bibitem{Aplicacion_2}
+Y.~Tan and Z.-y. Zheng.
+\newblock Research advance in swarm robotics.
+\newblock {\em Defence Technology}, 239, 03 2013.
+
+\bibitem{Aplicaciones_Militares}
+UNIDIR.
+\newblock Swarm robotics: Technical and operational overview of the next
+  generation of autonomous systems.
+\newblock
+  \url{https://unidir.org/publication/swarm-robotics-technical-and-operational-overview-next-generation\\
+  -autonomous-systems}.
+\newblock Accessed: 2021-03-20.
+
+\bibitem{Aplicacion_3}
+G.-Z. Yang, J.~Bellingham, P.~Dupont, P.~Fischer, L.~Floridi, R.~Full,
+  N.~Jacobstein, V.~Kumar, M.~McNutt, R.~Merrifield, B.~Nelson, B.~Scassellati,
+  M.~Taddeo, R.~Taylor, M.~Veloso, Z.~Wang, and R.~Wood.
+\newblock The grand challenges of science robotics.
+\newblock {\em Science Robotics}, 3:eaar7650, 01 2018.
+
+\end{thebibliography}

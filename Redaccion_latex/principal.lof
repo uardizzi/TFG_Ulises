@@ -8,33 +8,34 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Curvas de nivel}}}{10}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Disposición de los agentes en torno a la formación circular.}}{11}{figure.2.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Estrategia colaborativa para el cálculo del gradiente en el centro de la circunferencia formada por los agentes.}}{13}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Estimación del gradiente en función del número de agentes con D = 1}}{14}{figure.2.4}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {N = 2}}}{14}{figure.2.4}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {N = 3}}}{14}{figure.2.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Estimación del gradiente en función del número de agentes con D = 1. La figura de la izquierda es un caso no valido y se aporta para demostrar un mal uso del algoritmo.}}{14}{figure.2.4}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Estimación del gradiente en función del radio del círculo con N = 3}}{15}{figure.2.5}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {D = 100}}}{15}{figure.2.5}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {D = 10}}}{15}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Ejemplo de convergencia de un vehículo a la formación circular destino [referencia]}}{17}{figure.2.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Ejemplo de disposición simétrica en torno a la formación circular}}{19}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Diagrama de flujo que describe la dinámica del sistema.}}{22}{figure.2.8}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Un único vehículo con la capacidad de converger a una circunferencia destino. Figura tomada de: \cite {Control_Formacion}}}{18}{figure.2.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {N = 2}}}{18}{figure.2.6}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {N = 3}}}{18}{figure.2.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {D = 100}}}{18}{figure.2.6}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {D = 10}}}{18}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Grafo descrito por 4 vehículos. Definido por los nodos $\mathcal {V}=\left \lbrace {1,2,3,4}\right \rbrace $ y las aristas $\mathcal {E}_1$, $\mathcal {E}_2$ y $\mathcal {E}_3$}}{21}{figure.2.7}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Disposición de dos vehículos orbitando en dos circunferencias diferentes y alterando su velocidad angular para converger circunferencia objetivo.}}{22}{figure.2.8}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Diagrama de flujo que describe la dinámica del sistema.}}{25}{figure.2.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparativa entre el camino descrito por el gradiente y por el gradiente estimado.}}{26}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparativa de las componentes del gradiente entre el real y el estimado.}}{26}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diferencia entre las componentes del gradiente real y el estimado.}}{27}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Curva de error descrita por la estimación del gradiente.}}{27}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Avance del sistema para diferentes valores de la posición inicial de la formación.}}{29}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Componentes del gradiente estimado y el real para diferentes valores de la posición inicial de la formación.}}{30}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Avance del sistema en función del número de agentes N}}{31}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del número de agentes N.}}{32}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Error descrito por el gradiente esrimado al variar el número de agentes N.}}{33}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Avance del sistema en función del radio D.}}{33}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Evaluación de la componentes del gradiente estimado y el real en función del radio D.}}{34}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Error descrito por el gradiente estimado al variar el radio D.}}{35}{figure.3.12}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Avance del sistema en función del radio peso $\epsilon $.}}{36}{figure.3.13}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Error descrito por el gradiente estimado al variar el peso $\epsilon $.}}{36}{figure.3.14}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del peso $\epsilon $.}}{37}{figure.3.15}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Resultado de sumar las tres funciones gaussianas. Nuevo modelo para la simulación.}}{38}{figure.3.16}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Avance definido sobre el plano con múltiples fuentes en tres puntos diferentes}}{39}{figure.3.17}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Comparación del valor máximo de ambas fuentes}}{40}{figure.3.18}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Evaluación de las componentes del gradiente estimado según la fuente objetivo y el punto de partida}}{40}{figure.3.19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Vehículos dispuestos en torno a la formación. El punto rojo representa el círculo al que quieren converger y las diferentes líneas de colores que giran en torno a dicho punto son cada una de las trayectorias de los vehículos.}}{28}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparativa entre el camino descrito por el gradiente real y por el gradiente estimado.}}{29}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparativa de las componentes del gradiente entre el real y el estimado.}}{30}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Curva de error descrita por la estimación del gradiente.}}{30}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Avance del sistema para diferentes valores de la posición inicial de la formación.}}{31}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Componentes del gradiente estimado y el real para diferentes valores de la posición inicial de la formación.}}{32}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Avance del sistema en función del número de agentes N.}}{33}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del número de agentes N.}}{34}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Error descrito por el gradiente estimado al variar el número de agentes N.}}{35}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Avance del sistema en función del radio D.}}{35}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Evaluación de la componentes del gradiente estimado y el real en función del radio D.}}{36}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Error descrito por el gradiente estimado al variar el radio D.}}{37}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Avance del sistema en función del radio peso $\epsilon $.}}{38}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Error descrito por el gradiente estimado al variar el peso $\epsilon $.}}{38}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del peso $\epsilon $.}}{39}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Resultado de sumar las tres funciones gaussianas. Nuevo modelo para la simulación.}}{40}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Avance definido sobre el plano con múltiples fuentes en tres puntos diferentes}}{41}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Comparación del valor máximo de ambas fuentes}}{42}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Evaluación de las componentes del gradiente estimado según la fuente objetivo y el punto de partida}}{42}{figure.3.19}%
 \addvspace {10\p@ }

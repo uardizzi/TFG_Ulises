@@ -1,0 +1,95 @@
+\documentclass[tikz,a4paper]{article}
+
+\usepackage{pgfgantt}
+\usepackage[margin=3cm]{geometry}
+
+\title{Automatización Industrial}
+\date{Curso 2020/2021}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section*{Planificación de la asignatura}
+
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+\renewcommand\mddefault{mc}
+\renewcommand\bfdefault{bc}
+\setganttlinklabel{s-s}{START-TO-START}
+%\setganttlinklabel{f-s}{FINISH-TO-START}
+\setganttlinklabel{f-f}{FINISH-TO-FINISH}
+\sffamily
+\begin{ganttchart}[
+    canvas/.append style={fill=none, draw=black!5, line width=0.75pt},
+    x unit=0.8cm,
+    y unit chart=0.6cm,
+    hgrid style/.style={draw=black!5, line width=.75pt},
+    vgrid={*1{draw=black!5, line width=.75pt}},
+    title/.style={draw=none, fill=none},
+    title label font=\bfseries\footnotesize,
+    title label node/.append style={below=7pt},
+    include title in canvas=false,
+    bar height=0.5,
+    bar label font=\mdseries\small\color{blue!70},
+    bar label node/.append style={anchor=west,left=0.2cm},
+    bar/.append style={draw=none, fill=blue!60},
+    % bar incomplete/.append style={fill=barblue},
+    % bar progress label font=\mdseries\footnotesize\color{black!70},
+    % group incomplete/.append style={fill=groupblue},
+    group left shift=0,
+    group right shift=0,
+    group height=.25,
+    group peaks tip position=0,
+    group label node/.append style={left=0.5cm},
+    % group progress label font=\bfseries\small,
+    %link/.style={-latex, line width=1.0pt, type=recto},
+    % link label font=\scriptsize\bfseries,
+    % link label node/.append style={below left=-2pt and 0pt}
+    milestone label font=\bfseries\small\color{red!70},
+    milestone label node/.append style={left=0.8cm},
+    milestone/.append style={draw=none, fill=red!60},
+    milestone height=0.5,
+    milestone left shift=0.7,
+    milestone right shift=0.3,
+  ]{1}{14}
+  \gantttitle[
+    title label node/.append style={below left=7pt and -3pt}
+  ]{SEMANAS:\quad1}{1}
+  \gantttitlelist{2,...,13}{1} \\
+  \ganttgroup[name=Bloque1]{\textbf{Bloque 1}}{1}{1} \\
+  \ganttbar{Panorama}{1}{1} \\
+  \ganttgroup[name=Bloque2]{\textbf{Bloque 2}}{2}{4} \\
+  \ganttbar{Sensores}{2}{3} \\
+  \ganttbar{Actuadores}{3}{4} \\
+  \ganttmilestone[name=Test1]{Test Bloque 2}{4} \\
+
+  \ganttgroup{Bloque 3}{5}{8} \\
+  \ganttbar{Máquinas CN}{5}{6} \\
+  \ganttbar{PLCs}{7}{8} \\
+  \ganttmilestone[name=Test2]{Test Bloque 3}{8} \\
+
+  \ganttgroup{Bloque 4}{9}{12} \\
+  \ganttbar{SCADA}{9}{10} \\
+  \ganttbar{Industria 4.0}{11}{12} \\
+  \ganttmilestone[name=Test3]{Test Bloque 4}{12} \\
+  \ganttbar[
+    bar/.append style={fill=green!40!black},
+    bar label font=\mdseries\small\color{green!40!black},
+  ]{\large{Trabajo Final}}{8}{13} \\
+\end{ganttchart}
+
+
+\subsection*{Material}
+El contenido de la asignatura está dividido en 4 bloques, para facilitar su estudio. La entrega del material de estudio se hará según la planificación mostrada en el diagrama.
+
+\subsection*{Evaluación}
+
+La evaluación se realizará mediante los siguientes elementos:
+\begin{itemize}
+    \item \textbf{Cuestionarios (30\%)}: Al finalizar los bloques 2, 3 y 4, se realizará un cuestionario de evaluación continua con preguntas relacionadas con el material de estudio del bloque.
+    \item \textbf{Trabajo Práctico (70\%):} Consistirá en solucionar un problema de automatización, propuesto por el equipo docente, que englobará los aspectos tratados en la teoría.
+\end{itemize}
+\end{document}

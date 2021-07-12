@@ -169,7 +169,6 @@
 % +--------------------------------------------------------------------+
 % | Autorizacion Page -- Required for both Doctoral and Masters Students
 % +--------------------------------------------------------------------+
-
 \input{autorizacion.tex}
    \pdfbookmark[0]{Autorización}{PDFAutorizacionPage}
 
@@ -181,8 +180,8 @@
 % | or delete the following 3 lines.
 % +--------------------------------------------------------------------+
 
-\input{dedicatoria.tex}
-\phantomsection
+%\input{dedicatoria.tex}
+%\phantomsection
 %\addcontentsline{toc}{chapter}{Dedicatoria}
 
    % +--------------------------------------------------------------------+
@@ -191,10 +190,11 @@
 % | If you choose not to have an Acknowledgements page, comment out
 % | or delete the following 3 lines.
 % +--------------------------------------------------------------------+
-
+\pagenumbering{roman}
+\setcounter{page}{1}
 \input{agradecimientos.tex}
 \phantomsection
-%\addcontentsline{toc}{chapter}{Agradecimientos}
+\addcontentsline{toc}{chapter}{Agradecimientos}
 
 % +--------------------------------------------------------------------+
 % | We use the following code to suppress page numbers and other
@@ -203,7 +203,6 @@
 
 %\thispagestyle{empty} Looks like it's ok to remove this line
 \newpage
-\pagenumbering{roman}
 
 % +--------------------------------------------------------------------+
 % | On the line below, set the number to represent the page number of
@@ -215,8 +214,6 @@
 % | included in the page count.  The Table of Contents page is the
 % | first page on which page numbers are displayed.
 % +--------------------------------------------------------------------+
-
-\setcounter{page}{1}
 
 
 % +--------------------------------------------------------------------+
@@ -322,9 +319,11 @@
 % | entered in the references.bib file.  See that file for information
 % | on how to enter references.
 % +--------------------------------------------------------------------+
-\input{bibliography.tex}
+%\input{bibliography.tex}
 %\bibdata{references}
 \bibliographystyle{abbrv}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{unsrt}
 \bibliography{references}
 \addcontentsline{toc}{chapter}{Bibliografía}
 

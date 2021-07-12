@@ -1,18 +1,27 @@
-\newpage
-\thispagestyle{empty}
-\mbox{}
+%\newpage
+%\thispagestyle{empty}
+%\mbox{}
 
 \chapter{Conclusiones y futuras investigaciones}
 \label{ch:chapter4}
 
 Al evaluar el comportamiento del sistema completo variando sus parámetros más relevantes y en dos situaciones completamente diferentes se pueden extraer las siguientes conclusiones:
 
-En primer lugar, la operación conjunta de los tres algoritmos satisfacen los objetivos dispuestos en \ref{Objetives} que consistía en determinar la zona de máxima concentración de sustancias en superficies marítimas. Sin embargo, dados los distintos resultados obtenidos se puede deducir que determinar el número de agentes, el radio y hasta el peso correspondiente al avance, se deben elegir con especial cuidado dado que una mala elección de cualquiera de estos tres puede conllevar a que el sistema se ralentice, no sea fiable o incluso que ni llegue al máximo.
+En primer lugar, las iteraciones vistas en cada gráfica a lo largo del capítulo anterior no van a suponer nada sobre el sistema real. En este la importancia recae en la capacidad de los sensores para tomar los datos de manera continua y así poder llegar al punto de máxima concentración de sustancias.
 
-En primer lugar, si se evalúa individualmente el efecto que tiene tanto el número de agentes N como el radio D afectan de forma distinta a los algoritmos de estimación de gradiente y al algoritmo de coordinación. Esto se debe a que un aumento del número de agentes para la estimación va a representar una ventaja, sin embargo, para la coordinación se puede dar el caso de que lleve mucho más tiempo disponerse uniformemente en la formación, y no solo eso sino que será necesario un aumento del radio en caso de que los vehículos tengan un riesgo de colisión, dicho aumento conlleva a un error en la estima menor, pero a su vez el arco definido por el ángulo descrito entre vehículos adyacentes será menos restrictivo, es decir, va a ser necesario que los agentes se ubiquen en posiciones menos precisas que teniendo un radio más pequeño.
+En cuanto a la operación conjunta de los tres algoritmos. Estos satisfacen los objetivos dispuestos al inicio de la memoria que consistía en determinar la zona de máxima concentración de sustancias en superficies marítimas. Sin embargo, dados los distintos resultados obtenidos se puede deducir que determinar el número de agentes $N$, el radio $D$ y hasta la ganancia $\epsilon$ correspondiente al avance del algoritmo de ascenso, se deben elegir con especial cuidado dado que una mala elección de cualquiera de estos tres puede conllevar a que el sistema se ralentice, no sea fiable o incluso que ni llegue al máximo.
 
-Un aspecto de vital importancia es el propio avance del algoritmo definido por el ascenso de gradiente. En este se recogen los dos errores dados por el algoritmo de estimación y el asociado al ángulo entre vecinos adyacentes del algoritmo de control de formación, a su vez se le añade la propia elección del valor del peso $\epsilon$. Por lo que si juntas una mala definición de parámetros con los errores acumulados se pueden describir espirales incluso más pronunciadas que las referidas en \ref{Epsilon_Var}.
+Evaluando individualmente el efecto que tiene tanto el número de agentes N como el radio D sobre el algoritmo de estimación de gradiente y sobre el algoritmo de coordinación, se tiene:
 
-Tanto en como en \cite{Estimacion_Gradiente} como en \cite{Adicional_Estimacion_1} dan una forma de corregir el error dado por la mala elección del peso $\epsilon$ y las limitaciones apreciadas del algoritmos de ascenso de gradiente. Esto es hacer uso del Newton-Raphson, en el que aprovechas el hessiano de la función para desplazarte sobre su derivada. No obstante, se debe de estimar tal como se hizo con el gradiente pero para ello se ha de definir un vehículo adicional en el centro de la formación dificultado un poco la coordinación entre ellos y posiblemente tener que recurrir a otro algoritmo de coordinación que tenga este aspecto en cuenta.
+\begin{itemize}
+	\item Un aumento del número de agentes para la estimación va a representar una ventaja al obtener un gradiente teóricamente más cercano al real. Sin embargo, para la coordinación se puede dar el caso de que lleve mucho más tiempo disponerse uniformemente en la formación, y no solo eso sino que será necesario un aumento del radio en caso de que los vehículos tengan un riesgo de colisión.
+	\item Si se aumenta el radio conlleva a un error en la estima menor, pero a su vez el arco definido por el ángulo descrito entre vehículos adyacentes será más restrictivo, es decir, va a ser necesario que los agentes se ubiquen en posiciones más precisas que teniendo un radio más pequeño y nuevamente se ralentizaría el sistema.
+\end{itemize} 
 
-Finalmente, un reto que actualmente se plantea es como dotar a un único vehículo la capacidad de dirigir al enjambre entero sin que el resto sepan absolutamente nada, es decir, solo un único agente posee información sobre el sistema. Esto traducido, por ejemplo, al algoritmo de búsqueda de fuentes sería si solo uno de los vehículos sabe donde esta el gradiente que técnicas habrían que implementar para que el resto de los agentes que conforman al sistema sepan hacia donde tienen que ir sin poseer ningún tipo de información.
+Un aspecto de vital importancia es el propio avance del algoritmo definido por el ascenso de gradiente. En este se recogen los dos errores dados por el algoritmo de estimación y el asociado al ángulo entre vecinos adyacentes del algoritmo de control de formación, a su vez se le añade la propia elección del valor de la ganancia $\epsilon$. Por lo que si juntas una mala definición de parámetros con los errores acumulados se pueden describir espirales incluso más pronunciadas que las referidas en la figura \ref{Epsilon_Var}.
+
+Tanto en \cite{Estimacion_Gradiente} como en \cite{Adicional_Estimacion_1} dan una forma de corregir el error dado por la mala elección de dicha ganancia $\epsilon$ y las limitaciones apreciadas del algoritmos de ascenso de gradiente. Esto es hacer uso del método de Newton-Raphson, en el que aprovechas el hessiano de la función para desplazarte sobre su derivada. No obstante, se debe de estimar tal como se hizo con el gradiente, pero para ello se ha de definir un vehículo adicional en el centro de la formación.
+
+Finalmente, un reto que actualmente se plantea es un cálculo del gradiente centralizado, en donde un único agente, se desplazara en la trayectoria circular y recogiera todas las medidas correspondientes a cada uno de sus vecinos. Existe una segunda alternativa, que sería emplear consenso con el objetivo de que el cálculo del gradiente esté distribuido entre los agentes.
+
+\nocite{Git__todos}
