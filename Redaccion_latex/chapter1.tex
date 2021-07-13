@@ -18,31 +18,31 @@ Un aspecto fundamental sería el detectar y caracterizar la distribución de dic
 
 Los vehículos han de tener la capacidad de reunir datos del entorno, dicha tarea se realiza al estar dotados de sensores adecuados y de diversos tipos para tomar medidas de nivel asociadas al nivel de contaminación de modo continúo para posteriormente convertirlos en acciones a través de su efector final.
 
-Un vehículo que engloba todas las características descritas hasta el momento son los USVs\footnote[1]{unmanned surface vehicle} cuyo uso recae en tareas de monitorización de las aguas de manera automática y desasistida.
+Un vehículo que engloba todas las características descritas hasta el momento son los USVs\footnote[1]{unmanned surface vehicle}, cuyo uso recae en tareas de monitorización de las aguas de manera automática y desasistida.
 
 Además, al tratarse de una tarea que implica cubrir zonas amplias de agua, una manera más eficaz de acometerla es el empleo de multiples USVs que cooperan eficientemente entre ellos para cumplir la labor asignada. Esto conlleva a una necesidad de coordinarlos, en donde, existen diversas formas de hacerlo tal como se puede apreciar en \cite{Otra_Coorporativa}. En este proyecto se va a centrar en \cite{Control_Formacion} basado en la cooperación entre los USVs consiguiendo un sistema descentralizado y robusto.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.6\textwidth]{figures/USV.eps}
-\caption{Ejemplo de USV. Figura obtenida de: \url{https://www.navalnews.com/naval-news/2019/02/eca-group-unveils-inspector-125-unsinkable-usv/}}\label{fig:USV}
+\caption{Ejemplo de USV. Figura obtenida de: \cite{Imagen_Tomada}}\label{fig:USV}
 \end{figure}
 
 El proceso principal para la detección de los agentes biológicos en aguas contaminadas es la búsqueda de la fuente de contaminación. Por ello, el objetivo de este proyecto consiste en ver cómo un conjunto de agentes son capaces de comunicarse entre ellos para detectar el foco de máxima concentración para posteriormente desplazarse hacia él satisfactoriamente.
+\newpage
+Consecuentemente, los vehículos han de ser capaces de cumplir un rol fundamental, el cual consiste en ser capaces de detectar el punto de origen de máxima concentración.
 
-Consecuentemente, los vehículos han de ser capaces de cumplir un rol fundamental, el cual consiste en ser capaces de detectar exactamente el punto de origen de máxima concentración. Debido a esto, surge la necesidad de coordinarse para ejercer el desplazamiento describiendo una formación circular.
+Se aprovecharán las medidas tomadas mediante los sensores del grupo de robots con el objetivo estimar el gradiente de la concentración. Para ello, se les hará navegar en formación siguiendo un patrón geométrico que facilite estimar dicho gradiente; en nuestro caso, una formación circular.
 
-Se aprovecharán las medidas tomadas mediante los sensores del grupo de robots con el objetivo estimar el gradiente de la concentración.
+Asimismo, en cualquier punto de la superficie del agua afectada por los agentes biológicos, el gradiente de la concentración apunta en la dirección de crecimiento de la contaminación y por tanto hacia la fuente. Una forma de llegar al máximo es ir tomando medidas de manera continua con los sensores acoplados en cada USVs para ir avanzando en función de la dirección marcada por dicho gradiente, en donde si éste es próximo a cero quiere decir que los vehículos han llegado al punto máximo.
 
-Asimismo, en cualquier punto de la superficie del agua afectada por los agentes biológicos, el gradiente de la concentración apunta en la dirección de crecimiento de la contaminación y por tanto hacia la fuente. Una forma de llegar al máximo es ir tomando medidas de manera continúa con los sensores acoplados en cada USVs para ir avanzando en función de la dirección marcada por dicho gradiente, en donde si este es próximo a cero quiere decir que los vehículos han llegado al punto máximo.
-
-Cabe añadir que el punto de máxima concentración en la superficie sobre la que se desplazan los vehículos se puede definir mediante curvas de nivel, además su variación va a estar ligada con la distancia a la que este el centro de la formación con respecto al punto máximo.
+Cabe añadir que el punto de máxima concentración en la superficie sobre la que se desplazan los vehículos se puede definir mediante curvas de nivel, además su variación va a estar ligada con la distancia a la que esté el centro de la formación con respecto al punto máximo.
 
 Finalmente, el grupo de vehículos se puede definir mediante un enjambre robótico basado en un sistema multiagente. Aspectos que se describen a continuación.
 
 \section{Estado del arte}\label{Objetives}
 
-La robótica de enjambre se basa en el comportamiento de los organismos sociales, en donde los individuos no han de tener un alto conocimiento para producir un comportamiento colectivo complejo, ni existir un líder que guía al resto para completar un objetivo, como en los bancos de peces, un panal de abejas o una bandada de pájaros.
+La robótica de enjambre se basa en el comportamiento de los organismos sociales, en donde los individuos no han de tener un alto conocimiento para producir un comportamiento colectivo complejo, ni existir un líder que guíe al resto para completar un objetivo, como en los bancos de peces, un panal de abejas o una bandada de pájaros.
 \newpage
 Hoy en día, conforma un área de investigación muy activa por su versatilidad en diferentes ámbitos, tales como militar \cite{Aplicaciones_Militares} o industrial \cite{Aplicacion_2}. En contraposición a tener un único robot realizando una labor compleja se tienen varios individuos simples para formar un comportamiento colectivo con el objetivo de realizar la misma tarea traduciéndose a su vez en una reducción de costes. Las características principales con las que se pueden definir los enjambres son:
 
@@ -54,12 +54,12 @@ Hoy en día, conforma un área de investigación muy activa por su versatilidad 
 	\item El hecho de que se puede definir su modo de operar no implica que se controle a cada robot individualmente, es decir, cada uno ellos han de poseer un comportamiento \textbf{autónomo} y \textbf{descentralizado}.
 \end{enumerate}
 
-A continuación, se dan a conocer una serie de tareas donde sería conveniente aplicar la robótica de enjambre \cite{Aplicacion_3} \cite{Aplicacion_4}:
+A continuación, se dan a conocer una serie de tareas donde sería conveniente aplicar la robótica de enjambre \cite{Aplicacion_3}, \cite{Aplicacion_4}:
 
 \begin{itemize}
-	\item \textbf{\emph{Tareas peligrosas:}} Son útiles en aplicaciones militares como sería limpiar un campo de minas o simular el paseo de los soldados sobre este.
+	\item \textbf{\emph{Tareas peligrosas:}} Son útiles en aplicaciones militares como sería limpiar un campo de minas o simular el paso de los soldados sobre éste.
 	\item \textbf{\emph{Tareas que cubren un área:}} La capacidad de detección distribuida del sistema robótico puede proporcionar vigilancia para la detección inmediata de eventos perjudiciales, tales como fugas de sustancias químicas en un lago, entre otras palabras, proporciona un monitoreo ambiental.
-	\item \textbf{\emph{Tareas redundantes:}} La redundancia del enjambre permite que se degrade pacíficamente haciendo que el sistema sea menos propenso a fallas. Un ejemplo sería la comunicación dinámica mediante redes en un campo de batalla.
+	\item \textbf{\emph{Tareas redundantes:}} La redundancia del enjambre permite que se degrade parcialmente haciendo que el sistema sea menos propenso a fallas. Un ejemplo sería la comunicación dinámica mediante redes en un campo de batalla.
 	\item \textbf{\emph{Tareas escalables en el tiempo:}} La presencia de un enjambre robótico autoensamblado en un barco puede contener posibles fugas de petroleo en caso de que los tanques del barco se empiecen a descomponer.
 \end{itemize}
 
@@ -69,17 +69,17 @@ Por tal motivo, la información va a estar distribuida en cada uno de los agente
 
 \section{Objetivos} \label{Objetivos_Principales}
 
-Al principio de este capitulo se comento la necesidad del cálculo del gradiente para obtener la dirección de avance sobre la superficie marítima hacia zonas afectadas por sustancias contaminantes. Este objetivo se logra mediante la cooperación de tres algoritmos.
+Al principio de este capítulo se comentó la necesidad del cálculo del gradiente para obtener la dirección de avance sobre la superficie marítima hacia zonas afectadas por sustancias contaminantes. Este objetivo se logra mediante la cooperación de tres algoritmos.
 
-El primero de ellos es un \textbf{algoritmo de búsqueda de fuentes} \cite{Estimacion_Gradiente} cuyo objetivo es detectar dicha zona de máxima concentración, en donde, se asume que solo se tendrá una única fuente radiando y además que los agentes van a estar dispuestos en torno a una formación circular de manera simétrica para realizar las medidas correspondientes. 
+El primero de ellos es un \textbf{algoritmo de búsqueda de fuentes} \cite{Estimacion_Gradiente}, cuyo objetivo es detectar dicha zona de máxima concentración, en donde, se asume que solo se tendrá una única fuente radiando y además que los agentes van a estar dispuestos en torno a una formación circular de manera simétrica para realizar las medidas correspondientes. 
 
-Por otro lado, la necesidad del segundo algoritmo recae en la coordinación de los vehículos para adoptar una forma geométrica deseada más concretamente una formación circular, en donde los robots se distribuyen simétricamente en torno a ésta. Se define para ello un \textbf{algoritmo de control de formación circular} \cite{Control_Formacion}.
+Por otro lado, la necesidad del segundo algoritmo recae en la coordinación de los vehículos para adoptar la forma geométrica deseada más concretamente una formación circular, en donde los robots se distribuyen simétricamente en torno a esta. Se define para ello un \textbf{algoritmo de control de formación circular} \cite{Control_Formacion}.
 
-Al ya tener el gradiente calculado y los vehículos dispuestos en la formación uniformemente surge la necesidad de un tercer algoritmo que le otorgue la capacidad de dirigirse hacia la zona de interés haciendo uso de dicho gradiente. Por este motivo, se hará uso del \textbf{algoritmo de ascenso}.
+Al ya tener el gradiente calculado y los vehículos dispuestos en la formación uniformemente surge la necesidad de un tercer algoritmo que le otorgue la capacidad de dirigir a los vehículos hacia la zona de interés haciendo uso de dicho gradiente. Por este motivo, se hará uso de un \textbf{algoritmo de ascenso de gradiente}.
 
-Una vez que el conjunto de algoritmos se encuentran funcionando, se propone como objetivo estudiar el efecto de los diferentes parámetros sobre el rendimiento del sistema, entre ellos, la variación del número de vehículos, las posiciones desde donde empieces, el tamaño del radio de la formación o situaciones en las que se tienen varios focos radiando pero uno de ellos va a presentar la máxima concentración.
+Una vez que el conjunto de algoritmos se encuentran funcionando, se propone como objetivo estudiar el efecto de los diferentes parámetros sobre el rendimiento del sistema, entre ellos, la variación del número de vehículos, las posiciones iniciales desde donde se inicia la búsqueda, el tamaño del radio de la formación o situaciones en las que se tienen varios focos radiando, pero uno de ellos va a presentar la máxima concentración.
 
-Para estudiar cada uno de estos parámetros se propuso modelar el desplazamiento del sistema sobre una función gaussiana dado que esta cumple ser cóncava y permite estimar el carácter de una distribución de contaminación real, si toda la contaminación ha emanado de un único foco, adicionalmente permite de cierta manera dar un valor a los que realmente serían datos tomados por los sensores. De forma que sea posible evaluar la viabilidad y el rendimiento del conjunto de algoritmos de cara a emplearlo posteriormente sobre sistemas reales.
+Para estudiar cada uno de estos parámetros se propuso modelar el desplazamiento del sistema sobre una función gaussiana dado que esta cumple ser cóncava y permite estimar el carácter de una distribución de contaminación real, si toda la contaminación ha emanado de un único foco. Adicionalmente permite de cierta manera dar un valor a los que realmente serían datos tomados por los sensores. De forma que sea posible evaluar la viabilidad y el rendimiento del conjunto de algoritmos de cara a emplearlo posteriormente sobre sistemas reales.
 
 \section{Diagrama de Gantt}\label{Gantt}
 
@@ -141,14 +141,14 @@ Para estudiar cada uno de estos parámetros se propuso modelar el desplazamiento
 En el diagrama se definen los siguientes aspectos:
 
 \begin{itemize}
-	\item El algoritmo 1 se atribuye al que obtiene el gradiente en el centro de la formación \cite{Estimacion_Gradiente}. En primer lugar se analizo como se obtiene el gradiente mediante varios USVs para posteriormente codificarlo.
-	\item El algoritmo 2 es el encargado de la cooperación entre los vehículos descrito en \cite{Control_Formacion}. Este ya se encontraba codificado en \cite{Git_Hector} la única tarea que se hizo fue el entendimiento de su funcionamiento.
+	\item El algoritmo 1 se atribuye al que obtiene el gradiente en el centro de la formación \cite{Estimacion_Gradiente}. En primer lugar se analizó como se obtiene el gradiente mediante varios USVs para posteriormente codificarlo.
+	\item El algoritmo 2 es el encargado de la cooperación entre los vehículos descrito en \cite{Control_Formacion}. Este ya se encontraba codificado en \cite{Git_Hector}. La única tarea que se realizo fue el entendimiento de su funcionamiento.
 	\item Finalmente, ambos algoritmos en conjunto con el ascenso de gradiente descrito en \cite{Adicional_Estimacion_1} conforman el sistema global sobre el que se basarán cada uno de los casos previamente descritos, es decir, el análisis del rendimiento se dará en función de este sistema.
 \end{itemize}
 
 \section{Organización de la memoria}
 
-Se va a dividir el desarrollo de la memoria en tres capítulos que englobarán los aspectos más relevantes recopilados de las diferentes simulaciones.
+Se va a dividir el desarrollo del resto de la memoria en tres capítulos que englobarán los aspectos más relevantes recopilados de las diferentes simulaciones.
 
 \begin{itemize}
 	\item \textbf{\emph{El capítulo dos,}} contiene el fundamento teórico sobre el que se sustentan los USVs que poseen la capacidad de detectar fuentes. Posteriormente, han de cooperar y coordinarse con el objetivo de desplazarse hacia ellas por medio del gradiente, desglosándose dicha misión en tres algoritmos cada uno con una tarea fundamental: 
@@ -157,7 +157,8 @@ Se va a dividir el desarrollo de la memoria en tres capítulos que englobarán l
 		\item El segundo los coordina para formar una circunferencia cuya disposición de los agentes en esta es simétrica.
 		\item Finalmente, un tercer algoritmo que permite el avance mediante el gradiente estimado.
 	\end{itemize}
-	\item  \textbf{\emph{En el tercer capítulo,}} se simulan diversas situación para evaluar el rendimiento del sistema completo, entre ellas estarían variar el número de vehículos, el radio de la circunferencia o el ajuste de la ganancia del algoritmo de ascenso de gradiente.
-	\item \textbf{\emph{En el cuarto y ultimo capítulo,}} se recogen las conclusiones finales de evaluar el rendimiento del conjunto de algoritmos. Adicionalmente, se aportan mejoras que se pueden introducir o futuras investigaciones como sería el caso de tener un calculo del gradiente centralizado o aplicando un algoritmo de consenso cuyo intercambio de información de realiza de manera distribuida.
+	\item  \textbf{\emph{En el tercer capítulo,}} se simulan diversas situaciones para evaluar el rendimiento del sistema completo, entre ellas estarían variar el número de vehículos, el radio de la circunferencia o el ajuste de la ganancia del algoritmo de ascenso de gradiente.
+	\item \textbf{\emph{En el cuarto y ultimo capítulo,}} se recogen las conclusiones finales de evaluar el rendimiento del conjunto de algoritmos. Adicionalmente, se aportan mejoras que se pueden introducir o futuras investigaciones; como sería el caso de tener un cálculo del gradiente aplicando un algoritmo de consenso, cuyo intercambio de información se realiza de manera distribuida.
 \end{itemize}
- 
+
+Finalmente, en \cite{Git__todos} se encuentran todos los códigos utilizados para el desarrollo de la memoria.

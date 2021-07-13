@@ -112,8 +112,8 @@
 % | parentheses, brackets, etc.) and are not needed for the chosen     |
 % | style.                                                             |
 % +--------------------------------------------------------------------+
-
-\usepackage[sort&compress]{natbib}
+%\usepackage[numbers]{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 %\bibpunct{}{}{,}{s}{}{}
 %\usepackage{hypernat}
 
@@ -194,7 +194,7 @@
 \setcounter{page}{1}
 \input{agradecimientos.tex}
 \phantomsection
-\addcontentsline{toc}{chapter}{Agradecimientos}
+%\addcontentsline{toc}{chapter}{Agradecimientos}
 
 % +--------------------------------------------------------------------+
 % | We use the following code to suppress page numbers and other
@@ -230,10 +230,13 @@
 % | section.                                                           |
 % +--------------------------------------------------------------------+
 
-
+%\addcontentsline{toc}{chapter}{Resumen}
+\pdfbookmark[0]{Resumen}{PDFResumenPage}
+\input{resumen2.tex}
+\newpage
 
 \phantomsection
-\addcontentsline{toc}{chapter}{Índice}
+%\addcontentsline{toc}{chapter}{Índice}
 
 \tableofcontents
 \listoffigures
@@ -242,10 +245,10 @@
 %\hfill  Are these lines necessary?
 %\hfill
 
-\newpage
-\addcontentsline{toc}{chapter}{Resumen}
-\pdfbookmark[0]{Resumen}{PDFResumenPage}
-\input{resumen2.tex}
+%\newpage
+%\addcontentsline{toc}{chapter}{Resumen}
+%\pdfbookmark[0]{Resumen}{PDFResumenPage}
+%\input{resumen2.tex}
 
 %   \input{resumen.tex}
 %   \addcontentsline{toc}{chapter}{Resumen}
@@ -321,11 +324,13 @@
 % +--------------------------------------------------------------------+
 %\input{bibliography.tex}
 %\bibdata{references}
-\bibliographystyle{abbrv}
-%\bibliographystyle{ieeetr}
+%\bibliographystyle{abbrv}
+\phantomsection
+\bibliographystyle{ieeetr}
 %\bibliographystyle{unsrt}
 \bibliography{references}
 \addcontentsline{toc}{chapter}{Bibliografía}
+
 
 % +--------------------------------------------------------------------+
 % | Finally, we generate the appendix.  To add or delete appendices,
@@ -338,7 +343,7 @@
 % | file appendixX.tex for each appendix.                                 |
 % +--------------------------------------------------------------------+
 
-\appendix
+%\appendix
 %\input{appendixA.tex}
 %\input{appendixB.tex}
 %\input{appendixC.tex}

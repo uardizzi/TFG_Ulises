@@ -17,7 +17,7 @@ en donde, $c=\left(x,y\right)$ es el valor en el centro de la formación, $c_o=\
 
 Para los primeros 4 casos se particulariza la simulación del sistema en base a los siguientes datos: el centro se situé en $c_{o}=[600,600]$, el ángulo $\theta$ nulo, una desviación uniforme en ambos ejes $\sigma_{x}=\sigma_{y}=\frac{1}{1000}$ para que la matriz quede definida como $S = \bigl[\begin{smallmatrix}\frac{1000}{\sqrt{2}} & 0\\ 0 & \frac{1000}{\sqrt{2}}\end{smallmatrix}\bigr]$  y cuyo volumen es $p = 1$.
 
-Se van a emplear 4 vehículos que parten de posiciones arbitrarias y convergen situado en el origen. El gradiente estimado, es en realidad las sucesivas posiciones de los centros de la formación circular descrita por los vehículos cuyo radio $D$ será 30, y desplazados siguiendo el algoritmo de ascenso de gradiente con una ganancia $\epsilon$=20.
+Se van a emplear 4 vehículos que parten de posiciones arbitrarias y convergen a un círculo con centro situado en el origen. El gradiente estimado, es en realidad las sucesivas posiciones de los centros de la formación circular descrita por los vehículos cuyo radio $D$ será 30, y desplazados siguiendo el algoritmo de ascenso de gradiente con una ganancia $\epsilon=20$. 
 
 En primer lugar, se demostrará el correcto funcionamiento de la coordinación ejercida por los vehículos a través de la siguiente figura:
 
@@ -36,17 +36,17 @@ En primer lugar, se demostrará el correcto funcionamiento de la coordinación e
 Un comentario destacable es que se deben imponer dos condiciones que necesariamente se deben cumplir para que el sistema avance satisfactoriamente. Estas son:
 
 \begin{itemize}
-	\item La primera es que el error de formación sea lo más próximo a 0 posible, es decir, que en la medida de lo que cabe los vehículos estarán dispuestos uniformemente en la circunferencia pero con un error que se adicionará al existente por la estima del gradiente. Por ello, se decide imponer que como mucho $e_{\theta}\leq{0.2}$ sobre la ecuación \ref{Error_Coordinacion}.
+	\item La primera es que el error de formación sea lo más próximo a 0 posible, es decir, que en la medida de lo que cabe los vehículos estarán dispuestos uniformemente en la circunferencia pero con un error que se adicionará al existente por la estima del gradiente. Por ello, se decide imponer que como mucho $\|e_{\theta}\|\leq{0.2}$ sobre la ecuación \ref{Error_Coordinacion}.
 	\item La segunda consiste en dar una solución satisfactoria para tomar en consideración que ya se ha llegado al punto de interés. Esto se debe a la dificultad de movimiento cuando estés muy cerca del máximo al gradiente hacerse prácticamente 0 y, por lo tanto la formación apenas avanza. Por ello, se impone que para satisfacer condición de máximo será solución al problema cuando $f(c)\geq{0.999}$.
 \end{itemize}
 
 Puede darse el caso de que la ultima de las condiciones no se cumpla. Esto se debe a que el máximo se encontraría definido en una zona plana, y por ende el avance por dicha zona se volvería inviable. Para solucionarlo, basta con imponer que se ha llegado satisfactoriamente al máximo si se lee continuamente el mismo valor sobre la función \ref{Funcion_Gaussiana_2} y a su vez el valor del gradiente es próximo a cero. 
 
-A continuación, se reflejará el camino siguiendo al gradiente estimado en comparación con el camino siguiendo el gradiente real, la evolución de cada componente del gradiente hasta llegar al punto máximo y finalmente una curva de error que posteriormente se definirá.
+A continuación, se reflejará el camino siguiendo al gradiente estimado en comparación con el camino siguiendo el gradiente real, la evolución de cada componente del gradiente hasta llegar al punto máximo y finalmente una curva de error que posteriormente se definirá. Es importante resaltar que los valores de las constantes vistas en el algoritmo de coordinación se van a dejar fijas, cuyos valores son: $k_{e}=5\cdot{10^{-5}}$, $k_{d}=60$ y $k_{r}=50$,
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.70\textwidth]{figures/Caso_Inicial/Caminos.eps}
+\includegraphics[width=0.60\textwidth]{figures/Caso_Inicial/Caminos.eps}
 \caption{Comparativa entre el camino descrito por el gradiente real y por el gradiente estimado.} \label{Dif_Caminos}
 \end{figure}
 
@@ -62,7 +62,7 @@ A continuación, se reflejará el camino siguiendo al gradiente estimado en comp
 \caption{Curva de error descrita por la estimación del gradiente.} \label{Curva_error}
 \end{figure}
 
-En la figura \ref{Dif_Caminos} se aprecia como claramente el avance obtenido por el gradiente estimado difiere del real pasando de una recta a definir prácticamente una espiral. Esto era un resultado bastante esperable al acumular un error equiparable al orden 2 de Taylor visto en la ecuación \ref{Fun_Esti}, además se adiciona el error del angulo entre vehículos visto en \ref{Error_Coordinacion} que provocará una estima del gradiente incluso más alejada de lo ideal. 
+En la figura \ref{Dif_Caminos} se aprecia como claramente el avance obtenido por el gradiente estimado difiere del real pasando de una recta a definir prácticamente una espiral. Esto era un resultado bastante esperable al acumular un error equiparable al orden 2 de Taylor visto en la ecuación \ref{Fun_Esti}, además se adiciona el error del ángulo entre vehículos visto en \ref{Error_Coordinacion} que provocará una estima del gradiente incluso más alejada de lo ideal. 
 
 Por otro lado, en la figura \ref{grad} se observa la variación de cada componente del  gradiente real frente al estimado, a pesar de que difieren notablemente se aprecia como al avanzar el sistema ambos gradientes convergen al mismo punto. Esto se traduce en que el gradiente estimado es capaz de guiar a la formación al punto con máxima concentración de sustancias.
 
@@ -81,21 +81,21 @@ La figura \ref{Curva_error} describe el error dado por la ecuación \ref{error_g
 \caption{Avance del sistema para diferentes valores de la posición inicial de la formación.} \label{Avance_Posicion}
 \end{figure}
 
-La primera situación planteada consiste en utilizar los datos descritos anteriormente\footnote[2]{N = 4, D = 30 y $\epsilon$=20} para evaluar el efecto que tiene partir desde diferentes puntos. Consecuentemente, se escogen cuatro vértices que forman una diagonal respecto al punto máximo siendo estos $x_o=[0,1200]$, $x_o=[1200,0]$, $x_o=[1200,1200]$ y el origen. El resultado esperable es que la trayectoria descrita posea el mismo punto final\footnote[3]{Máxima concentración de sustancias}, pero lo hará definiendo otra forma, tal como se observo en \ref{Dif_Caminos}. Finalmente, se contempla en la figura \ref{Gradiente_Diversos_Puntos} que las iteraciones persisten para cada punto de partida, por ende el error terminaría siendo similar a \ref{Curva_error} en todos los casos. 
+La primera situación planteada consiste en utilizar los datos descritos anteriormente\footnote[2]{N = 4, D = 30 y $\epsilon=20$} para evaluar el efecto que tiene partir desde diferentes puntos. Consecuentemente, se escogen cuatro vértices que forman una diagonal respecto al punto máximo siendo estos $x_o=[0,1200]$, $x_o=[1200,0]$, $x_o=[1200,1200]$ y el origen. El resultado esperable es que la trayectoria descrita posea el mismo punto final con destino a la máxima concentración de sustancias, pero la trayectoria seguirá el gradiente estimado, tal como se observo en \ref{Dif_Caminos}. Finalmente, se contempla en la figura \ref{Gradiente_Diversos_Puntos} que las iteraciones persisten para cada punto de partida, por ende el error terminaría siendo similar a \ref{Curva_error} en todos los casos. 
 
 \begin{figure}[H]
   \begin{center}
     \subfigure[Punto 0 0]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/Caso_Inicial/Figure_3.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/Caso_Inicial/Figure_3.eps}
         }
     \subfigure[Punto 0 1200]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/Posicion/0_1200.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/Posicion/0_1200.eps}
         }
 	\subfigure[Punto 1200 0]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/Posicion/1200_0.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/Posicion/1200_0.eps}
         }
 	\subfigure[Punto 1200 1200]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/Posicion/1200_1200.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/Posicion/1200_1200.eps}
         }
     \caption{Componentes del gradiente estimado y el real para diferentes valores de la posición inicial de la formación.}
     \label{Gradiente_Diversos_Puntos}
@@ -117,28 +117,28 @@ El número de agentes va a influir de dos maneras:
 	\item No obstante, si se tiene en cuenta el algoritmo de control de formación  cada vez que el número de agentes va creciendo se tienen más nodos dentro del sistema y por ello se ha de pasar mucha más información al presentar más nodos adyacentes, traduciéndose en una ralentización en la coordinación de los vehículos. A esto se le añade el tiempo que se tendría que esperar para que los $N$ vehículos se dispongan uniformemente en la formación.
 \end{enumerate}
 
-Se puede apreciar como la trayectoria descrita en \ref{N_Var} no cambia significativamente. Sin embargo, si tiene un impacto en el número de iteraciones \ref{Gradiente_N_Var} y en la reducción del error \ref{N_Var_Error}. Para este último caso, se tiene que a partir de un determinado número de agentes la influencia sobre el sistema se hace prácticamente inapreciable.
+Sin embargo, este ultimo punto solo es cierto para la simulación. En el caso de un sistema real la información que cada vehículo debe compartir es la misma, como mucho son dos vecinos y lógicamente por ese lado no hay ralentización.
+
+Se puede apreciar como la trayectoria descrita en \ref{N_Var} no cambia significativamente. Sin embargo, si tiene un impacto en el número de iteraciones \ref{Gradiente_N_Var} y en la reducción del error \ref{N_Var_Error}. Para este último caso, se tiene que a partir de un determinado número de agentes la influencia sobre el sistema se hace prácticamente inapreciable. Adicionalmente, se aprecia en la figura \ref{N4} que al principio las componentes del gradiente estimado presentan oscilaciones en sus valores. Dicho efecto se mitiga según se aumenta el número de agentes.
 
 \begin{figure}[H]
   \begin{center}
     \subfigure[N = 4]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/N/N4.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/N/N4.eps}
         }\label{N4}
     \subfigure[N = 6]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/N/N6.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/N/N6.eps}
         }
 	\subfigure[N = 8]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/N/N8.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/N/N8.eps}
         }
 	\subfigure[N = 10]{
-        \includegraphics[width=0.45\textwidth]{figures/Graficas_Nuevas/N/N10.eps}
+        \includegraphics[width=0.42\textwidth]{figures/Graficas_Nuevas/N/N10.eps}
         }
     \caption{Evaluación de las componentes del gradiente estimado y el real en función del número de agentes N.}
     \label{Gradiente_N_Var}
   \end{center}
 \end{figure}
-
-Adicionalmente, se aprecia en la figura \ref{N4} que al principio las componentes del gradiente estimado presentan oscilaciones en sus valores. Dicho efecto se mitiga según se aumenta el número de agentes.
 
 \begin{figure}[H]
 \centering
@@ -154,12 +154,41 @@ Adicionalmente, se aprecia en la figura \ref{N4} que al principio las componente
 \caption{Avance del sistema en función del radio D.} \label{D_Var}
 \end{figure}
 
-Imponiendo que N = 4 y $\epsilon$=20, se evalúa la influencia del radio D. Se aprecia que el sistema en sí es mucho más sensible al radio de la formación que al número de agentes. En la referencia \cite{Adicional_Estimacion_1} acota al error de la siguiente forma:
+Imponiendo que N = 4 y $\epsilon=20$, se evalúa la influencia del radio D. Se aprecia que el sistema en sí es mucho más sensible al radio de la formación que al número de agentes. En la referencia \cite{Adicional_Estimacion_1} acota al error de la siguiente forma:
 \begin{equation}\label{Depe}
 	||\hat{\nabla}f\left(c\right)-\nabla{f}\left(c\right)||\leqslant{D·L},
 \end{equation}
 
-en donde, $L$ es un escalar delimitado por el error de la serie de Taylor original. Si bien es cierto que el error depende del radio de la formación D de tal forma que un aumento conlleva a tener más error al darle mayor margen sobre la desigualdad \ref{Depe}.
+en donde, $L$ es un escalar delimitado por el error de la serie de Taylor original. Esta expresión acota al error de manera proporcional, es decir, un radio más grande implicaría tener mucho mas error, tal como se discutió en el capítulo 2 mediante la figura \ref{VARD}. No obstante, el margen de error introducido por el algoritmo de coordinación hace que la posición de los vehículos en torno a la circunferencia no sea perfecta, un ejemplo de una posible disposión de los vehículos se aprecia en la figura \ref{Grafo_Nuevo}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.50\textwidth]{figures/New_Grafo.eps}
+\caption{Ejemplo de la posición de los vehículos en la circunferencia de radio D.} \label{Grafo_Nuevo}
+\end{figure}
+
+Si se toma una parte del desarrollo de la expresión \ref{Fun_Esti}, cuyos detalles se encuentran en \cite{Estimacion_Gradiente}. Adquiere protagonismo la siguiente expresión:
+
+\begin{equation} \label{No_nulo} 
+	f\left(c\right)\cdot\frac{2}{N\cdot{D}^2}\cdot\sum_{i=1}^{N}\left(r_{i}-c\right)
+\end{equation}
+
+Esta expresión es nula siempre y cuando los vehículos estén dispuestos uniformemente en la circunferencia, como se comento antes con el error existente entre vehículos adyacentes introducido por el algoritmo de coordinación, una disposición perfectamente simétrica es imposible de conseguir. Por ende, la expresión \ref{No_nulo} nunca será nula, el valor del sumatorio se hará más grande entre más radio se tenga. Sin embargo, al estar divido por el radio al cuadrado el efecto se vuelve inversamente proporcional y la dependencia con el radio de la expresión \ref{Depe} se invalida.
+
+\begin{figure}[H]
+  \begin{center}
+    \subfigure[Sin coordinación]{
+        \includegraphics[width=0.40\textwidth]{figures/D_Solo_Lara.eps}
+        \label{SC}}
+    \subfigure[Con coordinación]{
+        \includegraphics[width=0.40\textwidth]{figures/Graficas_Nuevas/D/DVariable.eps}
+        \label{CC}}
+    \caption{Comparativa del error descrito por el gradiente estimado al variar el radio $D$.}
+    \label{D_Var_Error}
+  \end{center}
+\end{figure}
+
+En la figura \ref{D_Var_Error} se aprecia como la dependencia con el radio se invierte. En la figura \ref{SC}, el avance del sistema se simuló sin el algoritmo de coordinación manteniendo siempre los vehículos en la misma posición, encontrándose dispuestos perfectamente simétricos con respecto al centro de la formación. Por otro lado, al introducir el algoritmo de coordinación la dependencia se vuelve inversamente proporcional como se observa en la figura \ref{CC}. Este efecto se refuerza con la evolución de la comparativa entre las componentes del gradiente real y del estimado de la  figura \ref{Gradiente_Var_D}, en donde según se aumenta el radio las componentes se van asemejando.
 
 \begin{figure}[H]
   \begin{center}
@@ -178,16 +207,6 @@ en donde, $L$ es un escalar delimitado por el error de la serie de Taylor origin
     \caption{Evaluación de la componentes del gradiente estimado y el real en función del radio D.}
     \label{Gradiente_Var_D}
   \end{center}
-\end{figure}
-
-En la formación de control va a influir directamente el radio de la circunferencia dado que entre mayor sea D el error prefijado será menos restrictivo y por ende aprecias comportamientos oscilantes en las zonas lejanas al máximo de radiación.
-
-Evaluando únicamente al radio D se ve como a medida que su valor decrece el error aumenta y con ello el número de iteraciones de una forma mucho más notoria que el número de agentes. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.70\textwidth]{figures/Graficas_Nuevas/D/DVariable.eps}
-\caption{Error descrito por el gradiente estimado al variar el radio D.} \label{D_Var_Error}
 \end{figure}
 
 \section{Variación de la constante $\epsilon$}
@@ -210,13 +229,13 @@ El comportamiento de la ganancia $\epsilon$ presenta un efecto diferente sobre e
 
 \begin{figure}[H]
   \begin{center}
-    \subfigure[$\epsilon$ = 20]{
+    \subfigure[$\epsilon=20$]{
         \includegraphics[width=0.41\textwidth]{figures/Graficas_Nuevas/E/E20.eps}
         }
-    \subfigure[$\epsilon$ = 50]{
+    \subfigure[$\epsilon=50$]{
         \includegraphics[width=0.41\textwidth]{figures/Graficas_Nuevas/E/E50.eps}
         }
-	\subfigure[$\epsilon$ = 80]{
+	\subfigure[$\epsilon=80$]{
         \includegraphics[width=0.41\textwidth]{figures/Graficas_Nuevas/E/E80.eps}
         }
     \caption{Evaluación de las componentes del gradiente estimado y el real en función del peso $\epsilon$.}
@@ -255,7 +274,7 @@ Con esta nueva función surgen dos casos de interés:
 
 \begin{enumerate}
 	\item El primero es que se tienen múltiples máximos, en concreto, dos locales y el global. Por lo que puede suceder que dependiendo del número de agentes N, el radio D o la ganancia $\epsilon$ vaya hacia cualquiera de los tres. Sin embargo, como ya se hizo un estudio de la influencia de cada parametro, directamente se evalúan las posiciones de partida del enjambre para observar hacia que fuente de emisión converge.
-	\item El segundo son los dos puntos silla generados entre los tres máximos. Estos haciendo uso del gradiente real conformaban un problema al utilizar el algoritmo de ascenso de gradiente al hacerse $\nabla{f\left(c\right)}=0$. No obstante, se verá que en este caso eso no va a suceder.
+	\item El segundo son los dos puntos de silla generados entre los tres máximos. Estos haciendo uso del gradiente real conformaban un problema al utilizar el algoritmo de ascenso de gradiente al hacerse $\nabla{f\left(c\right)}=0$. No obstante, se verá que en este caso eso no va a suceder.
 \end{enumerate}
 	
 \begin{figure}[H]
@@ -266,7 +285,7 @@ Con esta nueva función surgen dos casos de interés:
 
 La trayectoria de color morado en \ref{Multiples_Fuentes} consistía en definir una situación inicial que se encuentre justo sobre el punto silla. 
 
-En el caso de utilizar el gradiente estimado los punto silla no van a suponer un problema al tener el gradiente un error, en este caso dicho error va a representar una ventaja dado que permite al algoritmo salirse de ese tipo de situaciones, es decir, los puntos sillas pasan desapercibidos gracias a la operación conjunta de los tres algoritmos.
+En el caso de utilizar el gradiente estimado los puntos de silla no van a suponer un problema al tener el gradiente un error, en este caso dicho error va a representar una ventaja dado que permite al algoritmo salirse de ese tipo de situaciones, es decir, los puntos sillas pasan desapercibidos gracias a la operación conjunta de los tres algoritmos.
 
 \begin{figure}[H]
   \begin{center}

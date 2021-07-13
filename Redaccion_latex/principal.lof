@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Ejemplo de USV. Figura obtenida de: \url {https://www.navalnews.com/naval-news/2019/02/eca-group-unveils-inspector-125-unsinkable-usv/}}}{2}{figure.1.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Ejemplo de USV. Figura obtenida de: \cite {Imagen_Tomada}}}{2}{figure.1.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Representación de una función gaussiana}}{10}{figure.2.1}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Función definida en 3D}}}{10}{figure.2.1}%
@@ -16,7 +16,7 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {D = 100}}}{18}{figure.2.6}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {D = 10}}}{18}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Grafo descrito por 4 vehículos. Definido por los nodos $\mathcal {V}=\left \lbrace {1,2,3,4}\right \rbrace $ y las aristas $\mathcal {E}_1$, $\mathcal {E}_2$ y $\mathcal {E}_3$}}{21}{figure.2.7}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Disposición de dos vehículos orbitando en dos circunferencias diferentes y alterando su velocidad angular para converger circunferencia objetivo.}}{22}{figure.2.8}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Disposición de dos vehículos orbitando en dos circunferencias diferentes y alterando su velocidad angular para converger a la circunferencia objetivo.}}{22}{figure.2.8}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Diagrama de flujo que describe la dinámica del sistema.}}{25}{figure.2.9}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Vehículos dispuestos en torno a la formación. El punto rojo representa el círculo al que quieren converger y las diferentes líneas de colores que giran en torno a dicho punto son cada una de las trayectorias de los vehículos.}}{28}{figure.3.1}%
@@ -29,13 +29,14 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del número de agentes N.}}{34}{figure.3.8}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Error descrito por el gradiente estimado al variar el número de agentes N.}}{35}{figure.3.9}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Avance del sistema en función del radio D.}}{35}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Evaluación de la componentes del gradiente estimado y el real en función del radio D.}}{36}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Error descrito por el gradiente estimado al variar el radio D.}}{37}{figure.3.12}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Avance del sistema en función del radio peso $\epsilon $.}}{38}{figure.3.13}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Error descrito por el gradiente estimado al variar el peso $\epsilon $.}}{38}{figure.3.14}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del peso $\epsilon $.}}{39}{figure.3.15}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Resultado de sumar las tres funciones gaussianas. Nuevo modelo para la simulación.}}{40}{figure.3.16}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Avance definido sobre el plano con múltiples fuentes en tres puntos diferentes}}{41}{figure.3.17}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Comparación del valor máximo de ambas fuentes}}{42}{figure.3.18}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Evaluación de las componentes del gradiente estimado según la fuente objetivo y el punto de partida}}{42}{figure.3.19}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Ejemplo de la posición de los vehículos en la circunferencia de radio D.}}{36}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparativa del error descrito por el gradiente estimado al variar el radio $D$.}}{37}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Evaluación de la componentes del gradiente estimado y el real en función del radio D.}}{38}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Avance del sistema en función del radio peso $\epsilon $.}}{39}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Error descrito por el gradiente estimado al variar el peso $\epsilon $.}}{39}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Evaluación de las componentes del gradiente estimado y el real en función del peso $\epsilon $.}}{40}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Resultado de sumar las tres funciones gaussianas. Nuevo modelo para la simulación.}}{41}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Avance definido sobre el plano con múltiples fuentes en tres puntos diferentes}}{42}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Comparación del valor máximo de ambas fuentes}}{43}{figure.3.19}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Evaluación de las componentes del gradiente estimado según la fuente objetivo y el punto de partida}}{43}{figure.3.20}%
 \addvspace {10\p@ }

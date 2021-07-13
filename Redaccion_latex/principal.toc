@@ -1,9 +1,6 @@
 \babel@toc {spanish}{}
 \babel@toc {spanish}{}
-\contentsline {chapter}{Agradecimientos}{\es@scroman {ii}}{section*.1}%
-\contentsline {chapter}{Índice}{\es@scroman {iii}}{section*.2}%
 \contentsline {chapter}{Índice de figuras}{\es@scroman {v}}{chapter*.4}%
-\contentsline {chapter}{Resumen}{\es@scroman {vii}}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivación}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Estado del arte}{3}{section.1.2}%
@@ -20,7 +17,7 @@
 \contentsline {section}{\numberline {3.1}Variación del punto inicial}{31}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Variación del número de agentes N}{33}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Variación del radio D}{35}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Variación de la constante $\epsilon $}{37}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Evaluación con múltiples fuentes}{40}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Conclusiones y futuras investigaciones}{43}{chapter.4}%
-\contentsline {chapter}{Bibliografía}{46}{chapter*.5}%
+\contentsline {section}{\numberline {3.4}Variación de la constante $\epsilon $}{38}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Evaluación con múltiples fuentes}{41}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Conclusiones y futuras investigaciones}{44}{chapter.4}%
+\contentsline {chapter}{Bibliografía}{47}{chapter*.6}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  12 JUL 2021 05:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.29)  13 JUL 2021 20:01
 entering extended mode
 **./principal.tex
 (principal.tex
@@ -890,7 +890,7 @@ LaTeX Info: Redefining \nameref on input line 156.
 
 \c@lstlisting=\count349
  (title.tex
-<figures/escudo.jpg, id=113, 210.7875pt x 240.9pt>
+<figures/escudo.jpg, id=102, 210.7875pt x 240.9pt>
 File: figures/escudo.jpg Graphic file (type jpg)
 <use figures/escudo.jpg>
 Package pdftex.def Info: figures/escudo.jpg  used on input line 43.
@@ -900,67 +900,51 @@ Package pdftex.def Info: figures/escudo.jpg  used on input line 43.
 
 {C:/Users/tutir/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./figures/escud
 o.jpg>] [0]
-<figures/cc-by-nc-sa.png, id=128, 323.2075pt x 112.42pt>
+<figures/cc-by-nc-sa.png, id=117, 323.2075pt x 112.42pt>
 File: figures/cc-by-nc-sa.png Graphic file (type png)
 <use figures/cc-by-nc-sa.png>
 Package pdftex.def Info: figures/cc-by-nc-sa.png  used on input line 49.
 (pdftex.def)             Requested size: 323.20671pt x 112.41972pt.
 ) (agradecimientos.tex [1 <./figures/cc-by-nc-sa.png>]) [2]
-(principal.toc
+(resumen2.tex) [3] (principal.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
 
 (C:\Users\tutir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 
 (C:\Users\tutir\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 8.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 5.
 
 
 (C:\Users\tutir\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [3
-
-])
+))
 \tf@toc=\write5
 \openout5 = `principal.toc'.
 
 
-[4] (principal.lof
+[4
+
+] (principal.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-.
-
-(C:\Users\tutir\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (26.87862pt too wide) in paragraph at lines 4--4
- [][] []\T1/cmr/m/n/12 Ejemplo de USV. Fi-gu-ra ob-te-ni-da de: [][]$\T1/cmtt/m
-/n/12 https : / / www . navalnews . com / naval-[]news / 
- []
-
-[5
+ [5
 
 ])
 \tf@lof=\write6
 \openout6 = `principal.lof'.
 
- [6] (resumen2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-) [7] (chapter1.tex
+ [6] (chapter1.tex
 Cap\'{\i }tulo 1.
 [1
 
@@ -983,7 +967,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/USV-eps-converted-to.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/USV-eps-converted-to.pdf, id=266, 803.0pt x 602.25pt>
+<figures/USV-eps-converted-to.pdf, id=250, 803.0pt x 602.25pt>
 File: figures/USV-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/USV-eps-converted-to.pdf>
 Package pdftex.def Info: figures/USV-eps-converted-to.pdf  used on input line 2
@@ -1014,7 +998,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Gaussiana-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Gaussiana-eps-converted-to.pdf, id=345, 462.72874pt x 346.29375pt>
+<figures/Gaussiana-eps-converted-to.pdf, id=329, 462.72874pt x 346.29375pt>
 File: figures/Gaussiana-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Gaussiana-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Gaussiana-eps-converted-to.pdf  used on input 
@@ -1035,7 +1019,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/CurvasNivelGauss-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/CurvasNivelGauss-eps-converted-to.pdf, id=346, 505.89pt x 360.34625pt>
+<figures/CurvasNivelGauss-eps-converted-to.pdf, id=330, 505.89pt x 360.34625pt>
 
 File: figures/CurvasNivelGauss-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/CurvasNivelGauss-eps-converted-to.pdf>
@@ -1059,7 +1043,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Disposicion_Robots-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Disposicion_Robots-eps-converted-to.pdf, id=396, 279.0425pt x 89.33376
+<figures/Disposicion_Robots-eps-converted-to.pdf, id=379, 279.0425pt x 89.33376
 pt>
 File: figures/Disposicion_Robots-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Disposicion_Robots-eps-converted-to.pdf>
@@ -1086,7 +1070,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/p3-eps-converted-to.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/p3-eps-converted-to.pdf, id=412, 113.42375pt x 87.32625pt>
+<figures/p3-eps-converted-to.pdf, id=396, 113.42375pt x 87.32625pt>
 File: figures/p3-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/p3-eps-converted-to.pdf>
 Package pdftex.def Info: figures/p3-eps-converted-to.pdf  used on input line 13
@@ -1107,12 +1091,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/N2_RFIJO-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/N2_RFIJO-eps-converted-to.pdf, id=426, 505.89pt x 360.34625pt>
+<figures/N2_RFIJO-eps-converted-to.pdf, id=410, 505.89pt x 360.34625pt>
 File: figures/N2_RFIJO-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/N2_RFIJO-eps-converted-to.pdf>
 Package pdftex.def Info: figures/N2_RFIJO-eps-converted-to.pdf  used on input l
 ine 159.
-(pdftex.def)             Requested size: 177.41086pt x 126.3705pt.
+(pdftex.def)             Requested size: 186.74301pt x 133.01811pt.
 Package epstopdf Info: Source file: <figures/N3_RFIJO.eps>
 (epstopdf)                    date: 2021-05-29 02:07:08
 (epstopdf)                    size: 25005 bytes
@@ -1127,12 +1111,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/N3_RFIJO-eps-converted-to.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/N3_RFIJO-eps-converted-to.pdf, id=427, 505.89pt x 360.34625pt>
+<figures/N3_RFIJO-eps-converted-to.pdf, id=411, 505.89pt x 360.34625pt>
 File: figures/N3_RFIJO-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/N3_RFIJO-eps-converted-to.pdf>
 Package pdftex.def Info: figures/N3_RFIJO-eps-converted-to.pdf  used on input l
 ine 162.
-(pdftex.def)             Requested size: 177.41086pt x 126.3705pt.
+(pdftex.def)             Requested size: 186.74301pt x 133.01811pt.
 [14 <./figures/N2_RFIJO-eps-converted-to.pdf> <./figures/N3_RFIJO-eps-converted
 -to.pdf>]
 Package epstopdf Info: Source file: <figures/R100_NFIJO.eps>
@@ -1149,7 +1133,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/R100_NFIJO-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/R100_NFIJO-eps-converted-to.pdf, id=491, 505.89pt x 360.34625pt>
+<figures/R100_NFIJO-eps-converted-to.pdf, id=476, 505.89pt x 360.34625pt>
 File: figures/R100_NFIJO-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/R100_NFIJO-eps-converted-to.pdf>
 Package pdftex.def Info: figures/R100_NFIJO-eps-converted-to.pdf  used on input
@@ -1169,7 +1153,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/R10_NFIJO-eps-converted-to.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/R10_NFIJO-eps-converted-to.pdf, id=492, 505.89pt x 360.34625pt>
+<figures/R10_NFIJO-eps-converted-to.pdf, id=477, 505.89pt x 360.34625pt>
 File: figures/R10_NFIJO-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/R10_NFIJO-eps-converted-to.pdf>
 Package pdftex.def Info: figures/R10_NFIJO-eps-converted-to.pdf  used on input 
@@ -1191,7 +1175,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Coord_1-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Coord_1-eps-converted-to.pdf, id=568, 257.96375pt x 229.85875pt>
+<figures/Coord_1-eps-converted-to.pdf, id=553, 257.96375pt x 229.85875pt>
 File: figures/Coord_1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Coord_1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Coord_1-eps-converted-to.pdf  used on input li
@@ -1212,7 +1196,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Grafo-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Grafo-eps-converted-to.pdf, id=601, 196.735pt x 163.61125pt>
+<figures/Grafo-eps-converted-to.pdf, id=586, 196.735pt x 163.61125pt>
 File: figures/Grafo-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Grafo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Grafo-eps-converted-to.pdf  used on input line
@@ -1234,7 +1218,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Pruea_Coordinacion-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Pruea_Coordinacion-eps-converted-to.pdf, id=611, 165.61874pt x 131.491
+<figures/Pruea_Coordinacion-eps-converted-to.pdf, id=596, 165.61874pt x 131.491
 26pt>
 File: figures/Pruea_Coordinacion-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Pruea_Coordinacion-eps-converted-to.pdf>
@@ -1256,7 +1240,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Flujo2-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Flujo2-eps-converted-to.pdf, id=634, 1194.4625pt x 1365.1pt>
+<figures/Flujo2-eps-converted-to.pdf, id=620, 1194.4625pt x 1365.1pt>
 File: figures/Flujo2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Flujo2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Flujo2-eps-converted-to.pdf  used on input lin
@@ -1283,7 +1267,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Cap_3/Pos_Aleatorias-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Cap_3/Pos_Aleatorias-eps-converted-to.pdf, id=666, 462.72874pt x 346.2
+<figures/Cap_3/Pos_Aleatorias-eps-converted-to.pdf, id=652, 462.72874pt x 346.2
 9375pt>
 File: figures/Cap_3/Pos_Aleatorias-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1306,7 +1290,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Cap_3/Avance-eps-converted-to.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Cap_3/Avance-eps-converted-to.pdf, id=667, 462.72874pt x 346.29375pt>
+<figures/Cap_3/Avance-eps-converted-to.pdf, id=653, 462.72874pt x 346.29375pt>
 File: figures/Cap_3/Avance-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Cap_3/Avance-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Cap_3/Avance-eps-converted-to.pdf  used on inp
@@ -1330,14 +1314,14 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Caso_Inicial/Caminos-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Caso_Inicial/Caminos-eps-converted-to.pdf, id=706, 462.72874pt x 346.2
+<figures/Caso_Inicial/Caminos-eps-converted-to.pdf, id=691, 462.72874pt x 346.2
 9375pt>
 File: figures/Caso_Inicial/Caminos-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Caso_Inicial/Caminos-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Caso_Inicial/Caminos-eps-converted-to.pdf  use
 d on input line 49.
-(pdftex.def)             Requested size: 326.80385pt x 244.57568pt.
+(pdftex.def)             Requested size: 280.12166pt x 209.63782pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Caso_Inicial/Figur
 e_3.eps>
 (epstopdf)                    date: 2021-06-19 12:36:05
@@ -1356,7 +1340,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Caso_Inicial/Figure_3-
 eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
 ion <1.5> allowed
-<figures/Graficas_Nuevas/Caso_Inicial/Figure_3-eps-converted-to.pdf, id=707, 46
+<figures/Graficas_Nuevas/Caso_Inicial/Figure_3-eps-converted-to.pdf, id=692, 46
 2.72874pt x 346.29375pt>
 File: figures/Graficas_Nuevas/Caso_Inicial/Figure_3-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -1383,7 +1367,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Caso_Inicial/Figure_5-
 eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most vers
 ion <1.5> allowed
-<figures/Graficas_Nuevas/Caso_Inicial/Figure_5-eps-converted-to.pdf, id=737, 46
+<figures/Graficas_Nuevas/Caso_Inicial/Figure_5-eps-converted-to.pdf, id=723, 46
 2.72874pt x 346.29375pt>
 File: figures/Graficas_Nuevas/Caso_Inicial/Figure_5-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -1411,7 +1395,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/4_puntos_observar_forma/Figure_1-eps-c
 onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
 1.5> allowed
-<figures/4_puntos_observar_forma/Figure_1-eps-converted-to.pdf, id=842, 462.728
+<figures/4_puntos_observar_forma/Figure_1-eps-converted-to.pdf, id=828, 462.728
 74pt x 346.29375pt>
 File: figures/4_puntos_observar_forma/Figure_1-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1438,7 +1422,7 @@ c file (type pdf)
 <use figures/Graficas_Nuevas/Caso_Inicial/Figure_3-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Caso_Inicial/Figure_3-eps-conv
 erted-to.pdf  used on input line 90.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Posicion/0_1200.ep
 s>
 (epstopdf)                    date: 2021-06-19 19:42:55
@@ -1456,14 +1440,14 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Posicion/0_1200-eps-co
 nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
 .5> allowed
-<figures/Graficas_Nuevas/Posicion/0_1200-eps-converted-to.pdf, id=868, 462.7287
+<figures/Graficas_Nuevas/Posicion/0_1200-eps-converted-to.pdf, id=853, 462.7287
 4pt x 346.29375pt>
 File: figures/Graficas_Nuevas/Posicion/0_1200-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figures/Graficas_Nuevas/Posicion/0_1200-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Posicion/0_1200-eps-converted-
 to.pdf  used on input line 93.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Posicion/1200_0.ep
 s>
 (epstopdf)                    date: 2021-06-19 23:14:08
@@ -1481,14 +1465,14 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Posicion/1200_0-eps-co
 nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
 .5> allowed
-<figures/Graficas_Nuevas/Posicion/1200_0-eps-converted-to.pdf, id=869, 462.7287
+<figures/Graficas_Nuevas/Posicion/1200_0-eps-converted-to.pdf, id=854, 462.7287
 4pt x 346.29375pt>
 File: figures/Graficas_Nuevas/Posicion/1200_0-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figures/Graficas_Nuevas/Posicion/1200_0-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Posicion/1200_0-eps-converted-
 to.pdf  used on input line 96.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Posicion/1200_1200
 .eps>
 (epstopdf)                    date: 2021-06-19 21:32:04
@@ -1507,14 +1491,14 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Posicion/1200_1200-eps
 -converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version
  <1.5> allowed
-<figures/Graficas_Nuevas/Posicion/1200_1200-eps-converted-to.pdf, id=870, 462.7
+<figures/Graficas_Nuevas/Posicion/1200_1200-eps-converted-to.pdf, id=855, 462.7
 2874pt x 346.29375pt>
 File: figures/Graficas_Nuevas/Posicion/1200_1200-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figures/Graficas_Nuevas/Posicion/1200_1200-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Posicion/1200_1200-eps-convert
 ed-to.pdf  used on input line 99.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/N_Var_R_50/Figure_1.eps>
 (epstopdf)                    date: 2021-06-02 22:34:46
 (epstopdf)                    size: 2552998 bytes
@@ -1530,7 +1514,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/N_Var_R_50/Figure_1-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/N_Var_R_50/Figure_1-eps-converted-to.pdf, id=871, 462.72874pt x 346.29
+<figures/N_Var_R_50/Figure_1-eps-converted-to.pdf, id=856, 462.72874pt x 346.29
 375pt>
 File: figures/N_Var_R_50/Figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/N_Var_R_50/Figure_1-eps-converted-to.pdf>
@@ -1550,21 +1534,21 @@ Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/N4.eps>
 (epstopdf)                    size: 228232 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/N/N
 4-eps-converted-to.pdf figures/Graficas_Nuevas/N/N4.eps>
-(epstopdf)             \includegraphics on input line 126.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/N/N4-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Graficas_Nuevas/N/N4-eps-converted-to.pdf, id=1064, 462.72874pt x 346.
+<figures/Graficas_Nuevas/N/N4-eps-converted-to.pdf, id=1050, 462.72874pt x 346.
 29375pt>
 File: figures/Graficas_Nuevas/N/N4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Graficas_Nuevas/N/N4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/N/N4-eps-converted-to.pdf  use
-d on input line 126.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+d on input line 128.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/N6.eps>
 (epstopdf)                    date: 2021-06-20 15:05:25
 (epstopdf)                    size: 1040980 bytes
@@ -1574,21 +1558,21 @@ Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/N6.eps>
 (epstopdf)                    size: 195009 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/N/N
 6-eps-converted-to.pdf figures/Graficas_Nuevas/N/N6.eps>
-(epstopdf)             \includegraphics on input line 129.
+(epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/N/N6-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Graficas_Nuevas/N/N6-eps-converted-to.pdf, id=1065, 462.72874pt x 346.
+<figures/Graficas_Nuevas/N/N6-eps-converted-to.pdf, id=1051, 462.72874pt x 346.
 29375pt>
 File: figures/Graficas_Nuevas/N/N6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Graficas_Nuevas/N/N6-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/N/N6-eps-converted-to.pdf  use
-d on input line 129.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+d on input line 131.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/N8.eps>
 (epstopdf)                    date: 2021-06-20 18:47:35
 (epstopdf)                    size: 944320 bytes
@@ -1598,21 +1582,21 @@ Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/N8.eps>
 (epstopdf)                    size: 179154 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/N/N
 8-eps-converted-to.pdf figures/Graficas_Nuevas/N/N8.eps>
-(epstopdf)             \includegraphics on input line 132.
+(epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/N/N8-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/Graficas_Nuevas/N/N8-eps-converted-to.pdf, id=1066, 462.72874pt x 346.
+<figures/Graficas_Nuevas/N/N8-eps-converted-to.pdf, id=1052, 462.72874pt x 346.
 29375pt>
 File: figures/Graficas_Nuevas/N/N8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/Graficas_Nuevas/N/N8-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/N/N8-eps-converted-to.pdf  use
-d on input line 132.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+d on input line 134.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/N10.eps>
 (epstopdf)                    date: 2021-06-20 20:41:41
 (epstopdf)                    size: 2193631 bytes
@@ -1622,21 +1606,21 @@ d-to.pdf>
 (epstopdf)                    size: 383747 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/N/N
 10-eps-converted-to.pdf figures/Graficas_Nuevas/N/N10.eps>
-(epstopdf)             \includegraphics on input line 135.
+(epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/N/N10-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/N/N10-eps-converted-to.pdf, id=1067, 462.72874pt x 346
+<figures/Graficas_Nuevas/N/N10-eps-converted-to.pdf, id=1053, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/N/N10-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/N/N10-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/N/N10-eps-converted-to.pdf  us
-ed on input line 135.
-(pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
+ed on input line 137.
+(pdftex.def)             Requested size: 196.0823pt x 146.74223pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/N/Figure_5.eps>
 (epstopdf)                    date: 2021-06-20 21:44:45
 (epstopdf)                    size: 1309850 bytes
@@ -1653,7 +1637,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/N/Figure_5-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<figures/Graficas_Nuevas/N/Figure_5-eps-converted-to.pdf, id=1069, 462.72874pt 
+<figures/Graficas_Nuevas/N/Figure_5-eps-converted-to.pdf, id=1054, 462.72874pt 
 x 346.29375pt>
 File: figures/Graficas_Nuevas/N/Figure_5-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1679,7 +1663,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figures/Dif_R_BU/Figure_1-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Dif_R_BU/Figure_1-eps-converted-to.pdf, id=1291, 462.72874pt x 346.293
+<figures/Dif_R_BU/Figure_1-eps-converted-to.pdf, id=1275, 462.72874pt x 346.293
 75pt>
 File: figures/Dif_R_BU/Figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Dif_R_BU/Figure_1-eps-converted-to.pdf>
@@ -1697,6 +1681,71 @@ LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
 59.
 
 Missing character: There is no · in font cmr12!
+Package epstopdf Info: Source file: <figures/New_Grafo.eps>
+(epstopdf)                    date: 2021-07-13 16:23:54
+(epstopdf)                    size: 682464 bytes
+(epstopdf)             Output file: <figures/New_Grafo-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-07-13 16:43:46
+(epstopdf)                    size: 22012 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/New_Grafo-eps-conve
+rted-to.pdf figures/New_Grafo.eps>
+(epstopdf)             \includegraphics on input line 166.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/New_Grafo-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/New_Grafo-eps-converted-to.pdf, id=1339, 141.52875pt x 122.4575pt>
+File: figures/New_Grafo-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/New_Grafo-eps-converted-to.pdf>
+Package pdftex.def Info: figures/New_Grafo-eps-converted-to.pdf  used on input 
+line 166.
+(pdftex.def)             Requested size: 233.43234pt x 201.9938pt.
+[36 <./figures/New_Grafo-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/D_Solo_Lara.eps>
+(epstopdf)                    date: 2021-07-13 16:09:29
+(epstopdf)                    size: 12199323 bytes
+(epstopdf)             Output file: <figures/D_Solo_Lara-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-07-13 16:45:10
+(epstopdf)                    size: 2179851 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/D_Solo_Lara-eps-con
+verted-to.pdf figures/D_Solo_Lara.eps>
+(epstopdf)             \includegraphics on input line 182.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/D_Solo_Lara-eps-converted-to.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/D_Solo_Lara-eps-converted-to.pdf, id=1353, 462.72874pt x 346.29375pt>
+File: figures/D_Solo_Lara-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/D_Solo_Lara-eps-converted-to.pdf>
+Package pdftex.def Info: figures/D_Solo_Lara-eps-converted-to.pdf  used on inpu
+t line 182.
+(pdftex.def)             Requested size: 186.74301pt x 139.7515pt.
+Package epstopdf Info: Source file: <figures/Graficas_Nuevas/D/DVariable.eps>
+(epstopdf)                    date: 2021-06-24 18:31:54
+(epstopdf)                    size: 6685121 bytes
+(epstopdf)             Output file: <figures/Graficas_Nuevas/D/DVariable-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-07-03 18:28:21
+(epstopdf)                    size: 1284887 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/D/D
+Variable-eps-converted-to.pdf figures/Graficas_Nuevas/D/DVariable.eps>
+(epstopdf)             \includegraphics on input line 185.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/D/DVariable-eps-conver
+ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
+<figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf, id=1354, 462.72874pt
+ x 346.29375pt>
+File: figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Graficas_Nuevas/D/DVariable-eps-converted-to.p
+df  used on input line 185.
+(pdftex.def)             Requested size: 186.74301pt x 139.7515pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/D/D30.eps>
 (epstopdf)                    date: 2021-06-22 22:34:09
 (epstopdf)                    size: 8955917 bytes
@@ -1706,20 +1755,20 @@ d-to.pdf>
 (epstopdf)                    size: 1545496 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/D/D
 30-eps-converted-to.pdf figures/Graficas_Nuevas/D/D30.eps>
-(epstopdf)             \includegraphics on input line 168.
+(epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/D/D30-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf, id=1353, 462.72874pt x 346
+<figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf, id=1359, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf  us
-ed on input line 168.
+ed on input line 197.
 (pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/D/D40.eps>
 (epstopdf)                    date: 2021-06-22 23:38:04
@@ -1730,20 +1779,20 @@ d-to.pdf>
 (epstopdf)                    size: 1270180 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/D/D
 40-eps-converted-to.pdf figures/Graficas_Nuevas/D/D40.eps>
-(epstopdf)             \includegraphics on input line 171.
+(epstopdf)             \includegraphics on input line 200.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/D/D40-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/D/D40-eps-converted-to.pdf, id=1354, 462.72874pt x 346
+<figures/Graficas_Nuevas/D/D40-eps-converted-to.pdf, id=1360, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/D/D40-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/D/D40-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/D/D40-eps-converted-to.pdf  us
-ed on input line 171.
+ed on input line 200.
 (pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/D/D50.eps>
 (epstopdf)                    date: 2021-06-24 13:24:35
@@ -1754,20 +1803,20 @@ d-to.pdf>
 (epstopdf)                    size: 1047373 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/D/D
 50-eps-converted-to.pdf figures/Graficas_Nuevas/D/D50.eps>
-(epstopdf)             \includegraphics on input line 174.
+(epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/D/D50-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/D/D50-eps-converted-to.pdf, id=1355, 462.72874pt x 346
+<figures/Graficas_Nuevas/D/D50-eps-converted-to.pdf, id=1361, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/D/D50-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/D/D50-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/D/D50-eps-converted-to.pdf  us
-ed on input line 174.
+ed on input line 203.
 (pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/D/D60.eps>
 (epstopdf)                    date: 2021-06-24 14:47:15
@@ -1778,59 +1827,34 @@ d-to.pdf>
 (epstopdf)                    size: 884765 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/D/D
 60-eps-converted-to.pdf figures/Graficas_Nuevas/D/D60.eps>
-(epstopdf)             \includegraphics on input line 177.
+(epstopdf)             \includegraphics on input line 206.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/D/D60-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf, id=1356, 462.72874pt x 346
+<figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf, id=1362, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf  us
-ed on input line 177.
+ed on input line 206.
 (pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
-[36 <./figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf> <./figures/Graficas_
-Nuevas/D/D40-eps-converted-to.pdf> <./figures/Graficas_Nuevas/D/D50-eps-convert
-ed-to.pdf> <./figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figures/Graficas_Nuevas/D/DVariable.eps>
-(epstopdf)                    date: 2021-06-24 18:31:54
-(epstopdf)                    size: 6685121 bytes
-(epstopdf)             Output file: <figures/Graficas_Nuevas/D/DVariable-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2021-07-03 18:28:21
-(epstopdf)                    size: 1284887 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/D/D
-Variable-eps-converted-to.pdf figures/Graficas_Nuevas/D/DVariable.eps>
-(epstopdf)             \includegraphics on input line 189.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/D/DVariable-eps-conver
-ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
-allowed
-<figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf, id=1581, 462.72874pt
- x 346.29375pt>
-File: figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf Graphic file (ty
-pe pdf)
-<use figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf>
-Package pdftex.def Info: figures/Graficas_Nuevas/D/DVariable-eps-converted-to.p
-df  used on input line 189.
-(pdftex.def)             Requested size: 326.80385pt x 244.57568pt.
+[37 <./figures/D_Solo_Lara-eps-converted-to.pdf> <./figures/Graficas_Nuevas/D/D
+Variable-eps-converted-to.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\epsilon' on input line 193.
+(hyperref)                removing `\epsilon' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 193.
+(hyperref)                removing `math shift' on input line 212.
 
 Package epstopdf Info: Source file: <figures/Epsilon_variante/Figure_1.eps>
 (epstopdf)                    date: 2021-06-02 02:50:50
@@ -1841,22 +1865,24 @@ erted-to.pdf>
 (epstopdf)                    size: 526080 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Epsilon_variante/Fi
 gure_1-eps-converted-to.pdf figures/Epsilon_variante/Figure_1.eps>
-(epstopdf)             \includegraphics on input line 199.
+(epstopdf)             \includegraphics on input line 218.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Epsilon_variante/Figure_1-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<figures/Epsilon_variante/Figure_1-eps-converted-to.pdf, id=1584, 462.72874pt x
+<figures/Epsilon_variante/Figure_1-eps-converted-to.pdf, id=1452, 462.72874pt x
  346.29375pt>
 File: figures/Epsilon_variante/Figure_1-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/Epsilon_variante/Figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Epsilon_variante/Figure_1-eps-converted-to.pdf
-  used on input line 199.
+  used on input line 218.
 (pdftex.def)             Requested size: 336.14314pt x 251.56116pt.
-[37 <./figures/Graficas_Nuevas/D/DVariable-eps-converted-to.pdf>]
+[38 <./figures/Graficas_Nuevas/D/D30-eps-converted-to.pdf> <./figures/Graficas_
+Nuevas/D/D40-eps-converted-to.pdf> <./figures/Graficas_Nuevas/D/D50-eps-convert
+ed-to.pdf> <./figures/Graficas_Nuevas/D/D60-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/E/EPSILONVAR2.eps>
 
 (epstopdf)                    date: 2021-06-25 12:40:19
@@ -1867,22 +1893,22 @@ converted-to.pdf>
 (epstopdf)                    size: 1609399 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/E/E
 PSILONVAR2-eps-converted-to.pdf figures/Graficas_Nuevas/E/EPSILONVAR2.eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/E/EPSILONVAR2-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<figures/Graficas_Nuevas/E/EPSILONVAR2-eps-converted-to.pdf, id=1630, 462.72874
+<figures/Graficas_Nuevas/E/EPSILONVAR2-eps-converted-to.pdf, id=1676, 462.72874
 pt x 346.29375pt>
 File: figures/Graficas_Nuevas/E/EPSILONVAR2-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/Graficas_Nuevas/E/EPSILONVAR2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/E/EPSILONVAR2-eps-converted-to
-.pdf  used on input line 205.
+.pdf  used on input line 224.
 (pdftex.def)             Requested size: 336.14314pt x 251.56116pt.
-[38 <./figures/Epsilon_variante/Figure_1-eps-converted-to.pdf> <./figures/Grafi
+[39 <./figures/Epsilon_variante/Figure_1-eps-converted-to.pdf> <./figures/Grafi
 cas_Nuevas/E/EPSILONVAR2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/E/E20.eps>
 (epstopdf)                    date: 2021-06-24 20:53:18
@@ -1893,20 +1919,20 @@ d-to.pdf>
 (epstopdf)                    size: 1546089 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/E/E
 20-eps-converted-to.pdf figures/Graficas_Nuevas/E/E20.eps>
-(epstopdf)             \includegraphics on input line 215.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/E/E20-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf, id=1699, 462.72874pt x 346
+<figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf, id=1745, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf  us
-ed on input line 215.
+ed on input line 234.
 (pdftex.def)             Requested size: 191.41623pt x 143.24951pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/E/E50.eps>
 (epstopdf)                    date: 2021-06-24 23:13:22
@@ -1917,20 +1943,20 @@ d-to.pdf>
 (epstopdf)                    size: 1996404 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/E/E
 50-eps-converted-to.pdf figures/Graficas_Nuevas/E/E50.eps>
-(epstopdf)             \includegraphics on input line 218.
+(epstopdf)             \includegraphics on input line 237.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/E/E50-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/E/E50-eps-converted-to.pdf, id=1700, 462.72874pt x 346
+<figures/Graficas_Nuevas/E/E50-eps-converted-to.pdf, id=1746, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/E/E50-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/E/E50-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/E/E50-eps-converted-to.pdf  us
-ed on input line 218.
+ed on input line 237.
 (pdftex.def)             Requested size: 191.41623pt x 143.24951pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/E/E80.eps>
 (epstopdf)                    date: 2021-06-25 11:49:21
@@ -1941,22 +1967,22 @@ d-to.pdf>
 (epstopdf)                    size: 2379799 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/E/E
 80-eps-converted-to.pdf figures/Graficas_Nuevas/E/E80.eps>
-(epstopdf)             \includegraphics on input line 221.
+(epstopdf)             \includegraphics on input line 240.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/E/E80-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/Graficas_Nuevas/E/E80-eps-converted-to.pdf, id=1701, 462.72874pt x 346
+<figures/Graficas_Nuevas/E/E80-eps-converted-to.pdf, id=1747, 462.72874pt x 346
 .29375pt>
 File: figures/Graficas_Nuevas/E/E80-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/Graficas_Nuevas/E/E80-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/E/E80-eps-converted-to.pdf  us
-ed on input line 221.
+ed on input line 240.
 (pdftex.def)             Requested size: 191.41623pt x 143.24951pt.
-[39 <./figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf> <./figures/Graficas_
+[40 <./figures/Graficas_Nuevas/E/E20-eps-converted-to.pdf> <./figures/Graficas_
 Nuevas/E/E50-eps-converted-to.pdf> <./figures/Graficas_Nuevas/E/E80-eps-convert
 ed-to.pdf>]
 Package epstopdf Info: Source file: <figures/Casos_Especiales/Gaussiana.eps>
@@ -1968,20 +1994,20 @@ verted-to.pdf>
 (epstopdf)                    size: 38969 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Casos_Especiales/Ga
 ussiana-eps-converted-to.pdf figures/Casos_Especiales/Gaussiana.eps>
-(epstopdf)             \includegraphics on input line 245.
+(epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Casos_Especiales/Gaussiana-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<figures/Casos_Especiales/Gaussiana-eps-converted-to.pdf, id=1871, 505.89pt x 3
+<figures/Casos_Especiales/Gaussiana-eps-converted-to.pdf, id=1917, 505.89pt x 3
 60.34625pt>
 File: figures/Casos_Especiales/Gaussiana-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/Casos_Especiales/Gaussiana-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Casos_Especiales/Gaussiana-eps-converted-to.pd
-f  used on input line 245.
+f  used on input line 264.
 (pdftex.def)             Requested size: 210.08768pt x 149.64537pt.
 Package epstopdf Info: Source file: <figures/Casos_Especiales/Gaussiana_meh.eps
 >
@@ -1993,22 +2019,22 @@ Package epstopdf Info: Source file: <figures/Casos_Especiales/Gaussiana_meh.eps
 (epstopdf)                    size: 354485 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Casos_Especiales/Ga
 ussiana_meh-eps-converted-to.pdf figures/Casos_Especiales/Gaussiana_meh.eps>
-(epstopdf)             \includegraphics on input line 248.
+(epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Casos_Especiales/Gaussiana_meh-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figures/Casos_Especiales/Gaussiana_meh-eps-converted-to.pdf, id=1872, 462.7287
+<figures/Casos_Especiales/Gaussiana_meh-eps-converted-to.pdf, id=1918, 462.7287
 4pt x 346.29375pt>
 File: figures/Casos_Especiales/Gaussiana_meh-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use figures/Casos_Especiales/Gaussiana_meh-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Casos_Especiales/Gaussiana_meh-eps-converted-t
-o.pdf  used on input line 248.
+o.pdf  used on input line 267.
 (pdftex.def)             Requested size: 210.08768pt x 157.22572pt.
-[40 <./figures/Casos_Especiales/Gaussiana-eps-converted-to.pdf> <./figures/Caso
+[41 <./figures/Casos_Especiales/Gaussiana-eps-converted-to.pdf> <./figures/Caso
 s_Especiales/Gaussiana_meh-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/Multi_Gaussiana/Figure_1.eps>
 (epstopdf)                    date: 2021-06-03 09:51:33
@@ -2019,22 +2045,22 @@ rted-to.pdf>
 (epstopdf)                    size: 1508005 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Multi_Gaussiana/Fig
 ure_1-eps-converted-to.pdf figures/Multi_Gaussiana/Figure_1.eps>
-(epstopdf)             \includegraphics on input line 263.
+(epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Multi_Gaussiana/Figure_1-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf, id=1919, 462.72874pt x 
+<figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf, id=1965, 462.72874pt x 
 346.29375pt>
 File: figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf 
- used on input line 263.
+ used on input line 282.
 (pdftex.def)             Requested size: 350.14851pt x 262.04463pt.
-[41 <./figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf>]
+[42 <./figures/Multi_Gaussiana/Figure_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Multi/FC.eps>
 (epstopdf)                    date: 2021-06-25 23:47:35
 (epstopdf)                    size: 4335079 bytes
@@ -2044,20 +2070,20 @@ rted-to.pdf>
 (epstopdf)                    size: 780803 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/Mul
 ti/FC-eps-converted-to.pdf figures/Graficas_Nuevas/Multi/FC.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Multi/FC-eps-converted
 -to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
 owed
-<figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf, id=1942, 462.72874pt x 
+<figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf, id=1988, 462.72874pt x 
 346.29375pt>
 File: figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf 
- used on input line 275.
+ used on input line 294.
 (pdftex.def)             Requested size: 186.74301pt x 139.7515pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Multi/f_99.eps>
 (epstopdf)                    date: 2021-07-03 23:24:00
@@ -2068,20 +2094,20 @@ verted-to.pdf>
 (epstopdf)                    size: 284867 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/Mul
 ti/f_99-eps-converted-to.pdf figures/Graficas_Nuevas/Multi/f_99.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Multi/f_99-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<figures/Graficas_Nuevas/Multi/f_99-eps-converted-to.pdf, id=1943, 462.72874pt 
+<figures/Graficas_Nuevas/Multi/f_99-eps-converted-to.pdf, id=1989, 462.72874pt 
 x 346.29375pt>
 File: figures/Graficas_Nuevas/Multi/f_99-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/Graficas_Nuevas/Multi/f_99-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Multi/f_99-eps-converted-to.pd
-f  used on input line 278.
+f  used on input line 297.
 (pdftex.def)             Requested size: 186.74301pt x 139.7515pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Multi/00MULTI.eps>
 
@@ -2093,20 +2119,20 @@ converted-to.pdf>
 (epstopdf)                    size: 1573510 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/Mul
 ti/00MULTI-eps-converted-to.pdf figures/Graficas_Nuevas/Multi/00MULTI.eps>
-(epstopdf)             \includegraphics on input line 289.
+(epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Multi/00MULTI-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<figures/Graficas_Nuevas/Multi/00MULTI-eps-converted-to.pdf, id=1945, 462.72874
+<figures/Graficas_Nuevas/Multi/00MULTI-eps-converted-to.pdf, id=1991, 462.72874
 pt x 346.29375pt>
 File: figures/Graficas_Nuevas/Multi/00MULTI-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/Graficas_Nuevas/Multi/00MULTI-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Multi/00MULTI-eps-converted-to
-.pdf  used on input line 289.
+.pdf  used on input line 308.
 (pdftex.def)             Requested size: 186.74301pt x 139.7515pt.
 Package epstopdf Info: Source file: <figures/Graficas_Nuevas/Multi/Fun_3.eps>
 (epstopdf)                    date: 2021-07-03 23:51:57
@@ -2117,106 +2143,117 @@ nverted-to.pdf>
 (epstopdf)                    size: 615630 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/Graficas_Nuevas/Mul
 ti/Fun_3-eps-converted-to.pdf figures/Graficas_Nuevas/Multi/Fun_3.eps>
-(epstopdf)             \includegraphics on input line 292.
+(epstopdf)             \includegraphics on input line 311.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/Graficas_Nuevas/Multi/Fun_3-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<figures/Graficas_Nuevas/Multi/Fun_3-eps-converted-to.pdf, id=1946, 462.72874pt
+<figures/Graficas_Nuevas/Multi/Fun_3-eps-converted-to.pdf, id=1992, 462.72874pt
  x 346.29375pt>
 File: figures/Graficas_Nuevas/Multi/Fun_3-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/Graficas_Nuevas/Multi/Fun_3-eps-converted-to.pdf>
 Package pdftex.def Info: figures/Graficas_Nuevas/Multi/Fun_3-eps-converted-to.p
-df  used on input line 292.
+df  used on input line 311.
 (pdftex.def)             Requested size: 186.74301pt x 139.7515pt.
-) (chapter4.tex [42 <./figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf> <
+) (chapter4.tex [43 <./figures/Graficas_Nuevas/Multi/FC-eps-converted-to.pdf> <
 ./figures/Graficas_Nuevas/Multi/f_99-eps-converted-to.pdf> <./figures/Graficas_
 Nuevas/Multi/00MULTI-eps-converted-to.pdf> <./figures/Graficas_Nuevas/Multi/Fun
 _3-eps-converted-to.pdf>]
 Cap\'{\i }tulo 4.
-[43
+[44
 
-]) (principal.bbl [44] [45
+]) (principal.bbl [45]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+.
 
-]
-Underfull \hbox (badness 2452) in paragraph at lines 57--64
-[]\T1/cmr/m/n/12 UNIDIR.  Swarm ro-bo-tics: Tech-ni-cal and ope-ra-tio-nal over
--view of the next
+(C:\Users\tutir\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 6188) in paragraph at lines 4--6
+[]\T1/cmr/m/n/12 X. Va-vas-seur, ``na-val-news.'' [][]$\T1/cmtt/m/n/12 https : 
+/ / www . navalnews . com / naval-[]news / 2019 / 02 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
-\T1/cmr/m/n/12 ge-ne-ra-tion of au-to-no-mous sys-tems.  [][]$\T1/cmtt/m/n/12 h
-ttps : / / unidir . org / publication /
+Underfull \hbox (badness 3919) in paragraph at lines 17--22
+[]\T1/cmr/m/n/12 UNIDIR, ``Swarm ro-bo-tics: Tech-ni-cal and ope-ra-tio-nal ove
+r-view of the next
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+\T1/cmr/m/n/12 ge-ne-ra-tion of au-to-no-mous sys-tems.'' [][]$\T1/cmtt/m/n/12 
+https : / / unidir . org / publication /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
 \T1/cmtt/m/n/12 swarm-[]robotics-[]technical-[]and-[]operational-[]overview-[]n
 ext-[]generation \
  []
 
-) [46] (principal.aux
+[46
+
+]) [47] (principal.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 Package rerunfilecheck Info: File `principal.out' has not changed.
-(rerunfilecheck)             Checksum: 39099AC16FBD462CB11E7F838D0F0AFD;4627.
+(rerunfilecheck)             Checksum: 562B24567CD191F1D57E2A37CEB756AB;4349.
  ) 
 Here is how much of TeX's memory you used:
- 25708 strings out of 479334
- 482221 string characters out of 2857084
- 771954 words of memory out of 3000000
- 42410 multiletter control sequences out of 15000+200000
- 426555 words of font info for 87 fonts, out of 3000000 for 9000
+ 25736 strings out of 479334
+ 482914 string characters out of 2857084
+ 772256 words of memory out of 3000000
+ 42432 multiletter control sequences out of 15000+200000
+ 426240 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,15n,103p,1155b,862s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+ <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1095.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1000.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbi1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecit1200.pk> <C:\Users\tutir\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\tutir\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\tutir\AppDat
+0\tcrm1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm1095.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1000.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\tutir\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\tutir\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\tutir\AppDat
 a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\tutir\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\
-tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\
-Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk
-> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
-440.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecbx2488.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecbx1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\ecbx1440.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\tutir\AppData\Local\MiKTeX\font
-s/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/tutir/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tutir/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tutir/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users
-/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr6.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/tutir/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tutir/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tutir/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tutir/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
-/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb>
-Output written on principal.pdf (55 pages, 26623146 bytes).
+tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\
+Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk
+> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2
+488.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecbx1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecbx1440.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecrm1200.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\tutir\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/tutir/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tutir/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tutir/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/tutir
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Use
+rs/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Users/tutir/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tutir/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/tutir/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tutir/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users
+/tutir/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb>
+Output written on principal.pdf (55 pages, 28816738 bytes).
 PDF statistics:
- 2852 PDF objects out of 2984 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2863 PDF objects out of 2984 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
+ 455 words of extra memory for PDF output out of 10000 (max. 10000000)
 

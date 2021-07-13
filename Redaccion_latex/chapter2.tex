@@ -60,7 +60,7 @@ Se puede particularizar a un caso más sencillo para facilitar el análisis del 
 
 \begin{itemize}
 	\item Normalizar el volumen encerrado debajo de la gaussiana para que éste tenga un valor unitario. Esto se obtiene definiendo a $p=\frac{1}{2\cdot{\pi}\sigma_{x}\sigma_{y}}$.
-	\item Presentar desviaciones iguales en ambos ejes $\sigma_{x}=\sigma_{y}=\sigma$.
+	\item Presentar desviaciones iguales en ambos ejes $\sigma_{x}=\sigma_{y}=\sigma$ y considerar el sistema de refencia sin rotaciones $\theta=0$.
 \end{itemize}
 \newpage
 Con estas dos consideraciones la expresión final sería:
@@ -83,9 +83,9 @@ Para la obtención del gradiente en un sistema real basta con que un único agen
 \caption{Disposición de los agentes en torno a la formación circular.} \label{Disp:Robots}
 \end{figure}
 
-Adicionalmente, cada uno de los agentes deberá tener la capacidad de medir la intensidad de la señal mediante un sensor. En términos matemáticos, la distribución de la señal es una función espacial bidimensional que representa un campo escalar con un máximo o mínimo definido justo en la posición donde dicha fuente se localiza. Por lo tanto, se va a considerar que la señal es emitida por una única fuente de modo que su punto critico en $z_*$ es el único máximo definido del campo escalar.
+Adicionalmente, cada uno de los agentes deberá tener la capacidad de medir la intensidad de la señal mediante un sensor. En términos matemáticos, la distribución de la señal es una función espacial bidimensional que representa un campo escalar con un máximo o mínimo definido justo en la posición donde dicha fuente se localiza. Por lo tanto, se va a considerar que la señal es emitida por una única fuente de modo que su punto crítico en $z_*$ es el único máximo definido del campo escalar.
 
-Por ello, es necesario definir una función $f\left(x\right)$ con $x\in\mathbb{R}^{n}$, además de ser continua y derivable para todo x. En torno a un punto $x_*$, se aplica el desarrollo en serie de Taylor para un valor de $n\geq{2}$ de la siguiente forma:
+Supongamos que definimos el campo escalar mediante una función $f\left(x\right)$ con $x\in\mathbb{R}^{n}$, además de ser continua y derivable para todo x. En torno a un punto $x_*$, se aplica el desarrollo en serie de Taylor para un valor de $n\geq{2}$ de la siguiente forma:
 
 \begin{equation}\label{TaylorNormal}
 	f\left(x\right)=f\left(x_{*}\right)+\mathrm{\nabla}{f}{\left(x_{*}\right)}^{T}\left(x-x_{*}\right)+\frac{1}{2!}\cdot{\left(x-x_{*}\right)}^{T}\cdot{H}\left({f}\left(x_{*}\right)\right) 		\cdot\left(x-x_{*}\right)+O\left(x_{*}^3\right)
@@ -123,7 +123,7 @@ Particularizando para una distribución uniforme a lo largo de un circulo con ra
 	r_i = c + D\cdot{R}_{\phi_i}\cdot{e}\hspace{10mm}{i = 1,...,N}
 \end{equation}
 
-Definiendo a $r_{i}$ como la posición del robot i con respecto al radio del circulo, ${\phi }_{i}=\phi_{o}+\frac{2\cdot\pi\cdot{i}}{N}$ es el ángulo de rotación, $R_{\phi }$ es la matriz de rotación definida como $\left[ \begin{array}{cc} {\cos\phi} & -{\sin\phi } \\  {\sin\phi } & {\cos\phi } \end{array} \right]$ y  $e\ =\ {\left[1,0\right]}^T$.
+Definiendo a $r_{i}$ como la posición del robot i con respecto al radio del circulo, donde ${\phi }_{i}=\phi_{o}+\frac{2\cdot\pi\cdot{i}}{N}$ es el ángulo de rotación, $R_{\phi }$ es la matriz de rotación definida como $\left[ \begin{array}{cc} {\cos\phi} & -{\sin\phi } \\  {\sin\phi } & {\cos\phi } \end{array} \right]$ y  $e\ =\ {\left[1,0\right]}^T$.
 
 \begin{figure}[htb]
 \centering
@@ -132,7 +132,7 @@ Definiendo a $r_{i}$ como la posición del robot i con respecto al radio del cir
 \end{figure}
 
 
-A partir de la ecuación \ref{TaylorNormal} pero haciendo la expansión de Taylor hasta el termino primer orden sobre cada una de las medidas $f\left(r_i\right)$ en torno al punto c y redefiniendo a $D$ como $D=||r_i-c||$, se obtiene:
+A partir de la ecuación \ref{TaylorNormal} pero haciendo la expansión de Taylor hasta el término de primer orden sobre cada una de las medidas $f\left(r_i\right)$ en torno al punto c y redefiniendo a $D$ como $D=||r_i-c||$, se obtiene:
 
 \begin{equation} \label{PuntoPartidaGradiente}
 	f\left(r_i\right)-f\left(c\right)=\nabla{f\left(c\right)}^T\left(r_i-c\right)+\varphi_i\left(D,c\right)\hspace{12mm}\forall{i},\cdots,N,
@@ -143,10 +143,10 @@ en donde, $\varphi_i\left(D,c\right)$ denota el remanente de la expansión de Ta
 Para obtener una estima del gradiente se utilizan las medidas tomadas por los sensores de cada uno los vehículos $f\left(r_i\right)$ y la posición de cada uno de ellos por medio de:
 
 \begin{equation}\label{Fun_Esti}
-	\frac{2}{N\cdot{D}^2}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\underbrace{\nabla{f}\left(c\right) + \varphi\left(D,c\right)}_{:=\hat{\nabla}{f}\left(c\right)}
+	\frac{2}{N\cdot{D}^2}\cdot\sum_{i=1}^{N}f(r_{i})\cdot(r_{i}-c)=\underbrace{\nabla{f}\left(c\right) + \varphi\left(D,c\right)}_{:=\hat{\nabla}{f}\left(c\right)}\hspace{8mm}con\hspace{1mm}{N>2}
 \end{equation}
 
-La obtención de dicha expresión, así como la prueba de su validez pueden encontrar en \cite{Estimacion_Gradiente} y \cite{Adicional_Estimacion_1}. En donde, $\varphi\left(D,c\right)$ es el error de la aproximación. 
+La obtención de dicha expresión, así como la prueba de su validez pueden encontrar en \cite{Estimacion_Gradiente} y \cite{Adicional_Estimacion_1}. En donde, $\varphi\left(D,c\right)$ es el error de la aproximación.
 
 Para evaluar la fiabilidad de la estima se va a comparar con el valor exacto del gradiente obtenido sobre una función gaussiana y como influye en la bondad de dicho cálculo el número de agentes empleados y el radio del círculo de la formación. Por ello, se establece una posición arbitraria para el centro de la formación  se encuentre relativamente lejos de la fuente. Así pues, se evalúa la variación del número de agentes con un radio unitario y del radio con el mínimo de número de agentes posibles.
 
@@ -155,17 +155,17 @@ Finalmente, se hace uso de la función \ref{Funcion_Gaussiana} cuyos valores ser
 \begin{figure}[H]
   \begin{center}
     \subfigure[N = 2]{
-        \includegraphics[width=0.38\textwidth]{figures/N2_RFIJO.eps}
+        \includegraphics[width=0.40\textwidth]{figures/N2_RFIJO.eps}
         \label{N = 2}}
     \subfigure[N = 3]{
-        \includegraphics[width=0.38\textwidth]{figures/N3_RFIJO.eps}
+        \includegraphics[width=0.40\textwidth]{figures/N3_RFIJO.eps}
         \label{N = 3}}
     \caption{Estimación del gradiente en función del número de agentes con D = 1. La figura de la izquierda es un caso no valido y se aporta para demostrar un mal uso del algoritmo.}
     \label{NAGENTSEST}
   \end{center}
 \end{figure}
 
-Se observa en la figura \ref{N = 3} que aplicar tan solo el algoritmo de estima da un error prácticamente inapreciable. Por otra parte, el algoritmo solo funciona si cooperan tres o más vehículos, tal como se anticipaba en \cite{Estimacion_Gradiente}. De manera análoga, se procede a evaluar el efecto del radio:
+Nótese en la figura \ref{N = 2} que el algoritmo solo es válido para un número de agentes superior a 2. También, se observa en la figura \ref{N = 3} que aplicar tan solo el algoritmo de estima da un error prácticamente inapreciable. Por otra parte, el algoritmo solo funciona si cooperan tres o más vehículos, tal como se anticipaba en \cite{Estimacion_Gradiente}. De manera análoga, se procede a evaluar el efecto del radio:
 
 \begin{figure}[H]
   \begin{center}
@@ -180,7 +180,7 @@ Se observa en la figura \ref{N = 3} que aplicar tan solo el algoritmo de estima 
   \end{center}
 \end{figure}
 
-En el caso de figura \ref{VARD} la relación es inversa al número de agentes, es decir, cuanto menor es el radio menor será el error. No obstante, se deben considerar las dimensiones de los vehículos dado que si el radio es excesivamente pequeño pueden generarse colisiones entre ellos.
+En el caso de figura \ref{VARD} cuanto menor es el radio menor será el error. No obstante, se deben considerar las dimensiones de los vehículos dado que si el radio es excesivamente pequeño pueden generarse colisiones entre ellos.
 
 Se destaca que en ambos casos el gradiente apunta en la dirección del centro de la gaussiana, es decir, presenta una orientación en razón de un ángulo de $\frac{\pi}{4}$ con respecto al centro de la formación ubicada en el origen.
 
@@ -201,7 +201,7 @@ El modelo dinámico que se utilizará considera vehículos tipo monociclo con ve
   \right.
 \end{equation}
 
-en donde, $u_{r}$ es la velocidad que ha de ser constante, además de tener el mismo valor para cada uno de los vehículos, $m=\left[\cos\left(\psi_{i}\right)\hspace{2mm}\sin\left(\psi_{i}\right)\right]^{T}$ con $\psi_{i}$ siendo el angulo de orientación y $u_{\psi_{i}}$ es la entrada de control que otorga la capacidad a cada uno de los vehículos $i$ de converger a una circunferencia deseada. Posteriormente, se explicará más detalladamente su efecto sobre cada vehículo.
+en donde, $u_{r}$ es la velocidad que ha de ser constante, además de tener el mismo valor para cada uno de los vehículos, $m=\left[\cos\left(\psi_{i}\right)\hspace{2mm}\sin\left(\psi_{i}\right)\right]^{T}$ con $\psi_{i}$ siendo el angulo de orientación y $u_{\psi_{i}}$ es la entrada de control que otorga la capacidad a cada uno de los vehículos $i$ de cambiar su orientación. Posteriormente, se explicará más detalladamente su efecto sobre cada vehículo.
 
 Los vehículos modificarán su velocidad angular en función de girar en torno a un punto central y manipular la circunferencia que describen. De este modo, se puede hacer que aumenten o disminuyan la distancia angular entre ellos.
 
@@ -212,7 +212,7 @@ Definiéndose como objetivo el describir un \textbf{algoritmo distribuido para c
 	\item Posteriormente, deberán mantener la misma distancia angular entre sus vecinos distribuyéndose uniformemente en torno a dicha circunferencia. Esto será posible al minimizar el error existente entre sus ángulos como más adelante se comentará.
 \end{itemize}
 
-Para la primera de las tareas se basa en la idea de un único vehículo arranque desde cualquier posición y sea capaz de converger a una circunferencia deseada.
+Para la primera de las tareas se basa en la idea de que un único vehículo arranque desde cualquier posición y sea capaz de converger a una circunferencia deseada.
 
 Se debe definir una trayectoria circular de radio $D\in\mathbb{R}^+$ puede ser descrita mediante la siguiente ecuación:
 \begin{equation}	
@@ -221,7 +221,7 @@ Se debe definir una trayectoria circular de radio $D\in\mathbb{R}^+$ puede ser d
 
 en donde, $\varphi\left(p\right)=p_{x}^{2}+p_{y}^{2}-D^{2}$ y $p=\left[p_x\hspace{2mm}p_y\right]^T$ representa la posición cartesiana con respecto a un marco de coordenadas cuyo origen esta en el centro de $C_D$. Si $\nabla{\varphi\left(p\right)}\neq{0}\Longleftrightarrow{p}\neq{0}$ todo el conjunto de niveles $\varphi_c\left(p\right)$ se pueden parametrizar. Se puede obtener un ángulo $\theta$ asociado a la posición del vehículo mediante:
 
-\begin{equation}
+\begin{equation} \label{Angulo_Teta}
 	\theta\left(p\right)=atan2\left(p_{y},p_{x}\right)\in\left(-\pi,\pi\right]
 \end{equation} 
 
@@ -234,7 +234,7 @@ El vehículo a su vez posee dos vectores necesarios para hacerlo converger a la 
 \caption{Un único vehículo con la capacidad de converger a una circunferencia destino. Figura tomada de: \cite{Control_Formacion}} \label{Primera_Acción_Control}
 \end{figure}
 
-En la figura \ref{Primera_Acción_Control} se aprecia un vector $\hat{\dot{p_d}}$. Este es un vector unitario que indica la velocidad deseada por el vehículo. Dicha velocidad modifica la orientación del vehículo para que sea capaz de ser tangencial a la trayectoria en todo punto. El vector $\hat{\dot{p_d}}$ se describe como la suma de:
+En la figura \ref{Primera_Acción_Control} se aprecia un vector $\hat{\dot{p_d}}$. Este es un vector unitario que indica la dirección de la velocidad deseada por el vehículo. Dicha velocidad modifica la orientación del vehículo para que sea capaz de ser tangencial a la trayectoria en todo punto. El vector $\hat{\dot{p_d}}$ se describe como la suma de:
 
 \begin{equation} \label{Control_for}
 	\hat{\dot{p_{d}}}\left(p\right)\triangleq\tau\left(p\right)-k_{e}\cdot{e\left(p\right)}\cdot{n\left(p\right)},
@@ -262,11 +262,11 @@ en donde, $k_{d}\in\mathbb{R}^{+}$ es una constante que altera la velocidad de c
 
 Esta expresión surge de la necesidad de relacionar la dirección deseada por el vehículo $\hat{\dot{p_{d}}}$ con su ángulo de orientación. Los detalles de la obtención de dicha expresión se pueden consultar en \cite{Base_Coorporativa}.
 
-Por otro lado, el termino $k_{d}\cdot{\hat{\dot{p}}^{T}}\cdot{E}\cdot{\hat{\dot{p_{d}}}}$ es el producto escalar de la dirección actual del vehículo con un vector perpendicular a éste. El vector perpendicular sale de realizar el producto entre la matriz de rotación $E$ con el vector unitario de la velocidad deseada $\hat{\dot{p_{d}}}$.
+Por otro lado, el termino $k_{d}\cdot{\hat{\dot{p}}^{T}}\cdot{E}\cdot{\hat{\dot{p_{d}}}}$ es el producto escalar de la dirección actual del vehículo con un vector perpendicular a la dirección deseada. El vector perpendicular sale de realizar el producto entre la matriz de rotación $E$ con el vector unitario de la velocidad deseada $\hat{\dot{p_{d}}}$.
 \newpage
 Retomando la figura \ref{Primera_Acción_Control}, el resultado de aplicar la entrada de control es buscar que el ángulo formado entre $\dot{p}$ y $\hat{\dot{p_d}}$ se haga 0, es decir, que sean paralelos y apunten tanto la dirección actual del vehículo como la deseada en la misma dirección. Esto se consigue en el momento que el vector perpendicular ${E}\cdot{\hat{\dot{p_{d}}}}$ tenga un ángulo de $\frac{\pi}{2}$ con respecto a la dirección actual del vehículo $\hat{\dot{p}}$.
 
-Este control se aplica a cada uno de los vehículos que posteriormente componen la formación circular,  para el siguiente paso es necesario definir el grafo descrito entre dichos vehículos.
+Este control se aplica a cada uno de los vehículos que posteriormente componen la formación circular,  para el siguiente paso es preciso establecer relaciones entre vehículos, para ello se hará uso de un grafo.
 
 Inicialmente, se considera una formación con $N\geq{2}$ vehículos cuyas posiciones $p$ se definen por $p_i\in\mathbb{R}^2$ con $i\in\left\lbrace{1,\cdots,N}\right\rbrace$, en donde los vehículos son capaces de detectar las posiciones relativas con respecto a sus vecinos. Evaluando la relación existente entre los vecinos ésta puede describirse mediante un grafo $\mathbb{G}=\left(\mathcal{V},\mathcal{E}\right)$ siendo $\mathcal{V}=\left\lbrace{1,\cdots,N}\right\rbrace$ los distintos nodos pertenecientes al grafo, en donde cada uno de ellos representa un vehículo y $\mathcal{E}\subseteq\mathcal{V}\times\mathcal{V}$ sus aristas. El conjunto de los vecinos del vehículo $i$ esta definido por $\mathcal{N}_i\triangleq\left\lbrace{j\in\mathcal{V}:\left(i,j\right)\in\mathcal{E}}\right\rbrace$. Dos vértices son adyacentes si $\left(i,j\right)\in\mathcal{E}$. Un camino desde el nodo $i$ hasta el nodo $j$ es una secuencia que comienza en $i$ y termina en $j$, de manera que dos vértices consecutivos son adyacentes, y si $i=j$ el camino se le conoce como ciclo. \cite{Control_Formacion}
 
@@ -282,7 +282,7 @@ Asumiendo que el grafo $\mathbb{G}$ esta conectado, es decir, existe un camino q
   \right .
 \end{equation}
 
-en donde $\mathcal{E}^{cola}_{k}$ y $\mathcal{E}^{cabeza}_{k}$ representa los nodos cola y cabeza de la arista $\mathcal{E}_{k}$, es decir, $\mathcal{E}_{k}=\left(\mathcal{E}^{cola}_{k},\mathcal{E}^{cabeza}_{k}\right)$. 
+en donde $\mathcal{E}^{cola}_{k}$ y $\mathcal{E}^{cabeza}_{k}$ representa los nodos cola y cabeza de la arista $\mathcal{E}_{k}=\left(\mathcal{E}^{cola}_{k},\mathcal{E}^{cabeza}_{k}\right)$. 
 
 A continuación, la figura \ref{Grafo_Demostracion} ilustrará un grafo formado por cuatro vehículos cuya matriz de incidencia se define como:
 
@@ -298,7 +298,7 @@ A continuación, la figura \ref{Grafo_Demostracion} ilustrará un grafo formado 
 	\end{aligned}
 \end{equation}
 
-Se destaca que van a estar conectados todos los nodos adyacentes salvo el primero con el último.
+En general se emplearán formaciones en las que van a estar conectados todos los nodos adyacentes salvo el primero con el último.
 
 \begin{figure}[H]
 \centering
@@ -318,10 +318,10 @@ en donde, $u_{r}$ es la velocidad lineal que ha de ser constante como se describ
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.60\textwidth]{figures/Pruea_Coordinacion.eps}
-\caption{Disposición de dos vehículos orbitando en dos circunferencias diferentes y alterando su velocidad angular para converger circunferencia objetivo.} \label{Ejemplo_Coordinacion}
+\caption{Disposición de dos vehículos orbitando en dos circunferencias diferentes y alterando su velocidad angular para converger a la circunferencia objetivo.} \label{Ejemplo_Coordinacion}
 \end{figure}
 
-La idea es controlar el ángulo entre vehículos $z = B^{T}\cdot\theta$ modificando la trayectoria descrita. Se define:
+La idea es controlar el ángulo entre vehículos $z = B^{T}\cdot\theta$ modificando la trayectoria descrita. Siendo $z$ un vector que contiene la separación angular entre dos vecinos y $\theta$ es un vector que contiene apilados los ángulos. Dichos ángulos son los formados por cada vecino con el eje de las x mediante la ecuación \ref{Angulo_Teta} particularizando para cada vehículo $i$ como $\theta_{i}$. Se define:
 
 \begin{equation}\label{Control}
 	C_i\left(D,c_{i}\right)\triangleq\left\lbrace{p:\varphi\left(p\right)=c_{i}}\right\rbrace,
@@ -340,7 +340,7 @@ Se define a $c_i\triangleq{^{i}u}_{D}^{2}+2D\cdot{^i}u_{D},$ donde $^{i}u_{D}\in
 	x^2+y^2-D^2={^{i}}u_{D}^{2}+2D{^{i}}u_{D} \Leftrightarrow x^2+y^2-(D+{^{i}}u_{D})^2
 \end{equation}
 
-La acción de control adquiere el siguiente significado ${^{i}}{u}_{D}=k_{r}\sum_{i=1}^N{B_i}\cdot{e}$, definiendo a $B_i$ como cada una de las filas de la matriz de incidencia \ref{Incidence}, $k_r\in\mathbb{R}^{+}$ es una constante proporcional al error que se quiere corregir y $e$ se corresponde con el error en la distancia angular entre vehículos descrito como: 
+La acción de control adquiere el siguiente significado ${^{i}}{u}_{D}=k_{r}\sum_{i=1}^N{B_i}\cdot{e}$, definiendo a $B_i$ como cada una de las filas de la matriz de incidencia \ref{Incidence}, $k_r\in\mathbb{R}^{+}$ es una constante proporcional al error que se quiere corregir y $e$ se corresponde con el error en la distancia angular entre dos vehículos vecinos, descrito como: 
 
 \begin{equation} \label{Error_Coordinacion}
 	e_{\theta_{k}}\left(t\right)=z_{k}\left(t\right)-z_{k}^{*},
@@ -350,7 +350,7 @@ en donde, $e_{\theta_{k}}\in\left(-\pi,\pi\right]$ con $k\in\left\lbrace{1,\cdot
 
 Un aspecto a considerar es que se impone sobre $k_{r}$ la condición de $r-\pi\cdot{k_{r}}max\left(\left\lbrace\mathcal{N}_{i}\right\rbrace\right)>0$. Esta impide la posibilidad de tener radios negativos en \ref{Circulo_Neg}.
 
-El propósito de este control es permitir a los vehículos orbitar en torno a diferentes circunferencias en función del error existente en la distancia angular entre vehículos adyacentes. Este error va a actuar sobre el ángulo de orientación del vehículo descrito en la ecuación \ref{Action_Control} por medio de la expresión \ref{Orientacion_deseada}. Seguidamente, se dan dos posibles situaciones que pueden darse en base a todo lo definido hasta este punto:
+El propósito de este control es permitir a los vehículos orbitar en torno a diferentes circunferencias en función del error existente en la distancia angular entre vehículos adyacentes. Este error va a actuar sobre el ángulo de orientación del vehículo descrito en la ecuación \ref{Action_Control} por medio de la expresión \ref{Orientacion_deseada}. Seguidamente, se dan dos posibles situaciones en base a todo lo definido hasta este punto:
 
 \begin{itemize}
 	\item Si el error entre dos vehículos es positivo, el vehículo se encuentra orbitando en una circunferencia con mayor radio que la objetivo. Esto se traduce en una reducción en la velocidad angular $\omega_{i}$ correspondiente al vehículo $i$.\newpage
@@ -379,7 +379,7 @@ en donde, $c_k$ corresponde con el centro de la formación circular y $\epsilon\
 \caption{Diagrama de flujo que describe la dinámica del sistema.} \label{fig:Flujo}
 \end{figure}
 
-En la figura \ref{fig:Flujo} se pueden apreciar diferentes colores para diferenciar cada uno de los pasos a seguir antes de que los USVs lleguen a la zona con máximas sustancias contaminantes, desglosándolos estos serían:
+En la figura \ref{fig:Flujo} se pueden apreciar diferentes colores para diferenciar cada uno de los pasos a seguir antes de que los USVs lleguen a la zona con máxima concentración de sustancias contaminantes, desglosándolos estos serían:
 \newpage
 \begin{enumerate}
 	\item Se disponen los N agentes en el plano, es decir, se conoce la posición de cada uno de los USV en la superficie marítima.
