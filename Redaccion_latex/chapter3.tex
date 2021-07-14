@@ -159,7 +159,7 @@ Imponiendo que N = 4 y $\epsilon=20$, se evalúa la influencia del radio D. Se a
 	||\hat{\nabla}f\left(c\right)-\nabla{f}\left(c\right)||\leqslant{D·L},
 \end{equation}
 
-en donde, $L$ es un escalar delimitado por el error de la serie de Taylor original. Esta expresión acota al error de manera proporcional, es decir, un radio más grande implicaría tener mucho mas error, tal como se discutió en el capítulo 2 mediante la figura \ref{VARD}. No obstante, el margen de error introducido por el algoritmo de coordinación hace que la posición de los vehículos en torno a la circunferencia no sea perfecta, un ejemplo de una posible disposión de los vehículos se aprecia en la figura \ref{Grafo_Nuevo}.
+en donde, $L$ es un escalar delimitado por el error de la serie de Taylor original. Esta expresión acota al error de manera proporcional, es decir, un radio más grande implicaría tener mucho más error, tal como se discutió en el capítulo 2 mediante la figura \ref{VARD}. No obstante, el margen de error introducido por el algoritmo de coordinación hace que la posición de los vehículos en torno a la circunferencia no sea perfecta, un ejemplo de una posible disposión de los vehículos se aprecia en la figura \ref{Grafo_Nuevo}.
 
 \begin{figure}[H]
 \centering
@@ -167,13 +167,13 @@ en donde, $L$ es un escalar delimitado por el error de la serie de Taylor origin
 \caption{Ejemplo de la posición de los vehículos en la circunferencia de radio D.} \label{Grafo_Nuevo}
 \end{figure}
 
-Si se toma una parte del desarrollo de la expresión \ref{Fun_Esti}, cuyos detalles se encuentran en \cite{Estimacion_Gradiente}. Adquiere protagonismo la siguiente expresión:
+En la obtención de la expresión \ref{Fun_Esti} para la aproximación del gradiente, cuyos detalles se encuentran en \cite{Estimacion_Gradiente}. Adquiere protagonismo la siguiente expresión:
 
 \begin{equation} \label{No_nulo} 
 	f\left(c\right)\cdot\frac{2}{N\cdot{D}^2}\cdot\sum_{i=1}^{N}\left(r_{i}-c\right)
 \end{equation}
 
-Esta expresión es nula siempre y cuando los vehículos estén dispuestos uniformemente en la circunferencia, como se comento antes con el error existente entre vehículos adyacentes introducido por el algoritmo de coordinación, una disposición perfectamente simétrica es imposible de conseguir. Por ende, la expresión \ref{No_nulo} nunca será nula, el valor del sumatorio se hará más grande entre más radio se tenga. Sin embargo, al estar divido por el radio al cuadrado el efecto se vuelve inversamente proporcional y la dependencia con el radio de la expresión \ref{Depe} se invalida.
+Esta expresión se anula siempre y cuando los vehículos estén dispuestos uniformemente en la circunferencia, como se comento antes con el error existente entre vehículos adyacentes introducido por el algoritmo de coordinación, una disposición perfectamente simétrica es imposible de conseguir. Por ende, la expresión \ref{No_nulo} nunca será nula, el valor del sumatorio se hará más grande entre más radio se tenga. Sin embargo, al estar divido por el radio al cuadrado el efecto se vuelve inversamente proporcional y la dependencia con el radio de la expresión \ref{Depe} se invalida.
 
 \begin{figure}[H]
   \begin{center}
@@ -188,7 +188,7 @@ Esta expresión es nula siempre y cuando los vehículos estén dispuestos unifor
   \end{center}
 \end{figure}
 
-En la figura \ref{D_Var_Error} se aprecia como la dependencia con el radio se invierte. En la figura \ref{SC}, el avance del sistema se simuló sin el algoritmo de coordinación manteniendo siempre los vehículos en la misma posición, encontrándose dispuestos perfectamente simétricos con respecto al centro de la formación. Por otro lado, al introducir el algoritmo de coordinación la dependencia se vuelve inversamente proporcional como se observa en la figura \ref{CC}. Este efecto se refuerza con la evolución de la comparativa entre las componentes del gradiente real y del estimado de la  figura \ref{Gradiente_Var_D}, en donde según se aumenta el radio las componentes se van asemejando.
+En la figura \ref{D_Var_Error} se aprecia como la dependencia con el radio se invierte a la vez que el error resulta mayor. En la figura \ref{SC}, el avance del sistema se simuló sin el algoritmo de coordinación manteniendo siempre los vehículos en la misma posición, encontrándose dispuestos perfectamente simétricos con respecto al centro de la formación. Por otro lado, al introducir el algoritmo de coordinación la dependencia se vuelve inversamente proporcional como se observa en la figura \ref{CC}. Este efecto se refuerza con la evolución de la comparativa entre las componentes del gradiente real y del estimado de la  figura \ref{Gradiente_Var_D}, en donde según se aumenta el radio las componentes se van asemejando.
 
 \begin{figure}[H]
   \begin{center}

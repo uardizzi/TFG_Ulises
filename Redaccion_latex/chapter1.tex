@@ -143,7 +143,7 @@ En el diagrama se definen los siguientes aspectos:
 \begin{itemize}
 	\item El algoritmo 1 se atribuye al que obtiene el gradiente en el centro de la formación \cite{Estimacion_Gradiente}. En primer lugar se analizó como se obtiene el gradiente mediante varios USVs para posteriormente codificarlo.
 	\item El algoritmo 2 es el encargado de la cooperación entre los vehículos descrito en \cite{Control_Formacion}. Este ya se encontraba codificado en \cite{Git_Hector}. La única tarea que se realizo fue el entendimiento de su funcionamiento.
-	\item Finalmente, ambos algoritmos en conjunto con el ascenso de gradiente descrito en \cite{Adicional_Estimacion_1} conforman el sistema global sobre el que se basarán cada uno de los casos previamente descritos, es decir, el análisis del rendimiento se dará en función de este sistema.
+	\item Finalmente, ambos algoritmos en conjunto con el ascenso de gradiente descrito en \cite{Adicional_Estimacion_1} conforman el sistema global sobre el que se basarán cada uno de los casos previamente descritos, es decir, el análisis del rendimiento se dará en función de este sistema. 
 \end{itemize}
 
 \section{Organización de la memoria}
@@ -157,8 +157,7 @@ Se va a dividir el desarrollo del resto de la memoria en tres capítulos que eng
 		\item El segundo los coordina para formar una circunferencia cuya disposición de los agentes en esta es simétrica.
 		\item Finalmente, un tercer algoritmo que permite el avance mediante el gradiente estimado.
 	\end{itemize}
-	\item  \textbf{\emph{En el tercer capítulo,}} se simulan diversas situaciones para evaluar el rendimiento del sistema completo, entre ellas estarían variar el número de vehículos, el radio de la circunferencia o el ajuste de la ganancia del algoritmo de ascenso de gradiente.
+	\item  \textbf{\emph{En el tercer capítulo,}} se simulan diversas situaciones para evaluar el rendimiento del sistema completo, entre ellas estarían variar el número de vehículos, el radio de la circunferencia o el ajuste de la ganancia del algoritmo de ascenso de gradiente. Todas las simulaciones aportadas en este capítulo se obtuvieron mediante códigos que se pueden encontrar en \cite{Git__todos}.
 	\item \textbf{\emph{En el cuarto y ultimo capítulo,}} se recogen las conclusiones finales de evaluar el rendimiento del conjunto de algoritmos. Adicionalmente, se aportan mejoras que se pueden introducir o futuras investigaciones; como sería el caso de tener un cálculo del gradiente aplicando un algoritmo de consenso, cuyo intercambio de información se realiza de manera distribuida.
 \end{itemize}
 
-Finalmente, en \cite{Git__todos} se encuentran todos los códigos utilizados para el desarrollo de la memoria.
